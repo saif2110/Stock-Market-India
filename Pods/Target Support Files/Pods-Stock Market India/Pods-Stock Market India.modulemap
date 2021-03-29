@@ -1,0 +1,6 @@
+framework module Pods_Stock_Market_India {
+  umbrella header "Pods-Stock Market India-umbrella.h"
+
+  export *
+  module * { export * }
+}

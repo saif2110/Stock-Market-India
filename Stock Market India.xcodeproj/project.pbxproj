@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0616AE257FCBBE00D9712E /* UserDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0616AD257FCBBE00D9712E /* UserDef.swift */; };
+		5C07BD0F2595F6A50042871B /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C07BD0E2595F6A50042871B /* Ads.swift */; };
+		5C110CC62580D1020010FBEA /* mainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C110CC52580D1020010FBEA /* mainCell.swift */; };
+		5C110CCA2580E1D30010FBEA /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C110CC92580E1D20010FBEA /* Api.swift */; };
+		5C1C03602583907100959ADD /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C035F2583907100959ADD /* TableViewHelper.swift */; };
+		5C1CF887258D24F600D753CE /* PostStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1CF886258D24F600D753CE /* PostStock.swift */; };
+		5C1CF895258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1CF894258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf */; };
+		5C1F143A25868E130042A790 /* myAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F143925868E130042A790 /* myAlert.swift */; };
+		5C35BC02258A42560018230C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C35BC01258A42560018230C /* GoogleService-Info.plist */; };
+		5C4154A625926BDA00464ED6 /* 200.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4154A525926BDA00464ED6 /* 200.png */; };
+		5C57E7E225813ADA0049F0B4 /* topfifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57E7E125813ADA0049F0B4 /* topfifty.swift */; };
+		5C57E7E5258290020049F0B4 /* searchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57E7E4258290010049F0B4 /* searchVC.swift */; };
+		5C58B5E4260CB1AE006DD25F /* TopFiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58B5E3260CB1AE006DD25F /* TopFiveVC.swift */; };
+		5C8069EE2584CDBE00DF09A8 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8069ED2584CDBE00DF09A8 /* SettingVC.swift */; };
+		5C8069F12584D1F200DF09A8 /* SettingMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8069F02584D1F200DF09A8 /* SettingMain.swift */; };
+		5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA78B63257CE15A009F6C65 /* AppDelegate.swift */; };
+		5CA78B68257CE15A009F6C65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA78B67257CE15A009F6C65 /* ViewController.swift */; };
+		5CA78B6B257CE15A009F6C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B69257CE15A009F6C65 /* Main.storyboard */; };
+		5CA78B6D257CE15B009F6C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B6C257CE15B009F6C65 /* Assets.xcassets */; };
+		5CA78B70257CE15B009F6C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B6E257CE15B009F6C65 /* LaunchScreen.storyboard */; };
+		5CCC1C082584E996006EEC43 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC1C072584E996006EEC43 /* SettingsCell.swift */; };
+		D1E1EF61EAFA69E3768DA3C2 /* Pods_Stock_Market_India.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602E52BEC355FD8CDADAE3C /* Pods_Stock_Market_India.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0602E52BEC355FD8CDADAE3C /* Pods_Stock_Market_India.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock_Market_India.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0616AD257FCBBE00D9712E /* UserDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDef.swift; sourceTree = "<group>"; };
+		5C07BD0E2595F6A50042871B /* Ads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
+		5C110CC52580D1020010FBEA /* mainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainCell.swift; sourceTree = "<group>"; };
+		5C110CC92580E1D20010FBEA /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		5C1C035F2583907100959ADD /* TableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
+		5C1CF886258D24F600D753CE /* PostStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStock.swift; sourceTree = "<group>"; };
+		5C1CF894258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		5C1F143925868E130042A790 /* myAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myAlert.swift; sourceTree = "<group>"; };
+		5C35BC01258A42560018230C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C4154A525926BDA00464ED6 /* 200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 200.png; sourceTree = "<group>"; };
+		5C57E7E125813ADA0049F0B4 /* topfifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topfifty.swift; sourceTree = "<group>"; };
+		5C57E7E4258290010049F0B4 /* searchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchVC.swift; sourceTree = "<group>"; };
+		5C58B5E3260CB1AE006DD25F /* TopFiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFiveVC.swift; sourceTree = "<group>"; };
+		5C79AA57258928DE0065E75D /* Stock Market India.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stock Market India.entitlements"; sourceTree = "<group>"; };
+		5C8069ED2584CDBE00DF09A8 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		5C8069F02584D1F200DF09A8 /* SettingMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMain.swift; sourceTree = "<group>"; };
+		5CA78B60257CE159009F6C65 /* Stock Market India.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Market India.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA78B63257CE15A009F6C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CA78B67257CE15A009F6C65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CA78B6A257CE15A009F6C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CA78B6C257CE15B009F6C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CA78B6F257CE15B009F6C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CA78B71257CE15B009F6C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCC1C072584E996006EEC43 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		95DA6F73640CC49ABC4DC53C /* Pods-Stock Market India.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market India.release.xcconfig"; path = "Target Support Files/Pods-Stock Market India/Pods-Stock Market India.release.xcconfig"; sourceTree = "<group>"; };
+		9EE03EEFD5749248CAA26DD4 /* Pods-Stock Market India.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market India.debug.xcconfig"; path = "Target Support Files/Pods-Stock Market India/Pods-Stock Market India.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CA78B5D257CE159009F6C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E1EF61EAFA69E3768DA3C2 /* Pods_Stock_Market_India.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F680BB27181E2C480ED0FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EE03EEFD5749248CAA26DD4 /* Pods-Stock Market India.debug.xcconfig */,
+				95DA6F73640CC49ABC4DC53C /* Pods-Stock Market India.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50FF538CCB8ED6F6846EBD0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0602E52BEC355FD8CDADAE3C /* Pods_Stock_Market_India.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C110CC42580D0F50010FBEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5C8069F02584D1F200DF09A8 /* SettingMain.swift */,
+				5C110CC52580D1020010FBEA /* mainCell.swift */,
+				5CCC1C072584E996006EEC43 /* SettingsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5CA78B57257CE159009F6C65 = {
+			isa = PBXGroup;
+			children = (
+				5CA78B62257CE159009F6C65 /* Stock Market India */,
+				5CA78B61257CE159009F6C65 /* Products */,
+				15F680BB27181E2C480ED0FE /* Pods */,
+				50FF538CCB8ED6F6846EBD0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CA78B61257CE159009F6C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CA78B60257CE159009F6C65 /* Stock Market India.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CA78B62257CE159009F6C65 /* Stock Market India */ = {
+			isa = PBXGroup;
+			children = (
+				5C110CC42580D0F50010FBEA /* Cell */,
+				5C79AA57258928DE0065E75D /* Stock Market India.entitlements */,
+				5C1CF894258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf */,
+				5C4154A525926BDA00464ED6 /* 200.png */,
+				5C07BD0E2595F6A50042871B /* Ads.swift */,
+				5C0616AD257FCBBE00D9712E /* UserDef.swift */,
+				5C1F143925868E130042A790 /* myAlert.swift */,
+				5CA78B63257CE15A009F6C65 /* AppDelegate.swift */,
+				5CA78B67257CE15A009F6C65 /* ViewController.swift */,
+				5CA78B69257CE15A009F6C65 /* Main.storyboard */,
+				5CA78B6C257CE15B009F6C65 /* Assets.xcassets */,
+				5CA78B6E257CE15B009F6C65 /* LaunchScreen.storyboard */,
+				5C110CC92580E1D20010FBEA /* Api.swift */,
+				5C57E7E125813ADA0049F0B4 /* topfifty.swift */,
+				5C57E7E4258290010049F0B4 /* searchVC.swift */,
+				5C1C035F2583907100959ADD /* TableViewHelper.swift */,
+				5C8069ED2584CDBE00DF09A8 /* SettingVC.swift */,
+				5C1CF886258D24F600D753CE /* PostStock.swift */,
+				5C58B5E3260CB1AE006DD25F /* TopFiveVC.swift */,
+				5CA78B71257CE15B009F6C65 /* Info.plist */,
+				5C35BC01258A42560018230C /* GoogleService-Info.plist */,
+			);
+			path = "Stock Market India";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CA78B5F257CE159009F6C65 /* Stock Market India */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA78B74257CE15B009F6C65 /* Build configuration list for PBXNativeTarget "Stock Market India" */;
+			buildPhases = (
+				2EBE492376590F454DEB7F87 /* [CP] Check Pods Manifest.lock */,
+				5CA78B5C257CE159009F6C65 /* Sources */,
+				5CA78B5D257CE159009F6C65 /* Frameworks */,
+				5CA78B5E257CE159009F6C65 /* Resources */,
+				20A23E5D70AAB454BF36964F /* [CP] Embed Pods Frameworks */,
+				879C53E23AF5DEE1418A4D12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stock Market India";
+			productName = "Stock Market India";
+			productReference = 5CA78B60257CE159009F6C65 /* Stock Market India.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CA78B58257CE159009F6C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					5CA78B5F257CE159009F6C65 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 5CA78B5B257CE159009F6C65 /* Build configuration list for PBXProject "Stock Market India" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CA78B57257CE159009F6C65;
+			productRefGroup = 5CA78B61257CE159009F6C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CA78B5F257CE159009F6C65 /* Stock Market India */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CA78B5E257CE159009F6C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4154A625926BDA00464ED6 /* 200.png in Resources */,
+				5CA78B70257CE15B009F6C65 /* LaunchScreen.storyboard in Resources */,
+				5C35BC02258A42560018230C /* GoogleService-Info.plist in Resources */,
+				5CA78B6D257CE15B009F6C65 /* Assets.xcassets in Resources */,
+				5CA78B6B257CE15A009F6C65 /* Main.storyboard in Resources */,
+				5C1CF895258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A23E5D70AAB454BF36964F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock Market India/Pods-Stock Market India-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock Market India/Pods-Stock Market India-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stock Market India/Pods-Stock Market India-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EBE492376590F454DEB7F87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stock Market India-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879C53E23AF5DEE1418A4D12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock Market India/Pods-Stock Market India-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock Market India/Pods-Stock Market India-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stock Market India/Pods-Stock Market India-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CA78B5C257CE159009F6C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C07BD0F2595F6A50042871B /* Ads.swift in Sources */,
+				5C1CF887258D24F600D753CE /* PostStock.swift in Sources */,
+				5C57E7E5258290020049F0B4 /* searchVC.swift in Sources */,
+				5C8069EE2584CDBE00DF09A8 /* SettingVC.swift in Sources */,
+				5C58B5E4260CB1AE006DD25F /* TopFiveVC.swift in Sources */,
+				5C1F143A25868E130042A790 /* myAlert.swift in Sources */,
+				5C57E7E225813ADA0049F0B4 /* topfifty.swift in Sources */,
+				5C0616AE257FCBBE00D9712E /* UserDef.swift in Sources */,
+				5C1C03602583907100959ADD /* TableViewHelper.swift in Sources */,
+				5CA78B68257CE15A009F6C65 /* ViewController.swift in Sources */,
+				5C110CC62580D1020010FBEA /* mainCell.swift in Sources */,
+				5C8069F12584D1F200DF09A8 /* SettingMain.swift in Sources */,
+				5C110CCA2580E1D30010FBEA /* Api.swift in Sources */,
+				5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */,
+				5CCC1C082584E996006EEC43 /* SettingsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CA78B69257CE15A009F6C65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA78B6A257CE15A009F6C65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CA78B6E257CE15B009F6C65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA78B6F257CE15B009F6C65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CA78B72257CE15B009F6C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CA78B73257CE15B009F6C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CA78B75257CE15B009F6C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE03EEFD5749248CAA26DD4 /* Pods-Stock Market India.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 959YZPX78D;
+				INFOPLIST_FILE = "Stock Market India/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Stock-Market-India";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5CA78B76257CE15B009F6C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DA6F73640CC49ABC4DC53C /* Pods-Stock Market India.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = 959YZPX78D;
+				INFOPLIST_FILE = "Stock Market India/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Stock-Market-India";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CA78B5B257CE159009F6C65 /* Build configuration list for PBXProject "Stock Market India" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA78B72257CE15B009F6C65 /* Debug */,
+				5CA78B73257CE15B009F6C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA78B74257CE15B009F6C65 /* Build configuration list for PBXNativeTarget "Stock Market India" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA78B75257CE15B009F6C65 /* Debug */,
+				5CA78B76257CE15B009F6C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CA78B58257CE159009F6C65 /* Project object */;
+}
