@@ -1,28 +1,67 @@
 //
-//  topfifty.swift
+//  TopFiveVC.swift
 //  Stock Market India
 //
-//  Created by Junaid Mukadam on 09/12/20.
+//  Created by Junaid Mukadam on 25/03/21.
 //
 
 import UIKit
 import GoogleMobileAds
 
-class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADFullScreenContentDelegate {
     
-    var nameofStock = [String]()
-    var date = [String]()
-    var currentPrice = [String]()
-    var target = [String]()
-    var period = [String]()
-    var SL = [String]()
-    var Likes = [String]()
-    var DisLikes = [String]()
+    var rewardedAd: GADRewardedAd?
+    var indicator = UIActivityIndicatorView()
+    
+    func loadRewardedAd() {
+        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+        indicator.color = .systemRed
+        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        indicator.center = view.center
+        self.view.addSubview(indicator)
+        self.view.bringSubviewToFront(indicator)
+        indicator.startAnimating()
+        
+        let request = GADRequest()
+        GADRewardedAd.load(
+            withAdUnitID: videoads,
+            request: request,
+            completionHandler: { ad, error in
+                if error != nil {
+                    self.indicator.stopAnimating()
+                    self.present(myAlt(titel:"No Ad Found",message:"Something went wrong.Ad is not found this time.Please try again later."), animated: true, completion: nil)
+                    return
+                }
+                self.rewardedAd = ad
+                self.indicator.stopAnimating()
+                self.show()
+            })
+    }
+    
+    func show() {
+        if rewardedAd != nil {
+            rewardedAd!.present(
+                fromRootViewController: self,
+                userDidEarnRewardHandler: {
+                    self.watchAdviewTohide.isHidden = true
+                })
+        } else {
+            self.indicator.stopAnimating()
+        }
+    }
+    
+    @IBOutlet weak var watchAdView: UIView!
+    @IBOutlet weak var watchAdLabel: UILabel!
+    @IBOutlet weak var watchAdbutout: UIButton!
+    @IBOutlet weak var watchAdviewTohide: UIView!
+    @IBAction func watchAdbut(_ sender: Any) {
+        loadRewardedAd()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         nameofStock.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! mainCell
@@ -40,14 +79,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         cell.DisLike.addTarget(self, action: #selector(TapDisLike), for: .touchUpInside)
         cell.Like.setTitle("+"+Likes[indexPath.row], for: .normal)
         cell.DisLike.setTitle("-"+DisLikes[indexPath.row], for: .normal)
-        
-        if indexPath.row == 5 || indexPath.row == 14 {
-            cell.adView.isHidden = false
-            cell.adView.rootViewController = self
-            cell.adView.load(GADRequest())
-        }else{
-            cell.adView.isHidden = true
-        }
         
         return cell
     }
@@ -84,46 +115,42 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }
     }
     
+    var nameofStock = [String]()
+    var date = [String]()
+    var currentPrice = [String]()
+    var target = [String]()
+    var period = [String]()
+    var SL = [String]()
+    var Likes = [String]()
+    var DisLikes = [String]()
+    
     @IBOutlet weak var myView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Live 30 Stocks"
-        
+        self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
+        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = nil
     }
-    
-    var indicator = UIActivityIndicatorView()
-    
-    @objc func sortData(){
-        getStockData(sort: Sender)
-    }
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(sortData),
-                                               name: NSNotification.Name("sortData"),
-                                               object: nil)
+        watchAdView.layer.cornerRadius = 10
+        watchAdView.shadow2()
         
-        LoadIntrest(Myself: self)
-        showIntrest(Myself: self, Wait: 17)
+        watchAdbutout.layer.cornerRadius = 10
+        watchAdbutout.shadow2()
         
-        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-        indicator.color = .systemRed
-        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        indicator.center = view.center
-        self.view.addSubview(indicator)
-        self.view.bringSubviewToFront(indicator)
-        indicator.startAnimating()
-        
-        getStockData(sort: Sender)
+        watchAdLabel.text = "We have chosen today's top 5 stocks for you that are posted frequently by other users.\n\nStocks will be updated every 24 hrs."
+        getStockData()
     }
     
-    func getStockData(sort:String = "") {
-        indicator.startAnimating()
-        postWithParameter(Url: "getStockdata.php", parameters: ["limit":32,"sort":sort]) { (json, err) in
+    func getStockData() {
+        
+        postWithParameter(Url: "getTopStocks.php", parameters: [:]) { (json, err) in
             if err == nil {
                 
                 self.nameofStock.removeAll()
@@ -147,12 +174,9 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                     self.DisLikes.append(DisLikeAlgoritham(Name: SubJson["Name"].string ?? "Null", Date: SubJson["PostedTime"].string ?? "Null"))
                 }
                 
-                self.indicator.stopAnimating()
                 self.myView.delegate = self
                 self.myView.dataSource = self
                 self.myView.reloadData()
-            }else{
-                self.indicator.stopAnimating()
             }
         }
     }

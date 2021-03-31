@@ -1,67 +1,32 @@
 //
-//  TopFiveVC.swift
+//  topfifty.swift
 //  Stock Market India
 //
-//  Created by Junaid Mukadam on 25/03/21.
+//  Created by Junaid Mukadam on 09/12/20.
 //
 
 import UIKit
 import GoogleMobileAds
 
-class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADFullScreenContentDelegate {
+
+var Sender = ""
+var leftBarButtonItemStored:UIBarButtonItem? = nil
+
+class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var rewardedAd: GADRewardedAd?
-    var indicator = UIActivityIndicatorView()
-    
-    func loadRewardedAd() {
-        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-        indicator.color = .systemRed
-        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        indicator.center = view.center
-        self.view.addSubview(indicator)
-        self.view.bringSubviewToFront(indicator)
-        indicator.startAnimating()
-        
-        let request = GADRequest()
-        GADRewardedAd.load(
-            withAdUnitID: videoads,
-            request: request,
-            completionHandler: { ad, error in
-                if error != nil {
-                    self.indicator.stopAnimating()
-                    self.present(myAlt(titel:"No Ad Found",message:"Something went wrong.Ad is not found this time.Please try again later."), animated: true, completion: nil)
-                    return
-                }
-                self.rewardedAd = ad
-                self.indicator.stopAnimating()
-                self.show()
-            })
-    }
-    
-    func show() {
-        if rewardedAd != nil {
-            rewardedAd!.present(
-                fromRootViewController: self,
-                userDidEarnRewardHandler: {
-                    self.watchAdviewTohide.isHidden = true
-                })
-        } else {
-            self.indicator.stopAnimating()
-        }
-    }
-    
-    @IBOutlet weak var watchAdView: UIView!
-    @IBOutlet weak var watchAdLabel: UILabel!
-    @IBOutlet weak var watchAdbutout: UIButton!
-    @IBOutlet weak var watchAdviewTohide: UIView!
-    @IBAction func watchAdbut(_ sender: Any) {
-        loadRewardedAd()
-    }
-    
+    var nameofStock = [String]()
+    var date = [String]()
+    var currentPrice = [String]()
+    var target = [String]()
+    var period = [String]()
+    var SL = [String]()
+    var Likes = [String]()
+    var DisLikes = [String]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         nameofStock.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! mainCell
@@ -79,6 +44,14 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
         cell.DisLike.addTarget(self, action: #selector(TapDisLike), for: .touchUpInside)
         cell.Like.setTitle("+"+Likes[indexPath.row], for: .normal)
         cell.DisLike.setTitle("-"+DisLikes[indexPath.row], for: .normal)
+        
+        if indexPath.row == 5 || indexPath.row == 14 {
+            cell.adView.isHidden = false
+            cell.adView.rootViewController = self
+            cell.adView.load(GADRequest())
+        }else{
+            cell.adView.isHidden = true
+        }
         
         return cell
     }
@@ -115,45 +88,95 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
         }
     }
     
-    var nameofStock = [String]()
-    var date = [String]()
-    var currentPrice = [String]()
-    var target = [String]()
-    var period = [String]()
-    var SL = [String]()
-    var Likes = [String]()
-    var DisLikes = [String]()
-    
     @IBOutlet weak var myView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
-        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = nil
+        self.navigationController?.navigationBar.topItem?.title = "Live 30 Stocks"
+        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = leftBarButtonItemStored
+        
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = leftBarButtonItemStored
+    var indicator = UIActivityIndicatorView()
+    
+    @objc func sortData(){
+        getStockData(sort: Sender)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
         
-        watchAdView.layer.cornerRadius = 10
-        watchAdView.shadow2()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(sortData),
+                                               name: NSNotification.Name("sortData"),
+                                               object: nil)
         
-        watchAdbutout.layer.cornerRadius = 10
-        watchAdbutout.shadow2()
+        showIntrest(Myself: self, Wait: 8)
         
-        watchAdLabel.text = "We have chosen today's top 5 stocks for you that are posted frequently by other users.\n\nStocks will be updated every 24 hrs."
-        getStockData()
+        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+        indicator.color = .systemRed
+        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        indicator.center = view.center
+        self.view.addSubview(indicator)
+        self.view.bringSubviewToFront(indicator)
+        indicator.startAnimating()
+        
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        self.navigationController?.navigationBar.tintColor = .red
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem =  UIBarButtonItem(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(addTapped))
+        
+        
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(systemName: "arrow.up.arrow.down.circle"), for: .normal)
+        button.setTitle(" All Stocks", for: .normal)
+        button.contentHorizontalAlignment = .left
+        button.addTarget(self, action: #selector(sort), for: .touchUpInside)
+        button.titleLabel?.minimumScaleFactor = 0.5
+        button.clipsToBounds = true
+        
+        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(customView: button)
+        
+        leftBarButtonItemStored = self.navigationController?.navigationBar.topItem?.leftBarButtonItem
+        
+        getStockData(sort: Sender)
     }
     
-    func getStockData() {
+    @objc func addTapped(){
+        let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = (MainStoryboard.instantiateViewController(withIdentifier: "searchVC") as? searchVC)
+        self.present(controller!, animated: true, completion: nil)
+    }
+    
+    @objc func sort(sender:UIButton) {
         
-        postWithParameter(Url: "getTopStocks.php", parameters: [:]) { (json, err) in
+        if sender.currentTitle == " All Stocks" {
+            sender.setTitle(" Intraday", for: .normal)
+            getStockData(sort: "Intraday")
+            Sender = "Intraday"
+        }else if sender.currentTitle == " Intraday"{
+            sender.setTitle(" 1 Week", for: .normal)
+            getStockData(sort: "1 Week")
+            Sender = "1 Week"
+        }else if sender.currentTitle == " 1 Week"{
+            sender.setTitle(" 1 Month", for: .normal)
+            getStockData(sort: "1 Month")
+            Sender = "1 Month"
+        }else if sender.currentTitle == " 1 Month"{
+            sender.setTitle(" All Stocks", for: .normal)
+            getStockData()
+            Sender = ""
+        }
+        
+        NotificationCenter.default.post(name: NSNotification.Name("sortData"), object: nil)
+    }
+    
+    
+    func getStockData(sort:String = "") {
+        indicator.startAnimating()
+        postWithParameter(Url: "getStockdata.php", parameters: ["limit":32,"sort":sort]) { (json, err) in
             if err == nil {
                 
                 self.nameofStock.removeAll()
@@ -177,9 +200,12 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
                     self.DisLikes.append(DisLikeAlgoritham(Name: SubJson["Name"].string ?? "Null", Date: SubJson["PostedTime"].string ?? "Null"))
                 }
                 
+                self.indicator.stopAnimating()
                 self.myView.delegate = self
                 self.myView.dataSource = self
                 self.myView.reloadData()
+            }else{
+                self.indicator.stopAnimating()
             }
         }
     }

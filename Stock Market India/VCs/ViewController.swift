@@ -12,9 +12,7 @@ import AppTrackingTransparency
 import AdSupport
 import GoogleMobileAds
 
-var Sender = ""
 
-var leftBarButtonItemStored:UIBarButtonItem? = nil
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -135,8 +133,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var indicator = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        LoadIntrest(Myself: self)
+    
         showIntrest(Myself: self, Wait: 8)
         
         if UserDefaults.standard.getnumberOftimeAppOpen() > 8 {

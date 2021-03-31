@@ -54,6 +54,7 @@ PODS:
   - NilTutorial (0.2.7)
   - PromisesObjC (1.2.12)
   - SkyFloatingLabelTextField (3.8.0)
+  - StarReview (1.0.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -64,6 +65,7 @@ DEPENDENCIES:
   - Kingfisher
   - NilTutorial
   - SkyFloatingLabelTextField (~> 3.0)
+  - StarReview
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -83,6 +85,7 @@ SPEC REPOS:
     - NilTutorial
     - PromisesObjC
     - SkyFloatingLabelTextField
+    - StarReview
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -101,8 +104,9 @@ SPEC CHECKSUMS:
   NilTutorial: bd093ecef7162a5b99e50366c6bbcf907e2fb542
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  StarReview: 0578f61607b89b3f0ad87ab417907818c1f39532
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 49a3bdf4c37a29cefb0cd5f96bdc33470260638d
+PODFILE CHECKSUM: 787cf90e1753a358fb114d5f6e6cf8282cba311e
 
 COCOAPODS: 1.10.1

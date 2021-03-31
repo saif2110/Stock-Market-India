@@ -15,4 +15,5 @@ pod 'Kingfisher'
 pod 'SkyFloatingLabelTextField', '~> 3.0'
 pod 'DropDown', '~> 2.3'
 pod 'Google-Mobile-Ads-SDK'
+pod 'StarReview'
 end

@@ -13,12 +13,10 @@ import GoogleMobileAds
 import UIKit
 import StoreKit
 
-//let testIntrest = "ca-app-pub-3940256099942544/1033173712"      //Test
-let testIntrest = "ca-app-pub-2710347124980493/4230520325"    //Mine
+let Intrestads = "ca-app-pub-2710347124980493/4230520325"    //Mine
 
-//let videoads = "ca-app-pub-3940256099942544/5224354917" // Test
+
 let videoads = "ca-app-pub-2710347124980493/2912232437" // Main //
-
 
 //first Add
 //<key>NSUserTrackingUsageDescription</key>
@@ -26,9 +24,9 @@ let videoads = "ca-app-pub-2710347124980493/2912232437" // Main //
 
 private var interstitial: GADInterstitialAd?
 
-func LoadIntrest(Myself:UIViewController) {
+func showIntrest(Myself:UIViewController,Wait:Double) {
     let request = GADRequest()
-    GADInterstitialAd.load(withAdUnitID:testIntrest,
+    GADInterstitialAd.load(withAdUnitID:Intrestads,
                            request: request,
                            completionHandler: { [Myself] ad, error in
                             if let error = error {
@@ -36,19 +34,14 @@ func LoadIntrest(Myself:UIViewController) {
                                 return
                             }
                             interstitial = ad
+                            DispatchQueue.main.asyncAfter(deadline: .now() + Wait) {
+                                if interstitial != nil {
+                                    interstitial?.present(fromRootViewController: Myself)
+                                } else {
+                                    print("Ad wasn't ready")
+                                }
+                            }
                            })
-}
-
-
-
-func showIntrest(Myself:UIViewController,Wait:Double) {
-    DispatchQueue.main.asyncAfter(deadline: .now() + Wait) {
-        if interstitial != nil {
-            interstitial?.present(fromRootViewController: Myself)
-        } else {
-            print("Ad wasn't ready")
-        }
-    }
 }
 
 
