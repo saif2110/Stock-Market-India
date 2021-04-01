@@ -79,7 +79,6 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             cell.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 0.3)
             return cell
         }
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -88,7 +87,6 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         }else{
             return 50
         }
-        
     }
     
     @objc func posttips(){
@@ -115,7 +113,6 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    
     @IBOutlet weak var myView: UITableView!
     override func viewDidDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
@@ -124,7 +121,6 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         
         if indexPath.section == 1 {
             if indexPath.row == 0 {
@@ -149,7 +145,6 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             }
         }
     }
-    
 }
 
 

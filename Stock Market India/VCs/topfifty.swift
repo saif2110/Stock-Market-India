@@ -112,7 +112,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                                name: NSNotification.Name("sortData"),
                                                object: nil)
         
-        showIntrest(Myself: self, Wait: 8)
+        showIntrest(Myself: self, Wait: 5)
         
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = .systemRed
