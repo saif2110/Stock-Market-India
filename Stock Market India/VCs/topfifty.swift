@@ -7,7 +7,8 @@
 
 import UIKit
 import GoogleMobileAds
-
+import InAppPurchase
+import StoreKit
 
 var Sender = ""
 var leftBarButtonItemStored:UIBarButtonItem? = nil
@@ -27,7 +28,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         nameofStock.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! mainCell
         cell.nameStock.text = nameofStock[indexPath.row].capitalized
@@ -45,7 +45,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         cell.Like.setTitle("+"+Likes[indexPath.row], for: .normal)
         cell.DisLike.setTitle("-"+DisLikes[indexPath.row], for: .normal)
         
-        if indexPath.row == 5 || indexPath.row == 14 {
+        if (indexPath.row == 5 || indexPath.row == 14) && !UserDefaults.standard.isProMember() {
             cell.adView.isHidden = false
             cell.adView.rootViewController = self
             cell.adView.load(GADRequest())
@@ -91,9 +91,12 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var myView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Live 30 Stocks"
+        if UserDefaults.standard.isProMember(){
+            self.navigationController?.navigationBar.topItem?.title = "Live 40 Stocks"
+        }else{
+            self.navigationController?.navigationBar.topItem?.title = "Live 30 Stocks"
+        }
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem = leftBarButtonItemStored
-        
     }
     
     var indicator = UIActivityIndicatorView()
@@ -112,7 +115,11 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                                name: NSNotification.Name("sortData"),
                                                object: nil)
         
-        showIntrest(Myself: self, Wait: 5)
+        showIntrest(Myself: self, Wait: 7)
+        
+        if UserDefaults.standard.getnumberOftimeAppOpen() > 8 {
+            requestToRate()
+        }
         
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = .systemRed
@@ -122,11 +129,20 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.view.bringSubviewToFront(indicator)
         indicator.startAnimating()
         
-        
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
         self.navigationController?.navigationBar.tintColor = .red
-        self.navigationController?.navigationBar.topItem?.rightBarButtonItem =  UIBarButtonItem(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(addTapped))
+        
+        let search = UIBarButtonItem(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(addTapped))
+        
+        let pro = UIBarButtonItem(image: #imageLiteral(resourceName: "pro1"), style: .plain, target: self, action: #selector(addPro))
+        
+        self.navigationController?.navigationBar.topItem?.setRightBarButtonItems([search,pro], animated: true)
+        
+        if UserDefaults.standard.isProMember() {
+            self.navigationController?.navigationBar.topItem?.setRightBarButtonItems([search], animated: true)
+        }else{
+            self.navigationController?.navigationBar.topItem?.setRightBarButtonItems([search,pro], animated: true)
+        }
         
         
         let button = UIButton(type: .system)
@@ -148,6 +164,17 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = (MainStoryboard.instantiateViewController(withIdentifier: "searchVC") as? searchVC)
         self.present(controller!, animated: true, completion: nil)
+    }
+    
+    
+    @objc func addPro(){
+        let vc  = InAppVC()
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool{
+        return true
     }
     
     @objc func sort(sender:UIButton) {
@@ -173,10 +200,9 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         NotificationCenter.default.post(name: NSNotification.Name("sortData"), object: nil)
     }
     
-    
     func getStockData(sort:String = "") {
         indicator.startAnimating()
-        postWithParameter(Url: "getStockdata.php", parameters: ["limit":32,"sort":sort]) { (json, err) in
+        postWithParameter(Url: "getStockdata.php", parameters: ["limit":numberOFStocks,"sort":sort]) { (json, err) in
             if err == nil {
                 
                 self.nameofStock.removeAll()

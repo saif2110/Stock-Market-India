@@ -130,13 +130,18 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
         self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem = nil
     }
-  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
+        
+        if UserDefaults.standard.isProMember(){
+            self.watchAdviewTohide.isHidden = true
+        }
+        
         
         watchAdView.layer.cornerRadius = 10
         watchAdView.shadow2()
@@ -151,6 +156,7 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
     func getStockData() {
         
         postWithParameter(Url: "getTopStocks.php", parameters: [:]) { (json, err) in
+            
             if err == nil {
                 
                 self.nameofStock.removeAll()

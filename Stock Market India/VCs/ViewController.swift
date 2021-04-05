@@ -133,14 +133,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var indicator = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        showIntrest(Myself: self, Wait: 8)
+        
+        showIntrest(Myself: self, Wait: 7)
         
         if UserDefaults.standard.getnumberOftimeAppOpen() > 8 {
             requestToRate()
         }
-        
-        requestPermission()
         
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)

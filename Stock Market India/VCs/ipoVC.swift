@@ -145,6 +145,7 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         super.viewDidLoad()
         
         postWithParameter(Url: "ipo.json", parameters: [:]) { (Json, Err) in
+            
             for (_,Subjson) in JSON(Json)["ipoCompanyListingOrderMap"]["OPEN"] {
                 self.openData.append(DataOFjson(logoUrl: Subjson["company"]["logoUrl"].string ?? "", minPrice: Subjson["company"]["minPrice"].int ?? 0, maxPrice: Subjson["company"]["maxPrice"].int ?? 0, lotSize: Subjson["company"]["lotSize"].int ?? 0, name: Subjson["company"]["name"].string ?? "", retailSubscriptionRate: Subjson["company"]["retailSubscriptionRate"].float ?? 0.1, biddingEndDate: Subjson["company"]["biddingEndDate"].string ?? ""))
             }

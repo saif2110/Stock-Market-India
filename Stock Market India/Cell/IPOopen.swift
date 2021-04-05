@@ -35,7 +35,6 @@ class IPOopen: UITableViewCell {
         star.starFillColor = .clear
         outerBox.layer.cornerRadius = 8
         outerBox.shadow2()
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

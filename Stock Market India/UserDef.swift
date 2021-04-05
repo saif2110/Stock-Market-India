@@ -20,6 +20,7 @@ enum UserDefaultsKeys : String {
     case IP2
     case FullAccess
     case numberOftimeAppOpen
+    case isProMember
     
     
     
@@ -39,6 +40,14 @@ extension UserDefaults{
     
     func isFirstTimeOpen() -> Bool{
         return bool(forKey: UserDefaultsKeys.isFirstTimeOpen.rawValue)
+    }
+    
+    func setisProMember(value: Bool){
+        set(value,forKey: UserDefaultsKeys.isProMember.rawValue)
+    }
+    
+    func isProMember() -> Bool{
+        return bool(forKey: UserDefaultsKeys.isProMember.rawValue)
     }
     
     func setnumberOftimeAppOpen(value: Double){
