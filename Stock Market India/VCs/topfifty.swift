@@ -158,6 +158,23 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         leftBarButtonItemStored = self.navigationController?.navigationBar.topItem?.leftBarButtonItem
         
         getStockData(sort: Sender)
+        
+        let iap = InAppPurchase.default
+        iap.set(shouldAddStorePaymentHandler: { (product) -> Bool in
+            return true
+        }, handler: { (result) in
+            switch result {
+            case .success( _):
+                self.PerchesedComplte()
+            case .failure( _):
+                print("error")
+            }
+        })
+    }
+    
+    func PerchesedComplte(){
+        UserDefaults.standard.setisProMember(value: true)
+        self.present(myAlt(titel:"Congratulations !",message:"You are a pro member now. Enjoy seamless experience without the Ads."), animated: true, completion: nil)
     }
     
     @objc func addTapped(){
@@ -171,10 +188,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let vc  = InAppVC()
         self.present(vc, animated: true, completion: nil)
         
-    }
-    
-    func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool{
-        return true
     }
     
     @objc func sort(sender:UIButton) {

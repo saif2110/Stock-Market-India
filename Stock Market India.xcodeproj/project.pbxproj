@@ -140,7 +140,6 @@
 			children = (
 				5C110CC42580D0F50010FBEA /* Cell */,
 				5CB4BA452611F1B5004993D2 /* VCs */,
-				5C79AA57258928DE0065E75D /* Stock Market India.entitlements */,
 				5C1CF894258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf */,
 				5C4154A525926BDA00464ED6 /* 200.png */,
 				5C07BD0E2595F6A50042871B /* Ads.swift */,
@@ -154,6 +153,7 @@
 				5C1C035F2583907100959ADD /* TableViewHelper.swift */,
 				5C23D3D8261B2075002E006A /* pro.json */,
 				5CA78B71257CE15B009F6C65 /* Info.plist */,
+				5C79AA57258928DE0065E75D /* Stock Market India.entitlements */,
 				5C35BC01258A42560018230C /* GoogleService-Info.plist */,
 			);
 			path = "Stock Market India";
@@ -481,7 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Stock Market India/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -505,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Stock Market India/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

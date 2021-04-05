@@ -111,9 +111,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers =  ["71672e5a891db378b63d88dd080cc4ab"]
         
+        let iap = InAppPurchase.default
+        iap.addTransactionObserver(fallbackHandler: {_ in
+            // Handle the result of payment added by Store
+            // See also `InAppPurchase#purchase`
+            print("what the hell is this")
+        })
+        
+        
         if UserDefaults.standard.isProMember() {
             numberOFStocks = 40
         }
+        
+        
         
         return true
     }

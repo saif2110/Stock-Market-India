@@ -15,14 +15,7 @@ class InAppVC: UIViewController {
     @IBOutlet weak var imageLotti: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let iap = InAppPurchase.default
-        iap.addTransactionObserver(fallbackHandler: {_ in
-            // Handle the result of payment added by Store
-            // See also `InAppPurchase#purchase`
-            print("what the hell is this")
-        })
-        
+    
         let LottiV = AnimationView()
         LottiV.frame = self.imageLotti.bounds
         LottiV.backgroundColor = .white
@@ -33,6 +26,7 @@ class InAppVC: UIViewController {
         DispatchQueue.main.async {
             self.imageLotti.addSubview(LottiV)
         }
+        
     }
     
     @IBAction func restore(_ sender: Any) {
@@ -48,6 +42,8 @@ class InAppVC: UIViewController {
             }
         })
     }
+    
+    
     
     @IBAction func buyPro(_ sender: Any) {
         let iap = InAppPurchase.default
