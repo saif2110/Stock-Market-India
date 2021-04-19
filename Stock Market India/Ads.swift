@@ -13,15 +13,14 @@ import GoogleMobileAds
 import UIKit
 import StoreKit
 
-let videoads = "ca-app-pub-2710347124980493/2912232437" // Main //
+let videoads = "ca-app-pub-2710347124980493/2912232437"
 
 //first Add
 //<key>NSUserTrackingUsageDescription</key>
 //<string>This identifier will be used to deliver personalized ads to you.</string>
 
-private var interstitial: GADInterstitialAd?
 
-func showIntrest(Myself:UIViewController,Wait:Double) {
+func showIntrest(Myself:UIViewController) {
     if !UserDefaults.standard.isProMember() {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { (status) in
@@ -33,14 +32,10 @@ func showIntrest(Myself:UIViewController,Wait:Double) {
                                             print("Failed to load interstitial ad with error: \(error.localizedDescription)")
                                             return
                                         }
-                                        interstitial = ad
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + Wait) {
-                                            
-                                            if interstitial != nil {
-                                                interstitial?.present(fromRootViewController: Myself)
-                                            } else {
-                                                print("Ad wasn't ready")
-                                            }
+                                        if ad != nil {
+                                            ad?.present(fromRootViewController: Myself)
+                                        } else {
+                                            print("Ad wasn't ready")
                                         }
                                        })
             })
@@ -53,22 +48,34 @@ func showIntrest(Myself:UIViewController,Wait:Double) {
                                         print("Failed to load interstitial ad with error: \(error.localizedDescription)")
                                         return
                                     }
-                                    interstitial = ad
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + Wait) {
-                                        if interstitial != nil {
-                                            interstitial?.present(fromRootViewController: Myself)
-                                        } else {
-                                            print("Ad wasn't ready")
-                                        }
+                                    if ad != nil {
+                                        ad?.present(fromRootViewController: Myself)
+                                    } else {
+                                        print("Ad wasn't ready")
                                     }
+                                    
                                    })
             
         }
     }
 }
 
-
-
 func requestToRate() {
     SKStoreReviewController.requestReview()
+}
+
+var indicator = UIActivityIndicatorView()
+
+func startIndicator(selfo:UIViewController) {
+    indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    indicator.color = .systemRed
+    indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+    indicator.center = selfo.view.center
+    selfo.view.addSubview(indicator)
+    selfo.view.bringSubviewToFront(indicator)
+    indicator.startAnimating()
+}
+
+func stopIndicator() {
+    indicator.stopAnimating()
 }

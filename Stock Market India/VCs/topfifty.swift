@@ -115,12 +115,14 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                                name: NSNotification.Name("sortData"),
                                                object: nil)
         
-        showIntrest(Myself: self, Wait: 7)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            showIntrest(Myself: self)
+        }
         
         if UserDefaults.standard.getnumberOftimeAppOpen() > 8 {
             requestToRate()
         }
-        
+
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = .systemRed
         indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)

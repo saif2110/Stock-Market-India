@@ -42,30 +42,13 @@ class IPOopen: UITableViewCell {
         
         logo.kf.setImage(with: URL(string: data?.logoUrl ?? ""))
         name.text = data?.name
-        subcriptionRate.text = "Subcription Rate: " + String(data?.retailSubscriptionRate ?? 00)
-        price.text = "Price: ₹" + String(data?.minPrice ?? 0) + " - ₹" + String(data?.maxPrice ?? 0)
-        size.text = "Lot Size: " + String(data?.lotSize ?? 00)
-        endDate.text = "End Date: " + (data?.biddingEndDate ?? "")
-        star.starCount = startRating(rate: data?.retailSubscriptionRate ?? 10)
+        subcriptionRate.text = "Issue Size: ₹" + String(data?.issueSize ?? "Coming Soon") + " Cr"
+        price.text = "Price: ₹" + String(data?.minPrice ?? "Coming Soon") + " - ₹" + String(data?.maxPrice ?? "Coming Soon")
+        size.text = "Lot Size: " + String(data?.lotSize ?? "Coming Soon")
+        endDate.text = "End Date: " + (data?.biddingEndDate ?? "Coming Soon")
+        star.starCount = Int(data?.stars ?? "2") ?? 2
         
     }
     
     
-    func startRating(rate:Float) -> Int {
-        if rate > 100{
-            
-            return 5
-        }else if rate > 70 {
-            
-            return 4
-        }else if rate > 40 {
-            return 3
-            
-        }else if rate > 5 {
-            
-            return 2
-        }else {
-            return 1
-        }
-    }
 }

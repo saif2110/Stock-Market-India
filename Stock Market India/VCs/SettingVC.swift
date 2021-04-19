@@ -12,7 +12,7 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     let titels1 = ["Privacy Policy","Rate Us"]
     let titels2 = ["Follow Developer"]
     let titels3 = ["Share App","Bug / Feedback"]
-    let myMail = "feedback@safeapps.online"
+    let myMail = "feedback@apps15.com"
     
     let titelsImage1:[UIImage] = [#imageLiteral(resourceName: "Privacy"),#imageLiteral(resourceName: "Rate Us")]
     let titelsImage2:[UIImage]  = [#imageLiteral(resourceName: "dev")]

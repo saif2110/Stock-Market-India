@@ -2,15 +2,15 @@
 //  Api.swift
 //  EVV
 //
-//  Created by Abhisar Bhatnagar on 19/11/19.
-//  Copyright © 2019 Abhisar Bhatnagar. All rights reserved.
+//  Created by Saif Mukadam on 19/11/19.
+//  Copyright © 2019 Saif Mukadam. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 import Alamofire
 
-let baseUrl = "https://safeapps.online/StockMarket/"
+let baseUrl = "https://apps15.com/StockMarket/"
 
 func postWithParameter(Url:String,parameters:Parameters,completionhandler:@escaping (JSON, Error?) -> ()){
     let url =  baseUrl + Url

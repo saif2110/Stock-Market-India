@@ -134,8 +134,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showIntrest(Myself: self, Wait: 7)
-        
         if UserDefaults.standard.getnumberOftimeAppOpen() > 8 {
             requestToRate()
         }
@@ -153,7 +151,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.navigationController?.navigationBar.tintColor = .red
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem =  UIBarButtonItem(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(addTapped))
         
-        
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "arrow.up.arrow.down.circle"), for: .normal)
         button.setTitle(" All Stocks", for: .normal)
@@ -167,6 +164,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         leftBarButtonItemStored = self.navigationController?.navigationBar.topItem?.leftBarButtonItem
         
         getStockData(sort: "")
+        
+        showIntrest(Myself: self)
+        
     }
     
     

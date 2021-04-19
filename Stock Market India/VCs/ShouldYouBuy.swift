@@ -34,7 +34,9 @@ class ShouldYouBuy: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showIntrest(Myself: self, Wait: 1.5)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            showIntrest(Myself: self)
+        }
         
         postWithParameter(Url: "ipoConsPros.json", parameters: [:]) { (JSON, Err) in
             self.pros.text =  JSON[self.openData?.name ?? ""]["pros"].string ?? ""

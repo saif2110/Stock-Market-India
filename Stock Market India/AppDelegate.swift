@@ -142,64 +142,63 @@ func DisLikeAlgoritham(Name:String,Date:String) -> String {
     
 }
 
-
 func AlphateNumberforLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 4
+        return 6
     case "b":
-        return 6
+        return 8
     case "c":
-        return 8
-    case "d":
-        return 11
-    case "e":
-        return 8
-    case "f":
-        return 6
-    case "g":
-        return 4
-    case "h":
-        return 9
-    case "i":
-        return 3
-    case "j":
-        return 3
-    case "k":
-        return 8
-    case "l":
-        return 8
-    case "m":
-        return 8
-    case "n":
-        return 5
-    case "o":
-        return 3
-    case "p":
-        return 6
-    case "q":
-        return 8
-    case "r":
-        return 7
-    case "s":
-        return 9
-    case "t":
-        return 4
-    case "u":
-        return 5
-    case "v":
-        return 7
-    case "w":
-        return 9
-    case "x":
-        return 6
-    case "y":
         return 10
-    case "z":
+    case "d":
+        return 13
+    case "e":
+        return 10
+    case "f":
+        return 8
+    case "g":
         return 6
-    default:
+    case "h":
+        return 11
+    case "i":
+        return 5
+    case "j":
+        return 5
+    case "k":
+        return 10
+    case "l":
+        return 10
+    case "m":
+        return 10
+    case "n":
         return 7
+    case "o":
+        return 5
+    case "p":
+        return 8
+    case "q":
+        return 10
+    case "r":
+        return 9
+    case "s":
+        return 11
+    case "t":
+        return 6
+    case "u":
+        return 7
+    case "v":
+        return 9
+    case "w":
+        return 11
+    case "x":
+        return 8
+    case "y":
+        return 12
+    case "z":
+        return 8
+    default:
+        return 9
     }
 }
 
@@ -207,62 +206,61 @@ func AlphateNumberforDisLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 4
+        return 6
     case "b":
-        return 6
-    case "c":
-        return 5
-    case "d":
-        return 3
-    case "e":
-        return 4
-    case "f":
-        return 9
-    case "g":
-        return 6
-    case "h":
-        return 7
-    case "i":
-        return 6
-    case "j":
-        return 6
-    case "k":
-        return 6
-    case "l":
-        return 5
-    case "m":
-        return 4
-    case "n":
-        return 5
-    case "o":
-        return 10
-    case "p":
         return 8
-    case "q":
-        return 5
-    case "r":
-        return 6
-    case "s":
-        return 5
-    case "t":
-        return 4
-    case "u":
-        return 5
-    case "v":
-        return 4
-    case "w":
-        return 9
-    case "x":
-        return 6
-    case "y":
-        return 4
-    case "z":
-        return 6
-    default:
+    case "c":
         return 7
+    case "d":
+        return 5
+    case "e":
+        return 6
+    case "f":
+        return 11
+    case "g":
+        return 8
+    case "h":
+        return 9
+    case "i":
+        return 8
+    case "j":
+        return 8
+    case "k":
+        return 8
+    case "l":
+        return 7
+    case "m":
+        return 6
+    case "n":
+        return 7
+    case "o":
+        return 12
+    case "p":
+        return 10
+    case "q":
+        return 7
+    case "r":
+        return 8
+    case "s":
+        return 7
+    case "t":
+        return 6
+    case "u":
+        return 7
+    case "v":
+        return 6
+    case "w":
+        return 11
+    case "x":
+        return 8
+    case "y":
+        return 6
+    case "z":
+        return 8
+    default:
+        return 9
     }
 }
-
 
 func createEmailUrl(to: String, subject: String, body: String) -> URL? {
     let subjectEncoded = subject.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!

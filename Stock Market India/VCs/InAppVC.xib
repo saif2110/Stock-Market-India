@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InAppVC" customModule="Stock_Market_India" customModuleProvider="target">
             <connections>
+                <outlet property="buyButton" destination="zg6-P2-wLg" id="aqn-3s-udG"/>
                 <outlet property="imageLotti" destination="SHj-QV-Zid" id="bck-TN-rhz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TA-dR-8hp">
-                    <rect key="frame" x="20" y="284.5" width="374" height="197"/>
+                    <rect key="frame" x="20" y="285" width="374" height="184"/>
                     <string key="text">• Remove all Ads
 
 • Top 5 stocks always open 
@@ -32,12 +33,12 @@
 • Try coming soon features before release
 
 • Support Developer</string>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT YOU WILL GET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0c-2e-bXR">
-                    <rect key="frame" x="20" y="234" width="374" height="20.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT YOU WILL GET IN PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0c-2e-bXR">
+                    <rect key="frame" x="20" y="234" width="374" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
@@ -49,7 +50,7 @@
                             <fragment content="Already pro member?  ">
                                 <attributes>
                                     <color key="NSColor" red="0.30426873101128471" green="0.30426873101128471" blue="0.30426873101128471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" metaFont="system" size="11"/>
+                                    <font key="NSFont" metaFont="smallSystem"/>
                                 </attributes>
                             </fragment>
                             <fragment content="Restore purchase">

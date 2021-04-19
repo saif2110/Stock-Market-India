@@ -54,8 +54,14 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
     @IBOutlet weak var watchAdLabel: UILabel!
     @IBOutlet weak var watchAdbutout: UIButton!
     @IBOutlet weak var watchAdviewTohide: UIView!
+    
     @IBAction func watchAdbut(_ sender: Any) {
         loadRewardedAd()
+    }
+    
+    @IBAction func upgradetoPro(_ sender: Any) {
+        let vc = InAppVC()
+        self.present(vc, animated: true, completion: nil)
     }
     
     
