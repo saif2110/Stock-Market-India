@@ -14,7 +14,7 @@ import GoogleMobileAds
 import DropDown
 import InAppPurchase
 
-var numberOFStocks = 32
+var numberOFStocks = 22
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
@@ -120,7 +120,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         
         if UserDefaults.standard.isProMember() {
-            numberOFStocks = 40
+            numberOFStocks = 30
         }
         
         
@@ -283,4 +283,43 @@ func createEmailUrl(to: String, subject: String, body: String) -> URL? {
     }
     
     return defaultUrl
+}
+
+extension UIView {
+    
+    func shadow()  {
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize.zero
+        self.layer.shadowRadius = 5
+    }
+    
+    func shadow2()  {
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOpacity = 0.4
+        self.layer.shadowOffset = CGSize.zero
+        self.layer.shadowRadius = 5
+    }
+}
+
+
+extension UITableView {
+    
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .systemRed
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "TrebuchetMS", size: 16.5)
+        messageLabel.sizeToFit()
+        
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+    
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
 }

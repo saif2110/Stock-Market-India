@@ -53,6 +53,12 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             cell.adView.isHidden = true
         }
         
+        
+        if indexPath.row == 19 {
+            showIntrest(Myself: self)
+        }
+        
+        
         return cell
     }
     
@@ -73,6 +79,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             }
         }
     }
+    
     @objc func TapDisLike(sender:UIButton){
         if !UserDefaults.standard.isLogin(){
             self.present(myAlt(titel:"You need to Sign In",message:"You need to sign in to Like, Dislike & Post Tips"), animated: true, completion: nil)
@@ -92,9 +99,9 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         if UserDefaults.standard.isProMember(){
-            self.navigationController?.navigationBar.topItem?.title = "Live 40 Stocks"
-        }else{
             self.navigationController?.navigationBar.topItem?.title = "Live 30 Stocks"
+        }else{
+            self.navigationController?.navigationBar.topItem?.title = "Live 20 Stocks"
         }
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem = leftBarButtonItemStored
     }
@@ -115,11 +122,10 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                                name: NSNotification.Name("sortData"),
                                                object: nil)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            showIntrest(Myself: self)
-        }
         
-        if UserDefaults.standard.getnumberOftimeAppOpen() > 8 {
+        showIntrest(Myself: self)
+        
+        if UserDefaults.standard.getnumberOftimeAppOpen() > 10 {
             requestToRate()
         }
 
@@ -184,12 +190,10 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let controller = (MainStoryboard.instantiateViewController(withIdentifier: "searchVC") as? searchVC)
         self.present(controller!, animated: true, completion: nil)
     }
-    
-    
+
     @objc func addPro(){
         let vc  = InAppVC()
         self.present(vc, animated: true, completion: nil)
-        
     }
     
     @objc func sort(sender:UIButton) {
@@ -202,6 +206,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             sender.setTitle(" 1 Week", for: .normal)
             getStockData(sort: "1 Week")
             Sender = "1 Week"
+            showIntrest(Myself: self)
         }else if sender.currentTitle == " 1 Week"{
             sender.setTitle(" 1 Month", for: .normal)
             getStockData(sort: "1 Month")

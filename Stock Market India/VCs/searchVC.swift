@@ -9,6 +9,7 @@ import UIKit
 
 class searchVC: UIViewController,UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate {
     
+    var goforSearch  = ""
     
     var nameofStock = [String]()
     var date = [String]()
@@ -130,6 +131,7 @@ class searchVC: UIViewController,UITableViewDataSource, UITableViewDelegate,UISe
         DispatchQueue.main.async {
             self.searchBar.becomeFirstResponder()
         }
+        searchBar(searchBar, textDidChange: goforSearch)
         myView.delegate = self
         myView.dataSource = self
         myView.reloadData()
@@ -137,13 +139,13 @@ class searchVC: UIViewController,UITableViewDataSource, UITableViewDelegate,UISe
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        if nameofStock.count > 0 {
-            return 1
+        if nameofStock.count == 0 {
+            self.myView.setEmptyMessage("Search stock you looking for....")
         }else{
-            TableViewHelper.EmptyMessage(message: "Search stock you looking for.\nIf you not able to find any stock please try different.", viewController: myView)
-            return 0
+            myView.restore()
         }
         
+        return nameofStock.count
     }
     
     

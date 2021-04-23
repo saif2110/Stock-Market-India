@@ -18,13 +18,15 @@
 		5C23D3D9261B2075002E006A /* pro.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C23D3D8261B2075002E006A /* pro.json */; };
 		5C35BC02258A42560018230C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C35BC01258A42560018230C /* GoogleService-Info.plist */; };
 		5C4154A625926BDA00464ED6 /* 200.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4154A525926BDA00464ED6 /* 200.png */; };
+		5C49F5D12630499F004A6385 /* CompanyGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49F5D02630499F004A6385 /* CompanyGuideVC.swift */; };
+		5C4B87712630978900EEEC03 /* niftyFifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B87702630978900EEEC03 /* niftyFifty.swift */; };
+		5C4B87752630992500EEEC03 /* mycell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B87742630992500EEEC03 /* mycell.swift */; };
 		5C57E7E225813ADA0049F0B4 /* topfifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57E7E125813ADA0049F0B4 /* topfifty.swift */; };
 		5C57E7E5258290020049F0B4 /* searchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57E7E4258290010049F0B4 /* searchVC.swift */; };
 		5C58B5E4260CB1AE006DD25F /* TopFiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58B5E3260CB1AE006DD25F /* TopFiveVC.swift */; };
 		5C8069EE2584CDBE00DF09A8 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8069ED2584CDBE00DF09A8 /* SettingVC.swift */; };
 		5C8069F12584D1F200DF09A8 /* SettingMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8069F02584D1F200DF09A8 /* SettingMain.swift */; };
 		5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA78B63257CE15A009F6C65 /* AppDelegate.swift */; };
-		5CA78B68257CE15A009F6C65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA78B67257CE15A009F6C65 /* ViewController.swift */; };
 		5CA78B6B257CE15A009F6C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B69257CE15A009F6C65 /* Main.storyboard */; };
 		5CA78B6D257CE15B009F6C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B6C257CE15B009F6C65 /* Assets.xcassets */; };
 		5CA78B70257CE15B009F6C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B6E257CE15B009F6C65 /* LaunchScreen.storyboard */; };
@@ -34,6 +36,7 @@
 		5CCC1C082584E996006EEC43 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC1C072584E996006EEC43 /* SettingsCell.swift */; };
 		5CE10924261B162700E543EF /* InAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE10922261B162700E543EF /* InAppVC.swift */; };
 		5CE10925261B162700E543EF /* InAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE10923261B162700E543EF /* InAppVC.xib */; };
+		5CE8E55B2631CD59002CE7E6 /* topWL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8E55A2631CD59002CE7E6 /* topWL.swift */; };
 		5CFA6084261398CA00780C30 /* ShouldYouBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA6083261398CA00780C30 /* ShouldYouBuy.swift */; };
 		D1E1EF61EAFA69E3768DA3C2 /* Pods_Stock_Market_India.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602E52BEC355FD8CDADAE3C /* Pods_Stock_Market_India.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,9 @@
 		5C23D3D8261B2075002E006A /* pro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pro.json; sourceTree = "<group>"; };
 		5C35BC01258A42560018230C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C4154A525926BDA00464ED6 /* 200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 200.png; sourceTree = "<group>"; };
+		5C49F5D02630499F004A6385 /* CompanyGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyGuideVC.swift; sourceTree = "<group>"; };
+		5C4B87702630978900EEEC03 /* niftyFifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = niftyFifty.swift; sourceTree = "<group>"; };
+		5C4B87742630992500EEEC03 /* mycell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycell.swift; sourceTree = "<group>"; };
 		5C57E7E125813ADA0049F0B4 /* topfifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topfifty.swift; sourceTree = "<group>"; };
 		5C57E7E4258290010049F0B4 /* searchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchVC.swift; sourceTree = "<group>"; };
 		5C58B5E3260CB1AE006DD25F /* TopFiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFiveVC.swift; sourceTree = "<group>"; };
@@ -59,7 +65,6 @@
 		5C8069F02584D1F200DF09A8 /* SettingMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMain.swift; sourceTree = "<group>"; };
 		5CA78B60257CE159009F6C65 /* Stock Market India.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Market India.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA78B63257CE15A009F6C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CA78B67257CE15A009F6C65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5CA78B6A257CE15A009F6C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CA78B6C257CE15B009F6C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CA78B6F257CE15B009F6C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		5CCC1C072584E996006EEC43 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		5CE10922261B162700E543EF /* InAppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppVC.swift; sourceTree = "<group>"; };
 		5CE10923261B162700E543EF /* InAppVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InAppVC.xib; sourceTree = "<group>"; };
+		5CE8E55A2631CD59002CE7E6 /* topWL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topWL.swift; sourceTree = "<group>"; };
 		5CFA6083261398CA00780C30 /* ShouldYouBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldYouBuy.swift; sourceTree = "<group>"; };
 		95DA6F73640CC49ABC4DC53C /* Pods-Stock Market India.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market India.release.xcconfig"; path = "Target Support Files/Pods-Stock Market India/Pods-Stock Market India.release.xcconfig"; sourceTree = "<group>"; };
 		9EE03EEFD5749248CAA26DD4 /* Pods-Stock Market India.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market India.debug.xcconfig"; path = "Target Support Files/Pods-Stock Market India/Pods-Stock Market India.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 				5C110CC52580D1020010FBEA /* mainCell.swift */,
 				5CCC1C072584E996006EEC43 /* SettingsCell.swift */,
 				5CB4BA4A2611F775004993D2 /* IPOopen.swift */,
+				5C4B87742630992500EEEC03 /* mycell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -162,7 +169,6 @@
 		5CB4BA452611F1B5004993D2 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				5CA78B67257CE15A009F6C65 /* ViewController.swift */,
 				5C57E7E125813ADA0049F0B4 /* topfifty.swift */,
 				5C57E7E4258290010049F0B4 /* searchVC.swift */,
 				5C1CF886258D24F600D753CE /* PostStock.swift */,
@@ -172,6 +178,9 @@
 				5CFA6083261398CA00780C30 /* ShouldYouBuy.swift */,
 				5CE10922261B162700E543EF /* InAppVC.swift */,
 				5CE10923261B162700E543EF /* InAppVC.xib */,
+				5C49F5D02630499F004A6385 /* CompanyGuideVC.swift */,
+				5C4B87702630978900EEEC03 /* niftyFifty.swift */,
+				5CE8E55A2631CD59002CE7E6 /* topWL.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -319,17 +328,20 @@
 				5C57E7E5258290020049F0B4 /* searchVC.swift in Sources */,
 				5C8069EE2584CDBE00DF09A8 /* SettingVC.swift in Sources */,
 				5C58B5E4260CB1AE006DD25F /* TopFiveVC.swift in Sources */,
+				5C49F5D12630499F004A6385 /* CompanyGuideVC.swift in Sources */,
 				5C1F143A25868E130042A790 /* myAlert.swift in Sources */,
+				5C4B87712630978900EEEC03 /* niftyFifty.swift in Sources */,
 				5C57E7E225813ADA0049F0B4 /* topfifty.swift in Sources */,
 				5CB4BA482611F4BC004993D2 /* ipoVC.swift in Sources */,
 				5CFA6084261398CA00780C30 /* ShouldYouBuy.swift in Sources */,
+				5CE8E55B2631CD59002CE7E6 /* topWL.swift in Sources */,
 				5C0616AE257FCBBE00D9712E /* UserDef.swift in Sources */,
 				5C1C03602583907100959ADD /* TableViewHelper.swift in Sources */,
-				5CA78B68257CE15A009F6C65 /* ViewController.swift in Sources */,
 				5C110CC62580D1020010FBEA /* mainCell.swift in Sources */,
 				5C8069F12584D1F200DF09A8 /* SettingMain.swift in Sources */,
 				5C110CCA2580E1D30010FBEA /* Api.swift in Sources */,
 				5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */,
+				5C4B87752630992500EEEC03 /* mycell.swift in Sources */,
 				5CCC1C082584E996006EEC43 /* SettingsCell.swift in Sources */,
 				5CE10924261B162700E543EF /* InAppVC.swift in Sources */,
 			);
@@ -481,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Stock Market India/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -489,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6;
+				MARKETING_VERSION = 7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Stock-Market-India";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -505,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Stock Market India/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -513,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6;
+				MARKETING_VERSION = 7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Stock-Market-India";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

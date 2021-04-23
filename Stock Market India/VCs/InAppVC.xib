@@ -21,24 +21,134 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TA-dR-8hp">
-                    <rect key="frame" x="20" y="285" width="374" height="184"/>
-                    <string key="text">• Remove all Ads
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TA-dR-8hp">
+                    <rect key="frame" x="20" y="265" width="374" height="197"/>
+                    <attributedString key="attributedText">
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSColor" red="0.92042142149999995" green="0.34957486389999998" blue="0.29408383370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Remove all Ads
 
-• Top 5 stocks always open 
-• Post stocks tips for other (Request from setting)
-
-• 40 live stocks instead of 30
-
-• Try coming soon features before release
-
-• Support Developer</string>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSColor" red="0.92042000000000002" green="0.34956999999999999" blue="0.29408000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Top 5 stocks always open 
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSColor" red="0.92042000000000002" green="0.34956999999999999" blue="0.29408000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Post stocks tips for other (Request from setting)
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSColor" red="0.92042000000000002" green="0.34956999999999999" blue="0.29408000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> 30 live stocks instead of 20
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSColor" red="0.92042000000000002" green="0.34956999999999999" blue="0.29408000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Try coming soon features before release
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSColor" red="0.92042000000000002" green="0.34956999999999999" blue="0.29408000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" Support Developer">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="16" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT YOU WILL GET IN PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0c-2e-bXR">
-                    <rect key="frame" x="20" y="234" width="374" height="21"/>
+                    <rect key="frame" x="20" y="214" width="374" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
@@ -55,7 +165,7 @@
                             </fragment>
                             <fragment content="Restore purchase">
                                 <attributes>
-                                    <font key="NSFont" metaFont="toolTip"/>
+                                    <font key="NSFont" usesAppearanceFont="YES"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
@@ -84,7 +194,7 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHj-QV-Zid">
-                    <rect key="frame" x="107" y="64" width="200" height="150"/>
+                    <rect key="frame" x="107" y="54" width="200" height="150"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="ZFd-Xl-zdf"/>
                         <constraint firstAttribute="height" constant="150" id="vgd-E4-UE3"/>
@@ -100,11 +210,11 @@
                 <constraint firstItem="2TA-dR-8hp" firstAttribute="top" secondItem="X0c-2e-bXR" secondAttribute="bottom" constant="30" id="QnC-FJ-nLH"/>
                 <constraint firstItem="zg6-P2-wLg" firstAttribute="top" secondItem="xNI-Tu-Mbo" secondAttribute="bottom" constant="8" id="Ro9-Wh-8OY"/>
                 <constraint firstItem="zg6-P2-wLg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="90" id="TJ9-2U-YQZ"/>
-                <constraint firstItem="X0c-2e-bXR" firstAttribute="top" secondItem="SHj-QV-Zid" secondAttribute="bottom" constant="20" id="Weg-hH-xuO"/>
+                <constraint firstItem="X0c-2e-bXR" firstAttribute="top" secondItem="SHj-QV-Zid" secondAttribute="bottom" constant="10" id="Weg-hH-xuO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zg6-P2-wLg" secondAttribute="bottom" constant="50" id="ZWS-Zl-Nin"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2TA-dR-8hp" secondAttribute="trailing" constant="20" id="mys-7b-FD0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xNI-Tu-Mbo" secondAttribute="trailing" constant="20" id="nhZ-7H-4ov"/>
-                <constraint firstItem="SHj-QV-Zid" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="oGQ-Xl-fEU"/>
+                <constraint firstItem="SHj-QV-Zid" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="oGQ-Xl-fEU"/>
                 <constraint firstItem="X0c-2e-bXR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="oVw-Rr-v91"/>
                 <constraint firstItem="SHj-QV-Zid" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vKM-1z-wgI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zg6-P2-wLg" secondAttribute="trailing" constant="90" id="wfO-wZ-GZh"/>

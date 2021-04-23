@@ -14,6 +14,8 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var upcomingData = [DataOFjson]()
     var closedData = [DataOFjson]()
     
+    var indicator = UIActivityIndicatorView()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
             return openData.count
@@ -144,6 +146,14 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+        indicator.color = .systemRed
+        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        indicator.center = view.center
+        self.view.addSubview(indicator)
+        self.view.bringSubviewToFront(indicator)
+        indicator.startAnimating()
+        
         postWithParameter(Url: "getIPO.php", parameters: [:]) { (Json, Err) in
             
             for (_,Subjson) in Json["CLOSED"] {
@@ -158,6 +168,8 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 self.upcomingData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2"))
             }
     
+            
+            self.indicator.stopAnimating()
             
             self.myView.delegate = self
             self.myView.dataSource = self

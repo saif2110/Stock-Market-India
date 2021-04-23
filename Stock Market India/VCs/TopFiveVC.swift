@@ -66,7 +66,13 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        nameofStock.count
+        if nameofStock.count == 0 {
+            self.myView.setEmptyMessage("You are too early. No top stocks added yet.\nPlease check after sometime.")
+        }else{
+            myView.restore()
+        }
+        
+        return nameofStock.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -189,6 +195,13 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
                 self.myView.delegate = self
                 self.myView.dataSource = self
                 self.myView.reloadData()
+           
+            }else{
+                
+                self.myView.delegate = self
+                self.myView.dataSource = self
+                self.myView.reloadData()
+                
             }
         }
     }

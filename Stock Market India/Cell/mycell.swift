@@ -1,0 +1,23 @@
+//
+//  mycell.swift
+//  Stock Market India
+//
+//  Created by Junaid Mukadam on 21/04/21.
+//
+
+import UIKit
+
+class mycell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
