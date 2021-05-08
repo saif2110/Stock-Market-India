@@ -14,6 +14,18 @@ class InAppVC: UIViewController {
     
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var imageLotti: UIImageView!
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        jumpButtonAnimation(sender: buyButton)
+        
+        startIndicator(selfo: self)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            stopIndicator()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +44,7 @@ class InAppVC: UIViewController {
         iap.fetchProduct(productIdentifiers: ["StockMarketPro"], handler: { (result) in
             switch result {
             case .success(let products):
-                self.buyButton.setTitle("PAY " + (products[0].priceLocale.currencySymbol ?? "$") + String(products[0].price.description), for: .normal)
+                self.buyButton.setTitle("PAY " + (products[0].priceLocale.currencySymbol ?? "$") + String(products[0].price.description + " (Lifetime)"), for: .normal)
             case .failure(let error):
                 print(error)
             }
@@ -54,6 +66,15 @@ class InAppVC: UIViewController {
         })
     }
     
+    
+    func jumpButtonAnimation(sender: UIButton) {
+        let animation = CABasicAnimation(keyPath: "transform.scale")
+        animation.toValue = NSNumber(value: 1.1)
+        animation.duration = 0.24
+        animation.repeatCount = 100000
+        animation.autoreverses = true
+        sender.layer.add(animation, forKey: nil)
+    }
     
     
     @IBAction func buyPro(_ sender: Any) {
@@ -78,7 +99,7 @@ class InAppVC: UIViewController {
     
     func PerchesedComplte(){
         UserDefaults.standard.setisProMember(value: true)
-        self.present(myAlt(titel:"Congratulations !",message:"You are a pro member now. Enjoy seamless experience without the Ads."), animated: true, completion: nil)
+        self.present(myAlt(titel:"Congratulations !",message:"You are a pro member now. Enjoy seamless experience with all features unlock."), animated: true, completion: nil)
     }
     
 }

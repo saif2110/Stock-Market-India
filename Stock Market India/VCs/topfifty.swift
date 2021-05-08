@@ -58,7 +58,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             showIntrest(Myself: self)
         }
         
-        
         return cell
     }
     
@@ -82,15 +81,21 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @objc func TapDisLike(sender:UIButton){
         if !UserDefaults.standard.isLogin(){
+            
             self.present(myAlt(titel:"You need to Sign In",message:"You need to sign in to Like, Dislike & Post Tips"), animated: true, completion: nil)
+            
         }else{
+            
             let currentTimeInMiliseconds = Date().timeIntervalSince1970 * 1000
             if currentTimeInMiliseconds > UserDefaults.standard.getLikeDisLikeTime() + 3600000 {
                 DisLikes[sender.tag] = String(Int(DisLikes[sender.tag])! + 1)
                 myView.reloadData()
                 UserDefaults.standard.setLikeDisLikeTime(value: currentTimeInMiliseconds)
+                
             }else{
+                
                 self.present(myAlt(titel:"Limit Exceeded",message:"You can Like or Dislike only one stock every 1 hour"), animated: true, completion: nil)
+                
             }
         }
     }
