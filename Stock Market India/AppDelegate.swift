@@ -67,6 +67,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        window?.tintColor = .systemRed
+        
         DropDown.startListeningToKeyboard()
         
         UserDefaults.standard.setnumberOftimeAppOpen(value:
@@ -106,8 +109,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
             
         }
         
-        window?.tintColor = .systemRed
-        
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers =  ["71672e5a891db378b63d88dd080cc4ab"]
         
@@ -122,8 +123,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         if UserDefaults.standard.isProMember() {
             numberOFStocks = 30
         }
-        
-        
         
         return true
     }
@@ -146,57 +145,57 @@ func AlphateNumberforLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 6
+        return 8
     case "b":
-        return 8
+        return 10
     case "c":
-        return 10
-    case "d":
-        return 13
-    case "e":
-        return 10
-    case "f":
-        return 8
-    case "g":
-        return 6
-    case "h":
-        return 11
-    case "i":
-        return 5
-    case "j":
-        return 5
-    case "k":
-        return 10
-    case "l":
-        return 10
-    case "m":
-        return 10
-    case "n":
-        return 7
-    case "o":
-        return 5
-    case "p":
-        return 8
-    case "q":
-        return 10
-    case "r":
-        return 9
-    case "s":
-        return 11
-    case "t":
-        return 6
-    case "u":
-        return 7
-    case "v":
-        return 9
-    case "w":
-        return 11
-    case "x":
-        return 8
-    case "y":
         return 12
-    case "z":
+    case "d":
+        return 15
+    case "e":
+        return 12
+    case "f":
+        return 10
+    case "g":
+        return 7
+    case "h":
+        return 13
+    case "i":
+        return 7
+    case "j":
+        return 7
+    case "k":
+        return 12
+    case "l":
+        return 12
+    case "m":
+        return 12
+    case "n":
+        return 9
+    case "o":
+        return 7
+    case "p":
+        return 10
+    case "q":
+        return 12
+    case "r":
+        return 11
+    case "s":
+        return 13
+    case "t":
         return 8
+    case "u":
+        return 9
+    case "v":
+        return 11
+    case "w":
+        return 13
+    case "x":
+        return 10
+    case "y":
+        return 13
+    case "z":
+        return 10
     default:
         return 9
     }

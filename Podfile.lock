@@ -6,8 +6,8 @@ PODS:
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
   - DropDown (2.3.13)
-  - Google-Mobile-Ads-SDK (8.4.0):
-    - GoogleAppMeasurement (~> 7.0)
+  - Google-Mobile-Ads-SDK (8.5.0):
+    - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
   - GoogleAppMeasurement (7.11.0):
     - GoogleAppMeasurement/AdIdSupport (= 7.11.0)
@@ -101,7 +101,7 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
-  Google-Mobile-Ads-SDK: 093c3bf0aed3b7d1b8707221a15e3b6634f92dec
+  Google-Mobile-Ads-SDK: 6f5c41bf73db1656e5b203ba9c31e3d0899a128d
   GoogleAppMeasurement: fd19169c3034975cb934e865e5667bfdce59df7f
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca

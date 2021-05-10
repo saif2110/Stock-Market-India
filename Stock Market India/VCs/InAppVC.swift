@@ -11,59 +11,45 @@ import InAppPurchase
 import StoreKit
 
 class InAppVC: UIViewController {
+    var sysmbol = ""
+    var myprice = 0.0
     
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var imageLotti: UIImageView!
     
+    let IAPid = "StockMarketPro"
     
     override func viewDidAppear(_ animated: Bool) {
         jumpButtonAnimation(sender: buyButton)
-        
-        startIndicator(selfo: self)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            stopIndicator()
-        }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let LottiV = AnimationView()
         LottiV.frame = self.imageLotti.bounds
-        LottiV.backgroundColor = .white
+        LottiV.backgroundColor = .clear
         LottiV.animation = Animation.named("pro")
-        LottiV.contentMode = .scaleAspectFill
-        LottiV.loopMode = .repeat(10000000)
+        LottiV.contentMode = .scaleAspectFit
+        LottiV.loopMode = .repeat(0)
         LottiV.play()
+        
         DispatchQueue.main.async {
             self.imageLotti.addSubview(LottiV)
         }
         
         let iap = InAppPurchase.default
-        iap.fetchProduct(productIdentifiers: ["StockMarketPro"], handler: { (result) in
+        iap.fetchProduct(productIdentifiers: [IAPid], handler: { (result) in
             switch result {
             case .success(let products):
-                self.buyButton.setTitle("PAY " + (products[0].priceLocale.currencySymbol ?? "$") + String(products[0].price.description + " (Lifetime)"), for: .normal)
+                self.buyButton.setTitle((products[0].priceLocale.currencySymbol ?? "$") + String(products[0].price.description + " (Lifetime)"), for: .normal)
             case .failure(let error):
                 print(error)
             }
         })
-    }
-    
-    @IBAction func restore(_ sender: Any) {
-        let iap = InAppPurchase.default
-        iap.restore(handler: { (result) in
-            switch result {
-            case .success(let products):
-                if !products.isEmpty{
-                    self.PerchesedComplte()
-                }
-            case .failure(let error):
-                print("error")
-                print(error)
-            }
-        })
+        
+        
     }
     
     
@@ -76,25 +62,36 @@ class InAppVC: UIViewController {
         sender.layer.add(animation, forKey: nil)
     }
     
+    @IBAction func restore(_ sender: Any) {
+        let iap = InAppPurchase.default
+        iap.restore(handler: { (result) in
+            print(result)
+            switch result {
+            case .success(let products):
+                if !products.isEmpty{
+                    self.PerchesedComplte()
+                }
+            case .failure(let error):
+                print("error")
+                print(error)
+            }
+        })
+    }
     
     @IBAction func buyPro(_ sender: Any) {
         startIndicator(selfo: self)
+       
         let iap = InAppPurchase.default
-        iap.purchase(productIdentifier: "StockMarketPro", handler: { (result) in
+        iap.purchase(productIdentifier: IAPid, handler: { (result) in
             stopIndicator()
             switch result {
             case .success( _):
                 self.PerchesedComplte()
             case .failure( _):
-                print("error")
+                self.present(myAlt(titel:"Failure",message:"Something went wrong. Please try again"), animated: true, completion: nil)
             }
         })
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        if UserDefaults.standard.isProMember(){
-            requestToRate()
-        }
+        
     }
     
     func PerchesedComplte(){
@@ -103,3 +100,5 @@ class InAppVC: UIViewController {
     }
     
 }
+
+

@@ -142,6 +142,7 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
         self.navigationController?.navigationBar.topItem?.title = "Top 5 Stocks"
         self.navigationController?.navigationBar.topItem?.leftBarButtonItem = nil
     }
+
     
     
     override func viewDidLoad() {
@@ -154,7 +155,6 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
             self.watchAdviewTohide.isHidden = true
         }
         
-        
         watchAdView.layer.cornerRadius = 10
         watchAdView.shadow2()
         
@@ -162,6 +162,7 @@ class TopFiveVC: UIViewController,UITableViewDelegate,UITableViewDataSource,GADF
         watchAdbutout.shadow2()
         
         watchAdLabel.text = "We have chosen today's top 5 stocks for you that are posted frequently by other users.\n\nStocks will be updated every 24 hrs."
+        
         getStockData()
     }
     

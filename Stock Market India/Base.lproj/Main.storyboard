@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nvC-RJ-EaT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nvC-RJ-EaT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -67,7 +67,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mainCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="195" id="4hs-dP-3k8" customClass="mainCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4hs-dP-3k8" id="30A-hl-OMm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -277,7 +277,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mycell" textLabel="k2U-tg-Wjy" detailTextLabel="gl8-9w-MQb" imageView="fdR-VN-BER" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="2po-I7-f1w" customClass="mycell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="61"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2po-I7-f1w" id="J4g-Y5-mUh">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
@@ -495,7 +495,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mainCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="195" id="hWk-fG-pPQ" customClass="mainCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hWk-fG-pPQ" id="vgn-qF-bSY">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -702,7 +702,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IPOopen" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IPOopen" rowHeight="195" id="Nfu-DK-Nbk" customClass="IPOopen" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nfu-DK-Nbk" id="2Zg-kk-git">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -894,7 +894,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 <rect key="frame" x="0.0" y="103" width="414" height="793"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="jet-eF-QRX">
-                                    <rect key="frame" x="0.0" y="251" width="414" height="386"/>
+                                    <rect key="frame" x="0.0" y="244.00000034679067" width="414" height="386"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF6-WF-lij">
@@ -1059,7 +1059,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IPOopen" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IPOopen" rowHeight="195" id="7YM-GS-Ygw" customClass="IPOopen" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7YM-GS-Ygw" id="7Ho-fM-Sra">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -1267,7 +1267,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingMain" rowHeight="150" id="Wmq-5n-xfp" customClass="SettingMain" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wmq-5n-xfp" id="MzQ-a6-bbz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -1367,7 +1367,7 @@ Keep track of winner stocks for at least next two days.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsCell" rowHeight="33" id="4Pq-63-38S" customClass="SettingsCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="178" width="414" height="33"/>
+                                        <rect key="frame" x="0.0" y="174.5" width="414" height="33"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Pq-63-38S" id="dPi-gw-4O0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
@@ -1536,7 +1536,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mainCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="195" id="ArR-EU-Gf0" customClass="mainCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ArR-EU-Gf0" id="kg1-mw-Bq1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -1817,10 +1817,10 @@ Keep track of winner stocks for at least next two days.</string>
             </objects>
             <point key="canvasLocation" x="903" y="1124"/>
         </scene>
-        <!--Top 50 Companies-->
+        <!--Winners & Losers-->
         <scene sceneID="HQt-ct-S51">
             <objects>
-                <viewController storyboardIdentifier="topWL" title="Top 50 Companies" id="Dam-hW-5xO" customClass="topWL" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="topWL" title="Winners &amp; Losers" id="Dam-hW-5xO" customClass="topWL" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNC-eO-tpA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1830,7 +1830,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mycell" textLabel="FwL-Nq-ct3" detailTextLabel="8mj-1B-yEj" imageView="iWN-Zj-bb5" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="YJ1-K5-hvH" customClass="mycell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="61"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YJ1-K5-hvH" id="ku5-HS-g2K">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
