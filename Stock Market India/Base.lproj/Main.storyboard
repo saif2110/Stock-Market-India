@@ -1718,20 +1718,20 @@ Keep track of winner stocks for at least next two days.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pf0-IU-ahQ">
-                                                <rect key="frame" x="8" y="60" width="358" height="87"/>
-                                                <string key="text">We have chosen today's top 5 stock for you that are posted frequently by other users.\nStocks will be updated every 24 hr &amp; new stocks will available</string>
+                                                <rect key="frame" x="8" y="60" width="358" height="97"/>
+                                                <string key="text">We have chosen today's top 5 stock for you that are posted frequently by other users.\nStocks will be updated every 24 hrs &amp; new stocks will available</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ch-6v-lib">
-                                                <rect key="frame" x="20" y="155" width="334" height="45"/>
+                                                <rect key="frame" x="20" y="165" width="334" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2ch-6v-lib" secondAttribute="height" multiplier="179:28" constant="46.321428571428555" id="dMe-W3-D1X"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                <state key="normal" title="UPGRADE TO PRO">
+                                                <state key="normal" title="UPGRADE TO PRO (Lifetime)">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" systemColor="systemRedColor"/>
                                                 </state>
@@ -1748,8 +1748,8 @@ Keep track of winner stocks for at least next two days.</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIG-UW-OTj">
-                                                <rect key="frame" x="20" y="210" width="334" height="10"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIG-UW-OTj">
+                                                <rect key="frame" x="20" y="220" width="334" height="10"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TIG-UW-OTj" secondAttribute="height" multiplier="166:5" id="rFm-J9-jcU"/>
                                                 </constraints>
@@ -1762,7 +1762,7 @@ Keep track of winner stocks for at least next two days.</string>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="CPf-YU-phY" firstAttribute="top" secondItem="TIG-UW-OTj" secondAttribute="bottom" constant="10" id="A2z-UZ-mVr"/>
+                                            <constraint firstItem="CPf-YU-phY" firstAttribute="top" secondItem="TIG-UW-OTj" secondAttribute="bottom" id="A2z-UZ-mVr"/>
                                             <constraint firstAttribute="trailing" secondItem="CPf-YU-phY" secondAttribute="trailing" constant="8" id="EpK-6j-1rX"/>
                                             <constraint firstItem="6gc-qz-bJ0" firstAttribute="top" secondItem="NE2-Uj-hkK" secondAttribute="top" constant="8" id="K13-yu-1C8"/>
                                             <constraint firstAttribute="trailing" secondItem="pf0-IU-ahQ" secondAttribute="trailing" constant="8" id="LUe-js-ZNZ"/>

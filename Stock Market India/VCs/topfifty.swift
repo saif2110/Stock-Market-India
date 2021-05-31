@@ -130,7 +130,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         showIntrest(Myself: self)
         
-        if UserDefaults.standard.getnumberOftimeAppOpen() > 10 {
+        if UserDefaults.standard.getnumberOftimeAppOpen() > 1 {
             requestToRate()
         }
 

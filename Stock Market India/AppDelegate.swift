@@ -70,6 +70,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         window?.tintColor = .systemRed
         
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
         DropDown.startListeningToKeyboard()
         
         UserDefaults.standard.setnumberOftimeAppOpen(value:
@@ -78,6 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = "569740869698-n9dn4t2gjqvlcvbva27juj3ik5h4rhoq.apps.googleusercontent.com"
         
         GIDSignIn.sharedInstance().delegate = self
+        
         
         if !UserDefaults.standard.isFirstTimeOpen() {
             
