@@ -48,10 +48,20 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     @objc func ViewInfoTapped(sender:UIButton) {
-        let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = MainStoryboard.instantiateViewController(withIdentifier: "ShouldYouBuy") as! ShouldYouBuy
-        controller.openData = openData[sender.tag]
-        self.present(controller, animated: true, completion: nil)
+        
+        if UserDefaults.standard.isProMember() {
+            
+            let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = MainStoryboard.instantiateViewController(withIdentifier: "ShouldYouBuy") as! ShouldYouBuy
+            controller.openData = openData[sender.tag]
+            self.present(controller, animated: true, completion: nil)
+            
+        }else{
+            
+            let vc = InAppVC()
+            self.present(vc, animated: true, completion: nil)
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -167,7 +177,7 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             for (_,Subjson) in Json["UPCOMING"] {
                 self.upcomingData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2"))
             }
-    
+            
             
             self.indicator.stopAnimating()
             

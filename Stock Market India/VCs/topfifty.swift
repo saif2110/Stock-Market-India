@@ -25,40 +25,98 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var DisLikes = [String]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        nameofStock.count
+        if section == 0 {
+            return 1
+        }else{
+            return nameofStock.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! mainCell
-        cell.nameStock.text = nameofStock[indexPath.row].capitalized
-        cell.Date.text = date[indexPath.row]
-        cell.CurrentPrice.text = "Current Price: " + currentPrice[indexPath.row]
-        cell.SellTarget.text = "Sell Target: " + target[indexPath.row]
-        cell.Period.text = "Period: " + period[indexPath.row]
-        cell.StopLoss.text = "Stop Loss: " + SL[indexPath.row]
-        cell.OutsideView.shadow()
-        
-        cell.Like.tag = indexPath.row
-        cell.DisLike.tag = indexPath.row
-        cell.Like.addTarget(self, action: #selector(TapLike), for: .touchUpInside)
-        cell.DisLike.addTarget(self, action: #selector(TapDisLike), for: .touchUpInside)
-        cell.Like.setTitle("+"+Likes[indexPath.row], for: .normal)
-        cell.DisLike.setTitle("-"+DisLikes[indexPath.row], for: .normal)
-        
-        if (indexPath.row == 5 || indexPath.row == 14) && !UserDefaults.standard.isProMember() {
-            cell.adView.isHidden = false
-            cell.adView.rootViewController = self
-            cell.adView.load(GADRequest())
+        if indexPath.section != 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! mainCell
+            cell.nameStock.text = nameofStock[indexPath.row].capitalized
+            cell.Date.text = date[indexPath.row]
+            cell.CurrentPrice.text = "Current Price: " + currentPrice[indexPath.row]
+            cell.SellTarget.text = "Sell Target: " + target[indexPath.row]
+            cell.Period.text = "Period: " + period[indexPath.row]
+            cell.StopLoss.text = "Stop Loss: " + SL[indexPath.row]
+            cell.OutsideView.shadow()
+            
+            cell.Like.tag = indexPath.row
+            cell.DisLike.tag = indexPath.row
+            cell.Like.addTarget(self, action: #selector(TapLike), for: .touchUpInside)
+            cell.DisLike.addTarget(self, action: #selector(TapDisLike), for: .touchUpInside)
+            cell.Like.setTitle("+"+Likes[indexPath.row], for: .normal)
+            cell.DisLike.setTitle("-"+DisLikes[indexPath.row], for: .normal)
+            
+            if (indexPath.row == 5 || indexPath.row == 14) && !UserDefaults.standard.isProMember() {
+                cell.adView.isHidden = false
+                cell.adView.rootViewController = self
+                cell.adView.load(GADRequest())
+            }else{
+                cell.adView.isHidden = true
+            }
+            
+            
+            if indexPath.row == 18 {
+                showIntrest(Myself: self)
+            }
+            
+            return cell
+            
         }else{
-            cell.adView.isHidden = true
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "famousTableCell", for: indexPath) as! famousTableCell
+            
+            
+            return cell
+            
         }
         
         
-        if indexPath.row == 19 {
-            showIntrest(Myself: self)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            
+            return 165
+        }else{
+            
+            return 195
         }
-        
-        return cell
+    }
+    
+    func headerView(label:String) -> UIView {
+        let sectionHeader = UIView.init(frame: CGRect.init(x: 0, y: 0, width: myView.frame.width, height: 35))
+        sectionHeader.backgroundColor = .white
+        let sectionText = UILabel()
+        sectionText.frame = CGRect.init(x: 15, y: 8, width: sectionHeader.frame.width-10, height: sectionHeader.frame.height-10)
+        sectionText.text = label
+        sectionText.font = .systemFont(ofSize: 15, weight: .semibold) // my custom font
+        sectionText.textColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
+        sectionHeader.addSubview(sectionText)
+        return sectionHeader
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        2
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            
+            return headerView(label: "Recommended by Influential Personality")
+        }else{
+            
+            return headerView(label: "Recommended by Users")
+        }
     }
     
     @objc func TapLike(sender:UIButton){
@@ -120,6 +178,25 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if !Connectivity.isConnectedToInternet {
+            let alert2 = UIAlertController(title: "Connection Error", message: "The Internet connection appears to be offline.Please connect to Internet and open the app again.", preferredStyle: .alert)
+            alert2.addAction(UIAlertAction(title: "EXIT APP", style: .default, handler: { action in
+                                            switch action.style{
+                                            case .default:
+                                                exit(0)
+                                            case .cancel:
+                                                print("")
+                                            case .destructive:
+                                                print("")
+                                            @unknown default:
+                                                fatalError()
+                                            }}))
+            
+            present(alert2, animated: true, completion: nil)
+            print("Not Connected")
+            
+        }
+        
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         NotificationCenter.default.addObserver(self,
@@ -133,7 +210,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         if UserDefaults.standard.getnumberOftimeAppOpen() > 1 {
             requestToRate()
         }
-
+        
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = .systemRed
         indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
@@ -156,7 +233,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }else{
             self.navigationController?.navigationBar.topItem?.setRightBarButtonItems([search,pro], animated: true)
         }
-        
         
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "arrow.up.arrow.down.circle"), for: .normal)
@@ -195,7 +271,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let controller = (MainStoryboard.instantiateViewController(withIdentifier: "searchVC") as? searchVC)
         self.present(controller!, animated: true, completion: nil)
     }
-
+    
     @objc func addPro(){
         let vc  = InAppVC()
         self.present(vc, animated: true, completion: nil)

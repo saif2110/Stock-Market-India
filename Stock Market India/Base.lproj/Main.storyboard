@@ -7,6 +7,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,7 +85,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qf-qS-tfQ">
-                                                            <rect key="frame" x="8" y="82" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="81" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="uyt-xy-zAL"/>
@@ -92,7 +93,7 @@
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Y3m-Bl-DVh">
                                                             <rect key="frame" x="8" y="11" width="268" height="19"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -106,64 +107,64 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Size: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rqq-ka-W5T">
-                                                            <rect key="frame" x="8" y="52" width="146" height="18"/>
+                                                            <rect key="frame" x="8" y="52" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rqq-ka-W5T" secondAttribute="height" multiplier="138:17" id="aPE-QZ-Q0o"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: ₹498 - ₹500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rEl-53-MlC">
-                                                            <rect key="frame" x="220" y="52" width="146" height="18"/>
+                                                            <rect key="frame" x="228" y="52" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rEl-53-MlC" secondAttribute="height" multiplier="73:9" id="boD-V1-cX9"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-YK-ZJi">
-                                                            <rect key="frame" x="8" y="122" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="120" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="bEN-gf-zCK"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date: 2021-03-26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FFq-Kf-kdS">
-                                                            <rect key="frame" x="8" y="93" width="155" height="19"/>
+                                                            <rect key="frame" x="8" y="92" width="145.5" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="FFq-Kf-kdS" secondAttribute="height" multiplier="138:17" id="pFb-c2-hso"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription Rate: 13.13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FuJ-pM-92y">
-                                                            <rect key="frame" x="201" y="93" width="165" height="20.5"/>
+                                                            <rect key="frame" x="210.5" y="92" width="155.5" height="19"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="FuJ-pM-92y" secondAttribute="height" multiplier="138:17" id="xVo-LZ-b7W"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-U5-pYF">
-                                                            <rect key="frame" x="186.5" y="128" width="1" height="40"/>
+                                                            <rect key="frame" x="186.5" y="126" width="1" height="42"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="mbD-Ls-QZk"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybY-DX-MM2">
-                                                            <rect key="frame" x="8" y="131" width="170.5" height="34"/>
+                                                            <rect key="frame" x="8" y="129" width="170.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-rh-hhX">
-                                                            <rect key="frame" x="195.5" y="131" width="170.5" height="34"/>
+                                                            <rect key="frame" x="195.5" y="129" width="170.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -512,7 +513,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-Wo-v6g">
-                                                            <rect key="frame" x="8" y="82" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="81" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="FvG-xw-eEH"/>
@@ -520,7 +521,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="4bv-0D-8SQ">
                                                             <rect key="frame" x="8" y="11" width="268" height="19"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -534,64 +535,64 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price:  21242" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-24-VfO">
-                                                            <rect key="frame" x="8" y="52" width="146" height="18"/>
+                                                            <rect key="frame" x="8" y="52" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="c1V-24-VfO" secondAttribute="height" multiplier="138:17" id="xBq-Ls-KXM"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell Target:  21242" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-I5-wvH">
-                                                            <rect key="frame" x="220" y="52" width="146" height="18"/>
+                                                            <rect key="frame" x="228" y="52" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="DLk-I5-wvH" secondAttribute="height" multiplier="73:9" id="Oap-xv-s5d"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6y-zj-6Mo">
-                                                            <rect key="frame" x="8" y="121" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="119" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="uad-fi-ard"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:  2 - 3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecS-Ba-jUc">
-                                                            <rect key="frame" x="8" y="93" width="146" height="18"/>
+                                                            <rect key="frame" x="8" y="92" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ecS-Ba-jUc" secondAttribute="height" multiplier="138:17" id="Mar-PV-mVi"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Loss:  13600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ta4-HI-5Wy">
-                                                            <rect key="frame" x="220" y="93" width="146" height="18"/>
+                                                            <rect key="frame" x="228" y="92" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ta4-HI-5Wy" secondAttribute="height" multiplier="138:17" id="coM-sG-zxW"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCw-KI-6Zq">
-                                                            <rect key="frame" x="186.5" y="127" width="1" height="41"/>
+                                                            <rect key="frame" x="186.5" y="125" width="1" height="43"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="OAl-o2-Zzy"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-U3-Ipt">
-                                                            <rect key="frame" x="8" y="130" width="170.5" height="35"/>
+                                                            <rect key="frame" x="8" y="128" width="170.5" height="37"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nil-Cy-uaK">
-                                                            <rect key="frame" x="195.5" y="130" width="170.5" height="35"/>
+                                                            <rect key="frame" x="195.5" y="128" width="170.5" height="37"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -668,6 +669,151 @@ Keep track of winner stocks for at least next two days.</string>
                                             <outlet property="nameStock" destination="4bv-0D-8SQ" id="Gio-do-bRz"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="famousTableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="famousTableCell" rowHeight="165" id="NBD-Ba-PiN" customClass="famousTableCell" customModule="Stock_Market_India" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="219.5" width="414" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NBD-Ba-PiN" id="4bM-WQ-5Vg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A2K-EN-zW9">
+                                                    <rect key="frame" x="8" y="8" width="398" height="149"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fGd-oY-qeT">
+                                                        <size key="itemSize" width="398" height="144"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="famouseCollectionViewCell" id="ex1-wf-26w" customClass="famouseCollectionViewCell" customModule="Stock_Market_India" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="2.5" width="398" height="144"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LIT-4M-jDX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="144"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AV-N6-RAA">
+                                                                        <rect key="frame" x="8" y="7" width="382" height="129"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="HNd-Vw-LRg">
+                                                                                <rect key="frame" x="8" y="8" width="366" height="28"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPj-YD-gCz" userLabel="Line">
+                                                                                <rect key="frame" x="8" y="44" width="366" height="1"/>
+                                                                                <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="1" id="o7r-fx-RWw"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target:  21242" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUj-MJ-G5t">
+                                                                                <rect key="frame" x="8" y="53" width="179" height="28"/>
+                                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted:  27-12-2020" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvj-2D-bNq">
+                                                                                <rect key="frame" x="195" y="53" width="179" height="28"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqt-Pb-SUa" userLabel="Line2">
+                                                                                <rect key="frame" x="8" y="89" width="366" height="1"/>
+                                                                                <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="1" id="iiF-kH-GkT"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgH-Qx-cij">
+                                                                                <rect key="frame" x="8" y="97" width="52.5" height="24"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1P-Li-AMk">
+                                                                                <rect key="frame" x="68.5" y="98" width="111.5" height="23"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <state key="normal" title=" Motilal Oswal">
+                                                                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <imageReference key="image" image="arrowshape.turn.up.right.circle" catalog="system" symbolScale="small"/>
+                                                                                </state>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="fPj-YD-gCz" firstAttribute="top" secondItem="0AV-N6-RAA" secondAttribute="top" constant="44" id="08N-mJ-f86"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="leading" secondItem="rUj-MJ-G5t" secondAttribute="trailing" constant="8" id="2nu-xz-yii"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="width" secondItem="rUj-MJ-G5t" secondAttribute="width" id="3Fh-IL-6cf"/>
+                                                                            <constraint firstItem="m1P-Li-AMk" firstAttribute="top" secondItem="fqt-Pb-SUa" secondAttribute="bottom" constant="8" id="5ev-o6-7e9"/>
+                                                                            <constraint firstItem="HNd-Vw-LRg" firstAttribute="leading" secondItem="0AV-N6-RAA" secondAttribute="leading" constant="8" id="7an-ON-efP"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="qvj-2D-bNq" secondAttribute="trailing" constant="8" id="8Hr-4S-CtD"/>
+                                                                            <constraint firstItem="fqt-Pb-SUa" firstAttribute="leading" secondItem="0AV-N6-RAA" secondAttribute="leading" constant="8" id="8eu-t4-OyP"/>
+                                                                            <constraint firstItem="cgH-Qx-cij" firstAttribute="leading" secondItem="0AV-N6-RAA" secondAttribute="leading" constant="8" id="9Is-7Y-QjA"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="fqt-Pb-SUa" secondAttribute="trailing" constant="8" id="A0L-ez-ehl"/>
+                                                                            <constraint firstItem="fPj-YD-gCz" firstAttribute="top" secondItem="HNd-Vw-LRg" secondAttribute="bottom" constant="8" id="D4t-0d-vxa"/>
+                                                                            <constraint firstItem="fqt-Pb-SUa" firstAttribute="top" secondItem="qvj-2D-bNq" secondAttribute="bottom" constant="8" id="EQe-Ry-ccL"/>
+                                                                            <constraint firstItem="fqt-Pb-SUa" firstAttribute="top" secondItem="qvj-2D-bNq" secondAttribute="bottom" constant="8" id="FQd-Xq-5fg"/>
+                                                                            <constraint firstItem="rUj-MJ-G5t" firstAttribute="top" secondItem="fPj-YD-gCz" secondAttribute="bottom" constant="8" id="Fjd-6d-YWs"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="top" secondItem="fPj-YD-gCz" secondAttribute="bottom" constant="8" id="GNK-EP-d3X"/>
+                                                                            <constraint firstItem="fqt-Pb-SUa" firstAttribute="top" secondItem="fPj-YD-gCz" secondAttribute="bottom" constant="44" id="GhO-16-Bxi"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="fPj-YD-gCz" secondAttribute="trailing" constant="8" id="O62-ee-E3C"/>
+                                                                            <constraint firstItem="m1P-Li-AMk" firstAttribute="leading" secondItem="cgH-Qx-cij" secondAttribute="trailing" constant="8" id="PUJ-x3-vXk"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="width" secondItem="rUj-MJ-G5t" secondAttribute="width" id="Pcb-Pf-Hjb"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="height" secondItem="rUj-MJ-G5t" secondAttribute="height" id="RCm-dP-DXJ"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="cgH-Qx-cij" secondAttribute="bottom" constant="8" id="Scy-ev-x2X"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="top" secondItem="fPj-YD-gCz" secondAttribute="bottom" constant="8" id="VJf-SO-kB5"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="height" secondItem="rUj-MJ-G5t" secondAttribute="height" id="XIL-In-Rsh"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="HNd-Vw-LRg" secondAttribute="trailing" constant="8" id="Yl9-jk-w3d"/>
+                                                                            <constraint firstItem="HNd-Vw-LRg" firstAttribute="top" secondItem="0AV-N6-RAA" secondAttribute="top" constant="8" id="bsM-Ua-598"/>
+                                                                            <constraint firstItem="rUj-MJ-G5t" firstAttribute="leading" secondItem="0AV-N6-RAA" secondAttribute="leading" constant="8" id="c9o-0m-fyj"/>
+                                                                            <constraint firstItem="cgH-Qx-cij" firstAttribute="top" secondItem="fqt-Pb-SUa" secondAttribute="bottom" constant="7" id="k2P-KJ-VuN"/>
+                                                                            <constraint firstItem="qvj-2D-bNq" firstAttribute="leading" secondItem="rUj-MJ-G5t" secondAttribute="trailing" constant="8" id="laO-mI-IUP"/>
+                                                                            <constraint firstItem="fPj-YD-gCz" firstAttribute="leading" secondItem="0AV-N6-RAA" secondAttribute="leading" constant="8" id="otG-xU-84c"/>
+                                                                            <constraint firstItem="fqt-Pb-SUa" firstAttribute="top" secondItem="rUj-MJ-G5t" secondAttribute="bottom" constant="8" id="oxP-b4-w0d"/>
+                                                                            <constraint firstItem="fqt-Pb-SUa" firstAttribute="top" secondItem="rUj-MJ-G5t" secondAttribute="bottom" constant="8" id="qoS-LM-fGd"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="m1P-Li-AMk" secondAttribute="bottom" constant="8" id="sSs-eA-OvQ"/>
+                                                                            <constraint firstItem="rUj-MJ-G5t" firstAttribute="top" secondItem="fPj-YD-gCz" secondAttribute="bottom" constant="8" id="sUm-As-QMM"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="qvj-2D-bNq" secondAttribute="trailing" constant="8" id="yiP-YV-MYl"/>
+                                                                            <constraint firstItem="rUj-MJ-G5t" firstAttribute="leading" secondItem="0AV-N6-RAA" secondAttribute="leading" constant="8" id="zM5-Dg-2ba"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="0AV-N6-RAA" firstAttribute="top" secondItem="LIT-4M-jDX" secondAttribute="top" constant="7" id="E6N-hJ-UDc"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="0AV-N6-RAA" secondAttribute="trailing" constant="8" id="lRV-kd-FJf"/>
+                                                                    <constraint firstItem="0AV-N6-RAA" firstAttribute="leading" secondItem="LIT-4M-jDX" secondAttribute="leading" constant="8" id="uFa-SG-dTx"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="0AV-N6-RAA" secondAttribute="bottom" constant="8" id="x4J-8q-km3"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="398" height="144"/>
+                                                            <connections>
+                                                                <outlet property="date" destination="qvj-2D-bNq" id="pDI-wX-fZy"/>
+                                                                <outlet property="name" destination="HNd-Vw-LRg" id="9kF-Bz-6rM"/>
+                                                                <outlet property="outerContainer" destination="0AV-N6-RAA" id="zPV-7k-fKr"/>
+                                                                <outlet property="source" destination="m1P-Li-AMk" id="MD7-hX-2gl"/>
+                                                                <outlet property="taregt" destination="rUj-MJ-G5t" id="90h-zS-8yB"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="A2K-EN-zW9" firstAttribute="top" secondItem="4bM-WQ-5Vg" secondAttribute="top" constant="8" id="0JK-7U-Krk"/>
+                                                <constraint firstItem="A2K-EN-zW9" firstAttribute="leading" secondItem="4bM-WQ-5Vg" secondAttribute="leading" constant="8" id="399-Yh-bTd"/>
+                                                <constraint firstAttribute="bottom" secondItem="A2K-EN-zW9" secondAttribute="bottom" constant="8" id="Kdd-wv-9Xc"/>
+                                                <constraint firstAttribute="trailing" secondItem="A2K-EN-zW9" secondAttribute="trailing" constant="8" id="jqT-t5-4h2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="myView" destination="A2K-EN-zW9" id="Vkp-Y8-ggZ"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -687,7 +833,7 @@ Keep track of winner stocks for at least next two days.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imr-WH-U8C" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="471"/>
+            <point key="canvasLocation" x="902.89855072463774" y="470.75892857142856"/>
         </scene>
         <!--IPO-->
         <scene sceneID="6Uj-6x-6Hn">
@@ -725,9 +871,9 @@ Keep track of winner stocks for at least next two days.</string>
                                                                 <constraint firstAttribute="height" constant="1" id="Vcm-9J-x1O"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="hot-2k-CZo">
-                                                            <rect key="frame" x="49" y="4" width="317" height="39"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="hot-2k-CZo">
+                                                            <rect key="frame" x="51" y="4" width="315" height="37"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -766,7 +912,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date: 2021-03-26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-NL-9qU">
-                                                            <rect key="frame" x="220.5" y="94" width="145.5" height="18"/>
+                                                            <rect key="frame" x="220" y="94" width="146" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ykk-NL-9qU" secondAttribute="height" multiplier="138:17" id="1ky-g0-thC"/>
                                                             </constraints>
@@ -814,9 +960,9 @@ Keep track of winner stocks for at least next two days.</string>
                                                         <constraint firstAttribute="trailing" secondItem="Hjy-5j-tGf" secondAttribute="trailing" constant="8" id="Hkw-1G-v5q"/>
                                                         <constraint firstAttribute="trailing" secondItem="FWk-da-kJy" secondAttribute="trailing" constant="8" id="I5n-8G-OhI"/>
                                                         <constraint firstItem="FWk-da-kJy" firstAttribute="top" secondItem="534-00-RNq" secondAttribute="bottom" constant="10" id="Kk4-8H-Ksl"/>
-                                                        <constraint firstItem="Q6r-V1-1H2" firstAttribute="top" secondItem="hot-2k-CZo" secondAttribute="bottom" constant="4" id="L9P-zU-qiS"/>
+                                                        <constraint firstItem="Q6r-V1-1H2" firstAttribute="top" secondItem="hot-2k-CZo" secondAttribute="bottom" constant="6" id="L9P-zU-qiS"/>
                                                         <constraint firstAttribute="bottom" secondItem="zEa-l5-yQl" secondAttribute="bottom" constant="15" id="LXG-UU-df5"/>
-                                                        <constraint firstItem="hot-2k-CZo" firstAttribute="leading" secondItem="bWg-dy-M45" secondAttribute="trailing" constant="6" id="Md6-AM-0hT"/>
+                                                        <constraint firstItem="hot-2k-CZo" firstAttribute="leading" secondItem="bWg-dy-M45" secondAttribute="trailing" constant="8" id="Md6-AM-0hT"/>
                                                         <constraint firstAttribute="trailing" secondItem="Q6r-V1-1H2" secondAttribute="trailing" constant="8" id="PkX-th-waR"/>
                                                         <constraint firstAttribute="trailing" secondItem="Xnl-bF-Fa7" secondAttribute="trailing" constant="8" id="WSM-tL-Fx0"/>
                                                         <constraint firstAttribute="bottom" secondItem="ZJy-4Z-EVU" secondAttribute="bottom" constant="5" id="Xen-rV-g7Y"/>
@@ -831,6 +977,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                         <constraint firstItem="Q6r-V1-1H2" firstAttribute="top" secondItem="bWg-dy-M45" secondAttribute="bottom" constant="8" id="hyX-Cy-a4p"/>
                                                         <constraint firstItem="ZJy-4Z-EVU" firstAttribute="top" secondItem="Hjy-5j-tGf" secondAttribute="bottom" constant="5" id="kdg-PL-ntc"/>
                                                         <constraint firstItem="zEa-l5-yQl" firstAttribute="top" secondItem="Hjy-5j-tGf" secondAttribute="bottom" constant="15" id="nZp-Vv-3mF"/>
+                                                        <constraint firstItem="Hjy-5j-tGf" firstAttribute="top" secondItem="ykk-NL-9qU" secondAttribute="bottom" constant="9" id="oSw-0f-v3o"/>
                                                         <constraint firstAttribute="trailing" secondItem="hot-2k-CZo" secondAttribute="trailing" constant="8" id="qCB-8N-r2q"/>
                                                         <constraint firstItem="bWg-dy-M45" firstAttribute="leading" secondItem="tec-pc-9IB" secondAttribute="leading" constant="8" id="txh-MA-7Qz"/>
                                                         <constraint firstItem="2qT-cG-J19" firstAttribute="leading" secondItem="ZJy-4Z-EVU" secondAttribute="trailing" constant="8" id="uRQ-iM-4BZ"/>
@@ -1084,7 +1231,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="VyE-O2-eq3">
                                                             <rect key="frame" x="49" y="4" width="317" height="39"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1553,7 +1700,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obe-sT-ckn">
-                                                            <rect key="frame" x="8" y="82" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="83.5" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Odk-hu-cTS"/>
@@ -1561,7 +1708,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-p7-OmF">
                                                             <rect key="frame" x="8" y="11" width="268" height="19"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -1575,64 +1722,64 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price:  21242" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ty-0x-t9E">
-                                                            <rect key="frame" x="8" y="52" width="146" height="18"/>
+                                                            <rect key="frame" x="8" y="52" width="158.5" height="19.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="1Ty-0x-t9E" secondAttribute="height" multiplier="138:17" id="tEy-PB-gxd"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell Target:  21242" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8y-JH-xxr">
-                                                            <rect key="frame" x="220" y="52" width="146" height="18"/>
+                                                            <rect key="frame" x="208" y="52" width="158" height="19.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="L8y-JH-xxr" secondAttribute="height" multiplier="73:9" id="8dq-y5-iI4"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-Pe-XGI">
-                                                            <rect key="frame" x="8" y="121" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="121.5" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="3Nc-Yu-9jq"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:  2 - 3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-Qe-wf0">
-                                                            <rect key="frame" x="8" y="93" width="146" height="18"/>
+                                                            <rect key="frame" x="8" y="94.5" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rMT-Qe-wf0" secondAttribute="height" multiplier="138:17" id="QrG-f3-Aqu"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Loss:  13600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kv-ei-V5Z">
-                                                            <rect key="frame" x="220" y="93" width="146" height="18"/>
+                                                            <rect key="frame" x="228" y="94.5" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="9Kv-ei-V5Z" secondAttribute="height" multiplier="138:17" id="nrn-1H-HXz"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEI-xZ-IHg">
-                                                            <rect key="frame" x="186.5" y="127" width="1" height="41"/>
+                                                            <rect key="frame" x="186.5" y="127.5" width="1" height="40.5"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="801-qz-pZH"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-YT-dgU">
-                                                            <rect key="frame" x="8" y="130" width="170.5" height="35"/>
+                                                            <rect key="frame" x="8" y="130.5" width="170.5" height="34.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-XE-5x1">
-                                                            <rect key="frame" x="195.5" y="130" width="170.5" height="35"/>
+                                                            <rect key="frame" x="195.5" y="130.5" width="170.5" height="34.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1883,6 +2030,7 @@ Keep track of winner stocks for at least next two days.</string>
         <image name="30" width="27" height="25"/>
         <image name="5" width="25" height="23"/>
         <image name="arrowshape.turn.up.forward.fill" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.right.circle" catalog="system" width="128" height="121"/>
         <image name="avatar" width="128" height="128"/>
         <image name="blank" width="28" height="28"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>

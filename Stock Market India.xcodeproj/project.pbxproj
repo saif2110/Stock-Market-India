@@ -38,6 +38,8 @@
 		5CCC1C082584E996006EEC43 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCC1C072584E996006EEC43 /* SettingsCell.swift */; };
 		5CE8E55B2631CD59002CE7E6 /* topWL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8E55A2631CD59002CE7E6 /* topWL.swift */; };
 		5CFA6084261398CA00780C30 /* ShouldYouBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA6083261398CA00780C30 /* ShouldYouBuy.swift */; };
+		5CFE6D0D26653EF800F01AE8 /* famouseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE6D0C26653EF800F01AE8 /* famouseCollectionViewCell.swift */; };
+		5CFE6D0F26653FA300F01AE8 /* famousTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE6D0E26653FA300F01AE8 /* famousTableCell.swift */; };
 		D1E1EF61EAFA69E3768DA3C2 /* Pods_Stock_Market_India.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602E52BEC355FD8CDADAE3C /* Pods_Stock_Market_India.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		5CCC1C072584E996006EEC43 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		5CE8E55A2631CD59002CE7E6 /* topWL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topWL.swift; sourceTree = "<group>"; };
 		5CFA6083261398CA00780C30 /* ShouldYouBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldYouBuy.swift; sourceTree = "<group>"; };
+		5CFE6D0C26653EF800F01AE8 /* famouseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = famouseCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CFE6D0E26653FA300F01AE8 /* famousTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = famousTableCell.swift; sourceTree = "<group>"; };
 		95DA6F73640CC49ABC4DC53C /* Pods-Stock Market India.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market India.release.xcconfig"; path = "Target Support Files/Pods-Stock Market India/Pods-Stock Market India.release.xcconfig"; sourceTree = "<group>"; };
 		9EE03EEFD5749248CAA26DD4 /* Pods-Stock Market India.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market India.debug.xcconfig"; path = "Target Support Files/Pods-Stock Market India/Pods-Stock Market India.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +124,8 @@
 				5CCC1C072584E996006EEC43 /* SettingsCell.swift */,
 				5CB4BA4A2611F775004993D2 /* IPOopen.swift */,
 				5C4B87742630992500EEEC03 /* mycell.swift */,
+				5CFE6D0C26653EF800F01AE8 /* famouseCollectionViewCell.swift */,
+				5CFE6D0E26653FA300F01AE8 /* famousTableCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				5C4B87712630978900EEEC03 /* niftyFifty.swift in Sources */,
 				5C57E7E225813ADA0049F0B4 /* topfifty.swift in Sources */,
 				5CB4BA482611F4BC004993D2 /* ipoVC.swift in Sources */,
+				5CFE6D0D26653EF800F01AE8 /* famouseCollectionViewCell.swift in Sources */,
 				5CFA6084261398CA00780C30 /* ShouldYouBuy.swift in Sources */,
 				5CE8E55B2631CD59002CE7E6 /* topWL.swift in Sources */,
 				5C0616AE257FCBBE00D9712E /* UserDef.swift in Sources */,
@@ -340,6 +347,7 @@
 				5C110CC62580D1020010FBEA /* mainCell.swift in Sources */,
 				5C8069F12584D1F200DF09A8 /* SettingMain.swift in Sources */,
 				5C9284FB26493FC80067E062 /* InAppVC.swift in Sources */,
+				5CFE6D0F26653FA300F01AE8 /* famousTableCell.swift in Sources */,
 				5C110CCA2580E1D30010FBEA /* Api.swift in Sources */,
 				5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */,
 				5C4B87752630992500EEEC03 /* mycell.swift in Sources */,
@@ -495,7 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Stock Market India/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -503,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 9.5;
+				MARKETING_VERSION = 10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Stock-Market-India";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -519,7 +527,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Stock Market India/Stock Market India.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "Stock Market India/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -527,7 +535,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 9.5;
+				MARKETING_VERSION = 10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Stock-Market-India";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

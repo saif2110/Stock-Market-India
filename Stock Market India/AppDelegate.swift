@@ -131,6 +131,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     }
 }
 
+struct Connectivity {
+    static let sharedInstance = NetworkReachabilityManager()!
+    static var isConnectedToInternet:Bool {
+        return self.sharedInstance.isReachable
+    }
+}
+
 func LikeAlgoritham(Name:String,Date:String) -> String {
     
     let Likes = AlphateNumberforLike(alphabate: String(Name.first ?? "R")) + AlphateNumberforLike(alphabate: String(Name.last ?? "s")) + Int(String(Date.first!))!
@@ -148,59 +155,59 @@ func AlphateNumberforLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 8
+        return 9
     case "b":
-        return 10
+        return 11
     case "c":
-        return 12
+        return 13
     case "d":
-        return 15
+        return 16
     case "e":
-        return 12
+        return 13
     case "f":
-        return 10
+        return 11
     case "g":
-        return 7
-    case "h":
-        return 13
-    case "i":
-        return 7
-    case "j":
-        return 7
-    case "k":
-        return 12
-    case "l":
-        return 12
-    case "m":
-        return 12
-    case "n":
-        return 9
-    case "o":
-        return 7
-    case "p":
-        return 10
-    case "q":
-        return 12
-    case "r":
-        return 11
-    case "s":
-        return 13
-    case "t":
         return 8
-    case "u":
-        return 9
-    case "v":
+    case "h":
+        return 14
+    case "i":
+        return 8
+    case "j":
+        return 8
+    case "k":
+        return 13
+    case "l":
+        return 13
+    case "m":
+        return 13
+    case "n":
+        return 10
+    case "o":
+        return 8
+    case "p":
         return 11
-    case "w":
+    case "q":
         return 13
-    case "x":
-        return 10
-    case "y":
-        return 13
-    case "z":
-        return 10
-    default:
+    case "r":
+        return 12
+    case "s":
+        return 14
+    case "t":
         return 9
+    case "u":
+        return 10
+    case "v":
+        return 12
+    case "w":
+        return 14
+    case "x":
+        return 11
+    case "y":
+        return 14
+    case "z":
+        return 11
+    default:
+        return 10
     }
 }
 
@@ -208,59 +215,59 @@ func AlphateNumberforDisLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 6
+        return 7
     case "b":
-        return 8
+        return 9
     case "c":
-        return 7
+        return 8
     case "d":
-        return 5
+        return 6
     case "e":
-        return 6
+        return 7
     case "f":
-        return 11
-    case "g":
-        return 8
-    case "h":
-        return 9
-    case "i":
-        return 8
-    case "j":
-        return 8
-    case "k":
-        return 8
-    case "l":
-        return 7
-    case "m":
-        return 6
-    case "n":
-        return 7
-    case "o":
         return 12
-    case "p":
-        return 10
-    case "q":
-        return 7
-    case "r":
-        return 8
-    case "s":
-        return 7
-    case "t":
-        return 6
-    case "u":
-        return 7
-    case "v":
-        return 6
-    case "w":
-        return 11
-    case "x":
-        return 8
-    case "y":
-        return 6
-    case "z":
-        return 8
-    default:
+    case "g":
         return 9
+    case "h":
+        return 10
+    case "i":
+        return 9
+    case "j":
+        return 9
+    case "k":
+        return 9
+    case "l":
+        return 8
+    case "m":
+        return 7
+    case "n":
+        return 8
+    case "o":
+        return 13
+    case "p":
+        return 11
+    case "q":
+        return 8
+    case "r":
+        return 9
+    case "s":
+        return 8
+    case "t":
+        return 7
+    case "u":
+        return 8
+    case "v":
+        return 7
+    case "w":
+        return 12
+    case "x":
+        return 9
+    case "y":
+        return 7
+    case "z":
+        return 9
+    default:
+        return 10
     }
 }
 
@@ -291,7 +298,7 @@ extension UIView {
     
     func shadow()  {
         self.layer.shadowColor = UIColor.gray.cgColor
-        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOpacity = 0.45
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowRadius = 5
     }
