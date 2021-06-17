@@ -62,6 +62,7 @@ class InAppVC: UIViewController {
         sender.layer.add(animation, forKey: nil)
     }
     
+    
     @IBAction func restore(_ sender: Any) {
         let iap = InAppPurchase.default
         iap.restore(handler: { (result) in
@@ -80,7 +81,7 @@ class InAppVC: UIViewController {
     
     @IBAction func buyPro(_ sender: Any) {
         startIndicator(selfo: self)
-       
+        
         let iap = InAppPurchase.default
         iap.purchase(productIdentifier: IAPid, handler: { (result) in
             stopIndicator()

@@ -1700,7 +1700,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obe-sT-ckn">
-                                                            <rect key="frame" x="8" y="83.5" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="81" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Odk-hu-cTS"/>
@@ -1722,32 +1722,32 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price:  21242" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ty-0x-t9E">
-                                                            <rect key="frame" x="8" y="52" width="158.5" height="19.5"/>
+                                                            <rect key="frame" x="8" y="52" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="1Ty-0x-t9E" secondAttribute="height" multiplier="138:17" id="tEy-PB-gxd"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell Target:  21242" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8y-JH-xxr">
-                                                            <rect key="frame" x="208" y="52" width="158" height="19.5"/>
+                                                            <rect key="frame" x="228" y="52" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="L8y-JH-xxr" secondAttribute="height" multiplier="73:9" id="8dq-y5-iI4"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-Pe-XGI">
-                                                            <rect key="frame" x="8" y="121.5" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="119" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="3Nc-Yu-9jq"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:  2 - 3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-Qe-wf0">
-                                                            <rect key="frame" x="8" y="94.5" width="138" height="17"/>
+                                                            <rect key="frame" x="8" y="92" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rMT-Qe-wf0" secondAttribute="height" multiplier="138:17" id="QrG-f3-Aqu"/>
                                                             </constraints>
@@ -1756,7 +1756,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Loss:  13600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kv-ei-V5Z">
-                                                            <rect key="frame" x="228" y="94.5" width="138" height="17"/>
+                                                            <rect key="frame" x="228" y="92" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="9Kv-ei-V5Z" secondAttribute="height" multiplier="138:17" id="nrn-1H-HXz"/>
                                                             </constraints>
@@ -1765,21 +1765,21 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEI-xZ-IHg">
-                                                            <rect key="frame" x="186.5" y="127.5" width="1" height="40.5"/>
+                                                            <rect key="frame" x="186.5" y="125" width="1" height="43"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="801-qz-pZH"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-YT-dgU">
-                                                            <rect key="frame" x="8" y="130.5" width="170.5" height="34.5"/>
+                                                            <rect key="frame" x="8" y="128" width="170.5" height="37"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-XE-5x1">
-                                                            <rect key="frame" x="195.5" y="130.5" width="170.5" height="34.5"/>
+                                                            <rect key="frame" x="195.5" y="128" width="170.5" height="37"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

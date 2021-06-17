@@ -56,6 +56,13 @@ class famousTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionView
             self.myView.delegate = self
             self.myView.dataSource = self
             self.myView.reloadData()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                if self.inflModel.count > 2 {
+                    let indexPath = IndexPath(item: 1, section: 0)
+                    self.myView.scrollToItem(at: indexPath, at: [.centeredHorizontally], animated: true)
+                }
+            }
         }
     }
     
@@ -65,6 +72,7 @@ class famousTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionView
     }
     
 }
+
 
 class InfluentialModel {
     var StockName = ""

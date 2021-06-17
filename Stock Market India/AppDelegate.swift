@@ -126,10 +126,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         if UserDefaults.standard.isProMember() {
             numberOFStocks = 30
         }
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+            if error != nil {
+                print("Request authorization failed!")
+            } else {
+                print("Request authorization succeeded!")
+                self.notification()
+            }
+        }
         
         return true
     }
+    
+    func notification() {
+        if nameofDay() != "Saturday" && nameofDay() != "Sunday" {
+            let notificationContent = UNMutableNotificationContent()
+            notificationContent.title = "New Stock Tips Available"
+            notificationContent.body = "Have two spare minutes ? Click to see today's latest tips."
+            notificationContent.sound = .default
+            
+            var datComp = DateComponents()
+            datComp.hour = 12
+            datComp.minute = 30
+            let trigger = UNCalendarNotificationTrigger(dateMatching: datComp, repeats: true)
+            let request = UNNotificationRequest(identifier: "ID", content: notificationContent, trigger: trigger)
+            UNUserNotificationCenter.current().add(request) { (error : Error?) in
+                if let theError = error {
+                    print(theError.localizedDescription)
+                }
+            }
+        }
+    }
 }
+
+
+
+
 
 struct Connectivity {
     static let sharedInstance = NetworkReachabilityManager()!
@@ -332,3 +366,14 @@ extension UITableView {
         self.separatorStyle = .singleLine
     }
 }
+
+
+
+func nameofDay() -> String{
+    let date = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "EEEE"
+    let dayInWeek = dateFormatter.string(from: date)
+    return dayInWeek
+}
+
