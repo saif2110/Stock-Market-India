@@ -126,6 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         if UserDefaults.standard.isProMember() {
             numberOFStocks = 30
         }
+        
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             // Enable or disable features based on authorization.
