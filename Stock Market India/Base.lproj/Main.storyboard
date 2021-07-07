@@ -1878,7 +1878,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                     <constraint firstAttribute="width" secondItem="2ch-6v-lib" secondAttribute="height" multiplier="179:28" constant="46.321428571428555" id="dMe-W3-D1X"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                <state key="normal" title="UPGRADE TO PRO (Lifetime)">
+                                                <state key="normal" title="UPGRADE TO PRO">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" systemColor="systemRedColor"/>
                                                 </state>

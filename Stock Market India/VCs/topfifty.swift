@@ -273,7 +273,8 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     @objc func addPro(){
-        let vc  = InAppVC()
+        let vc  = InAppPurchases()
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     

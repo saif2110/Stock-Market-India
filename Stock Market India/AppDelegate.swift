@@ -13,6 +13,7 @@ import GoogleSignIn
 import GoogleMobileAds
 import DropDown
 import InAppPurchase
+import Purchases
 
 var numberOFStocks = 22
 
@@ -76,11 +77,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         UserDefaults.standard.setnumberOftimeAppOpen(value:
                                                         UserDefaults.standard.getnumberOftimeAppOpen()+1)
+
+        
+        Purchases.debugLogsEnabled = true
+        Purchases.configure(withAPIKey: "lkepAliEKBiKaKgjmMWSwwWUeGXlEvSI")
+        
         
         GIDSignIn.sharedInstance().clientID = "569740869698-n9dn4t2gjqvlcvbva27juj3ik5h4rhoq.apps.googleusercontent.com"
         
         GIDSignIn.sharedInstance().delegate = self
         
+        isSubsActive()
         
         if !UserDefaults.standard.isFirstTimeOpen() {
             
@@ -101,6 +108,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
             DispatchQueue.main.asyncAfter(deadline: .now()+3) {
                 tutorialVC.showSkipButton()
             }
+            
             self.window?.rootViewController = tutorialVC
             
         }else{
@@ -157,6 +165,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
                 if let theError = error {
                     print(theError.localizedDescription)
                 }
+            }
+        }
+    }
+    
+    
+    func isSubsActive(){
+        Purchases.shared.purchaserInfo { (purchaserInfo, error) in
+            if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true {
+                
+                UserDefaults.standard.setisProMember(value: true)
+                
+            }else{
+                
+                UserDefaults.standard.setisProMember(value: false)
             }
         }
     }

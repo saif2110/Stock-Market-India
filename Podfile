@@ -15,6 +15,7 @@ target 'Stock Market India' do
   pod 'DropDown', '~> 2.3'
   pod 'Google-Mobile-Ads-SDK'
   pod 'StarReview'
+  pod 'Purchases'
   pod "InAppPurchase"
   pod 'lottie-ios'
   

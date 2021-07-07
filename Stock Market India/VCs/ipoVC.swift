@@ -49,10 +49,20 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @objc func ViewInfoTapped(sender:UIButton) {
         
-        let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = MainStoryboard.instantiateViewController(withIdentifier: "ShouldYouBuy") as! ShouldYouBuy
-        controller.openData = openData[sender.tag]
-        self.present(controller, animated: true, completion: nil)
+        if UserDefaults.standard.isProMember(){
+            
+            let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = MainStoryboard.instantiateViewController(withIdentifier: "ShouldYouBuy") as! ShouldYouBuy
+            controller.openData = openData[sender.tag]
+            self.present(controller, animated: true, completion: nil)
+            
+        }else{
+            
+            let vc = InAppPurchases()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+            
+        }
         
     }
     
