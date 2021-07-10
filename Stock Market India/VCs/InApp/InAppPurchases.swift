@@ -186,6 +186,7 @@ class InAppPurchases: UIViewController {
         Purchases.shared.restoreTransactions { (purchaserInfo, error) in
             
             if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true {
+                
                 self.PerchesedComplte()
                 
             }
@@ -193,11 +194,13 @@ class InAppPurchases: UIViewController {
         
         let iap = InAppPurchase.default
         iap.restore(handler: { (result) in
-            print(result)
             switch result {
             case .success(let products):
                 if products.contains("StockMarketPro"){
                     self.PerchesedComplte()
+                    
+                    UserDefaults.standard.setislifeTimePro(value: true)
+                    
                 }
             case .failure(let error):
                 print("error")
