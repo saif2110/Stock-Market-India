@@ -13,6 +13,7 @@ import SafariServices
 enum IPA:String {
     case OneMonthPro = "OneMonthPro"
     case OneYearPro = "OneYearPro"
+    case StockMarketPro = "StockMarketPro"
 }
 
 class InAppPurchases: UIViewController {
@@ -172,7 +173,6 @@ class InAppPurchases: UIViewController {
                 }
             }
         }
-        
     }
     
     func PerchesedComplte(){
