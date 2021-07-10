@@ -18,6 +18,7 @@
 		5C23D3D9261B2075002E006A /* pro.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C23D3D8261B2075002E006A /* pro.json */; };
 		5C35BC02258A42560018230C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C35BC01258A42560018230C /* GoogleService-Info.plist */; };
 		5C4154A625926BDA00464ED6 /* 200.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C4154A525926BDA00464ED6 /* 200.png */; };
+		5C4480792699B24D00F87A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4480782699B24D00F87A6D /* AppDelegate.swift */; };
 		5C49F5D12630499F004A6385 /* CompanyGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49F5D02630499F004A6385 /* CompanyGuideVC.swift */; };
 		5C4B87712630978900EEEC03 /* niftyFifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B87702630978900EEEC03 /* niftyFifty.swift */; };
 		5C4B87752630992500EEEC03 /* mycell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B87742630992500EEEC03 /* mycell.swift */; };
@@ -30,7 +31,6 @@
 		5C8069F12584D1F200DF09A8 /* SettingMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8069F02584D1F200DF09A8 /* SettingMain.swift */; };
 		5C9284FA26493FC80067E062 /* InAppVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C9284F826493FC70067E062 /* InAppVC.xib */; };
 		5C9284FB26493FC80067E062 /* InAppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9284F926493FC80067E062 /* InAppVC.swift */; };
-		5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA78B63257CE15A009F6C65 /* AppDelegate.swift */; };
 		5CA78B6B257CE15A009F6C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B69257CE15A009F6C65 /* Main.storyboard */; };
 		5CA78B6D257CE15B009F6C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B6C257CE15B009F6C65 /* Assets.xcassets */; };
 		5CA78B70257CE15B009F6C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA78B6E257CE15B009F6C65 /* LaunchScreen.storyboard */; };
@@ -58,6 +58,7 @@
 		5C23D3D8261B2075002E006A /* pro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pro.json; sourceTree = "<group>"; };
 		5C35BC01258A42560018230C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C4154A525926BDA00464ED6 /* 200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 200.png; sourceTree = "<group>"; };
+		5C4480782699B24D00F87A6D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C49F5D02630499F004A6385 /* CompanyGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyGuideVC.swift; sourceTree = "<group>"; };
 		5C4B87702630978900EEEC03 /* niftyFifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = niftyFifty.swift; sourceTree = "<group>"; };
 		5C4B87742630992500EEEC03 /* mycell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycell.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		5C9284F826493FC70067E062 /* InAppVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InAppVC.xib; sourceTree = "<group>"; };
 		5C9284F926493FC80067E062 /* InAppVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppVC.swift; sourceTree = "<group>"; };
 		5CA78B60257CE159009F6C65 /* Stock Market India.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Market India.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CA78B63257CE15A009F6C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CA78B6A257CE15A009F6C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CA78B6C257CE15B009F6C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CA78B6F257CE15B009F6C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -169,9 +169,9 @@
 				5C1CF894258D34FD00D753CE /* Font Awesome 5 Free-Solid-900.otf */,
 				5C4154A525926BDA00464ED6 /* 200.png */,
 				5C07BD0E2595F6A50042871B /* Ads.swift */,
+				5C4480782699B24D00F87A6D /* AppDelegate.swift */,
 				5C0616AD257FCBBE00D9712E /* UserDef.swift */,
 				5C1F143925868E130042A790 /* myAlert.swift */,
-				5CA78B63257CE15A009F6C65 /* AppDelegate.swift */,
 				5CA78B69257CE15A009F6C65 /* Main.storyboard */,
 				5CA78B6C257CE15B009F6C65 /* Assets.xcassets */,
 				5CA78B6E257CE15B009F6C65 /* LaunchScreen.storyboard */,
@@ -356,6 +356,7 @@
 				5C57E7E225813ADA0049F0B4 /* topfifty.swift in Sources */,
 				5CB4BA482611F4BC004993D2 /* ipoVC.swift in Sources */,
 				5CFE6D0D26653EF800F01AE8 /* famouseCollectionViewCell.swift in Sources */,
+				5C4480792699B24D00F87A6D /* AppDelegate.swift in Sources */,
 				5CFA6084261398CA00780C30 /* ShouldYouBuy.swift in Sources */,
 				5CE8E55B2631CD59002CE7E6 /* topWL.swift in Sources */,
 				5C0616AE257FCBBE00D9712E /* UserDef.swift in Sources */,
@@ -365,7 +366,6 @@
 				5C9284FB26493FC80067E062 /* InAppVC.swift in Sources */,
 				5CFE6D0F26653FA300F01AE8 /* famousTableCell.swift in Sources */,
 				5C110CCA2580E1D30010FBEA /* Api.swift in Sources */,
-				5CA78B64257CE15A009F6C65 /* AppDelegate.swift in Sources */,
 				5C4B87752630992500EEEC03 /* mycell.swift in Sources */,
 				5CCC1C082584E996006EEC43 /* SettingsCell.swift in Sources */,
 			);

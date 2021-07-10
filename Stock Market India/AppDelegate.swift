@@ -77,9 +77,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         UserDefaults.standard.setnumberOftimeAppOpen(value:
                                                         UserDefaults.standard.getnumberOftimeAppOpen()+1)
-
         
-        Purchases.debugLogsEnabled = true
+        
+        Purchases.debugLogsEnabled = false
         Purchases.configure(withAPIKey: "lkepAliEKBiKaKgjmMWSwwWUeGXlEvSI")
         
         
@@ -169,19 +169,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         }
     }
     
+    //||!(purchaserInfo?.entitlements.active.isEmpty ?? false)
     
     func isSubsActive(){
+        
         Purchases.shared.purchaserInfo { (purchaserInfo, error) in
-            if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true || purchaserInfo?.entitlements.all[IPA.StockMarketPro.rawValue]?.isActive == true {
+            
+            if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true || UserDefaults.standard.islifeTimePro() {
                 
                 UserDefaults.standard.setisProMember(value: true)
                 
             }else{
                 
                 UserDefaults.standard.setisProMember(value: false)
+
             }
         }
     }
+    
 }
 
 
@@ -389,7 +394,6 @@ extension UITableView {
         self.separatorStyle = .singleLine
     }
 }
-
 
 
 func nameofDay() -> String{
