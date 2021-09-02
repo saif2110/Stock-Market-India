@@ -195,13 +195,14 @@ class InAppPurchases: UIViewController {
         let iap = InAppPurchase.default
         iap.restore(handler: { (result) in
             switch result {
+            
             case .success(let products):
                 if products.contains("StockMarketPro"){
                     self.PerchesedComplte()
                     
                     UserDefaults.standard.setislifeTimePro(value: true)
-                    
                 }
+                
             case .failure(let error):
                 print("error")
                 print(error)

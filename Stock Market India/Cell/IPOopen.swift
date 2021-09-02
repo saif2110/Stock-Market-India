@@ -42,7 +42,7 @@ class IPOopen: UITableViewCell {
         
         logo.kf.setImage(with: URL(string: data?.logoUrl ?? ""))
         name.text = data?.name
-        subcriptionRate.text = "Issue Size: ₹" + String(data?.issueSize ?? "Coming Soon") + " Cr"
+        subcriptionRate.text = "Grey Market Premium: " + String(data?.GMP ?? "Not Avail.")
         price.text = "Price: ₹" + String(data?.minPrice ?? "Coming Soon") + " - ₹" + String(data?.maxPrice ?? "Coming Soon")
         size.text = "Lot Size: " + String(data?.lotSize ?? "Coming Soon")
         endDate.text = "End Date: " + (data?.biddingEndDate ?? "Coming Soon")

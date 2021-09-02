@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nvC-RJ-EaT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -16,7 +16,7 @@
             <objects>
                 <navigationController storyboardIdentifier="RootNavigationController" id="nvC-RJ-EaT" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nqt-rS-0c1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" systemColor="systemRedColor"/>
@@ -60,15 +60,15 @@
             <objects>
                 <viewController restorationIdentifier="searchVC" storyboardIdentifier="searchVC" title="searchVC" id="d15-Ep-kwy" customClass="searchVC" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jv2-34-17B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bh8-dY-FHB">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="680"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mainCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="195" id="4hs-dP-3k8" customClass="mainCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4hs-dP-3k8" id="30A-hl-OMm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -78,27 +78,27 @@
                                                     <rect key="frame" x="20" y="11" width="374" height="173"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="He8-Y9-9kv">
-                                                            <rect key="frame" x="8" y="41" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="41.666666666666664" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="0aa-aC-See"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qf-qS-tfQ">
-                                                            <rect key="frame" x="8" y="81" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="81.666666666666671" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="uyt-xy-zAL"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Y3m-Bl-DVh">
-                                                            <rect key="frame" x="8" y="11" width="268" height="19"/>
+                                                            <rect key="frame" x="8" y="11.000000000000002" width="264" height="19.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-02-2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilg-Zg-8KK">
-                                                            <rect key="frame" x="288" y="14" width="78" height="13.5"/>
+                                                            <rect key="frame" x="284" y="14" width="82" height="14.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ilg-Zg-8KK" secondAttribute="height" multiplier="81:14" id="qul-Di-dvP"/>
                                                             </constraints>
@@ -107,7 +107,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Size: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rqq-ka-W5T">
-                                                            <rect key="frame" x="8" y="52" width="138" height="17"/>
+                                                            <rect key="frame" x="8" y="52.666666666666664" width="138" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rqq-ka-W5T" secondAttribute="height" multiplier="138:17" id="aPE-QZ-Q0o"/>
                                                             </constraints>
@@ -116,7 +116,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: ₹498 - ₹500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rEl-53-MlC">
-                                                            <rect key="frame" x="228" y="52" width="138" height="17"/>
+                                                            <rect key="frame" x="228" y="52.666666666666664" width="138" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rEl-53-MlC" secondAttribute="height" multiplier="73:9" id="boD-V1-cX9"/>
                                                             </constraints>
@@ -125,14 +125,14 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-YK-ZJi">
-                                                            <rect key="frame" x="8" y="120" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="120.66666666666666" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="bEN-gf-zCK"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date: 2021-03-26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FFq-Kf-kdS">
-                                                            <rect key="frame" x="8" y="92" width="145.5" height="18"/>
+                                                            <rect key="frame" x="8" y="92.666666666666671" width="145.66666666666666" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="FFq-Kf-kdS" secondAttribute="height" multiplier="138:17" id="pFb-c2-hso"/>
                                                             </constraints>
@@ -141,7 +141,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription Rate: 13.13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FuJ-pM-92y">
-                                                            <rect key="frame" x="210.5" y="92" width="155.5" height="19"/>
+                                                            <rect key="frame" x="210.66666666666663" y="92.666666666666671" width="155.33333333333337" height="19"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="FuJ-pM-92y" secondAttribute="height" multiplier="138:17" id="xVo-LZ-b7W"/>
                                                             </constraints>
@@ -150,21 +150,21 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-U5-pYF">
-                                                            <rect key="frame" x="186.5" y="126" width="1" height="42"/>
+                                                            <rect key="frame" x="186.66666666666666" y="126.66666666666664" width="1" height="41.333333333333329"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="mbD-Ls-QZk"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybY-DX-MM2">
-                                                            <rect key="frame" x="8" y="129" width="170.5" height="36"/>
+                                                            <rect key="frame" x="8" y="129.66666666666666" width="170.66666666666666" height="35.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-rh-hhX">
-                                                            <rect key="frame" x="195.5" y="129" width="170.5" height="36"/>
+                                                            <rect key="frame" x="195.66666666666663" y="129.66666666666666" width="170.33333333333337" height="35.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -235,7 +235,7 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="Search Stock  eg. ICICI, Yes Bank" translatesAutoresizingMaskIntoConstraints="NO" id="VW9-wX-3XJ">
-                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="12" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="VW9-wX-3XJ" secondAttribute="height" multiplier="207:22" id="g8w-Wd-k0l"/>
                                 </constraints>
@@ -270,36 +270,36 @@
             <objects>
                 <viewController storyboardIdentifier="niftyFifty" title="Top 50 Companies" id="BVt-se-Y3R" customClass="niftyFifty" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tkk-vQ-fu6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8mK-2g-J0Q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mycell" textLabel="k2U-tg-Wjy" detailTextLabel="gl8-9w-MQb" imageView="fdR-VN-BER" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="2po-I7-f1w" customClass="mycell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="61"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2po-I7-f1w" id="J4g-Y5-mUh">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k2U-tg-Wjy">
-                                                    <rect key="frame" x="63" y="10" width="33" height="20.5"/>
+                                                    <rect key="frame" x="63" y="10.999999999999998" width="33" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gl8-9w-MQb">
-                                                    <rect key="frame" x="63" y="33.5" width="33" height="14.5"/>
+                                                    <rect key="frame" x="63" y="34.333333333333329" width="32.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="blank" id="fdR-VN-BER">
-                                                    <rect key="frame" x="20" y="16.5" width="28" height="28"/>
+                                                    <rect key="frame" x="20" y="16.333333333333332" width="28" height="28"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -330,11 +330,11 @@
             <objects>
                 <viewController storyboardIdentifier="CompanyGuideVC" id="6Ed-xb-Sq5" customClass="CompanyGuideVC" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tpb-lO-OvQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I8L-KE-dbW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="LAb-Qu-9OH">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="295"/>
@@ -362,7 +362,7 @@ Always keep track of these companies.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHX-qD-Lgd">
-                                                    <rect key="frame" x="359" y="2" width="15" height="116.5"/>
+                                                    <rect key="frame" x="359" y="2" width="15" height="116.33333333333333"/>
                                                     <color key="tintColor" systemColor="systemGray4Color"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="81J-30-r0x"/>
@@ -417,7 +417,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJU-af-T2T">
-                                                    <rect key="frame" x="359" y="2" width="15" height="116.5"/>
+                                                    <rect key="frame" x="359" y="2" width="15" height="116.33333333333333"/>
                                                     <color key="tintColor" systemColor="systemGray4Color"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="wqg-Mn-9QF"/>
@@ -488,15 +488,15 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="topfifty" title="Top Stock Tips" id="HPd-CK-Z1H" customClass="topfifty" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixd-CK-DDX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-qL-ldC">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mainCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="195" id="hWk-fG-pPQ" customClass="mainCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hWk-fG-pPQ" id="vgn-qF-bSY">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -506,27 +506,27 @@ Keep track of winner stocks for at least next two days.</string>
                                                     <rect key="frame" x="20" y="11" width="374" height="173"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2f-j2-jyH">
-                                                            <rect key="frame" x="8" y="41" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="41.666666666666664" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Mqy-PS-1YX"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-Wo-v6g">
-                                                            <rect key="frame" x="8" y="81" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="81.666666666666671" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="FvG-xw-eEH"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="4bv-0D-8SQ">
-                                                            <rect key="frame" x="8" y="11" width="268" height="19"/>
+                                                            <rect key="frame" x="8" y="11.000000000000002" width="264" height="19.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-02-2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvm-jN-wX7">
-                                                            <rect key="frame" x="288" y="14" width="78" height="13.5"/>
+                                                            <rect key="frame" x="284" y="14" width="82" height="14.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="Qvm-jN-wX7" secondAttribute="height" multiplier="81:14" id="xle-jA-uAd"/>
                                                             </constraints>
@@ -535,7 +535,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price:  21242" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-24-VfO">
-                                                            <rect key="frame" x="8" y="52" width="138" height="17"/>
+                                                            <rect key="frame" x="8" y="52.666666666666664" width="138" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="c1V-24-VfO" secondAttribute="height" multiplier="138:17" id="xBq-Ls-KXM"/>
                                                             </constraints>
@@ -544,7 +544,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell Target:  21242" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-I5-wvH">
-                                                            <rect key="frame" x="228" y="52" width="138" height="17"/>
+                                                            <rect key="frame" x="228" y="52.666666666666664" width="138" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="DLk-I5-wvH" secondAttribute="height" multiplier="73:9" id="Oap-xv-s5d"/>
                                                             </constraints>
@@ -553,14 +553,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6y-zj-6Mo">
-                                                            <rect key="frame" x="8" y="119" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="119.66666666666666" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="uad-fi-ard"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:  2 - 3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecS-Ba-jUc">
-                                                            <rect key="frame" x="8" y="92" width="138" height="17"/>
+                                                            <rect key="frame" x="8" y="92.666666666666671" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ecS-Ba-jUc" secondAttribute="height" multiplier="138:17" id="Mar-PV-mVi"/>
                                                             </constraints>
@@ -569,7 +569,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Loss:  13600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ta4-HI-5Wy">
-                                                            <rect key="frame" x="228" y="92" width="138" height="17"/>
+                                                            <rect key="frame" x="228" y="92.666666666666671" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ta4-HI-5Wy" secondAttribute="height" multiplier="138:17" id="coM-sG-zxW"/>
                                                             </constraints>
@@ -578,21 +578,21 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCw-KI-6Zq">
-                                                            <rect key="frame" x="186.5" y="125" width="1" height="43"/>
+                                                            <rect key="frame" x="186.66666666666666" y="125.66666666666664" width="1" height="42.333333333333329"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="OAl-o2-Zzy"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-U3-Ipt">
-                                                            <rect key="frame" x="8" y="128" width="170.5" height="37"/>
+                                                            <rect key="frame" x="8" y="128.66666666666666" width="170.66666666666666" height="36.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nil-Cy-uaK">
-                                                            <rect key="frame" x="195.5" y="128" width="170.5" height="37"/>
+                                                            <rect key="frame" x="195.66666666666663" y="128.66666666666666" width="170.33333333333337" height="36.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -670,7 +670,7 @@ Keep track of winner stocks for at least next two days.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="famousTableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="famousTableCell" rowHeight="165" id="NBD-Ba-PiN" customClass="famousTableCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="219.5" width="414" height="165"/>
+                                        <rect key="frame" x="0.0" y="219.33333396911621" width="414" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NBD-Ba-PiN" id="4bM-WQ-5Vg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="165"/>
@@ -687,7 +687,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="famouseCollectionViewCell" id="ex1-wf-26w" customClass="famouseCollectionViewCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="2.5" width="398" height="144"/>
+                                                            <rect key="frame" x="0.0" y="2.6666666666666665" width="398" height="144"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LIT-4M-jDX">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="144"/>
@@ -729,13 +729,13 @@ Keep track of winner stocks for at least next two days.</string>
                                                                                 </constraints>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgH-Qx-cij">
-                                                                                <rect key="frame" x="8" y="97" width="52.5" height="24"/>
+                                                                                <rect key="frame" x="7.9999999999999964" y="97" width="52.666666666666657" height="24"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1P-Li-AMk">
-                                                                                <rect key="frame" x="68.5" y="98" width="111.5" height="23"/>
+                                                                                <rect key="frame" x="68.666666666666686" y="98" width="111.33333333333331" height="23"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <state key="normal" title=" Motilal Oswal">
@@ -840,15 +840,15 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="ipoVC" title="IPO" id="QPz-ya-mdq" customClass="ipoVC" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ChT-M3-kKc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4qF-nj-10O">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IPOopen" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IPOopen" rowHeight="195" id="Nfu-DK-Nbk" customClass="IPOopen" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nfu-DK-Nbk" id="2Zg-kk-git">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -865,7 +865,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWk-da-kJy">
-                                                            <rect key="frame" x="8" y="83" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="89" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Vcm-9J-x1O"/>
@@ -877,8 +877,8 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issue Size: 13.13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="534-00-RNq">
-                                                            <rect key="frame" x="8" y="56" width="138" height="17"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grey Market Premium: +20%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="534-00-RNq">
+                                                            <rect key="frame" x="8" y="56" width="186" height="23"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="534-00-RNq" secondAttribute="height" multiplier="138:17" id="NYw-rd-FdX"/>
                                                             </constraints>
@@ -886,8 +886,8 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: ₹498 - ₹500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xnl-bF-Fa7">
-                                                            <rect key="frame" x="228" y="56" width="138" height="17"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Size: 30 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xnl-bF-Fa7">
+                                                            <rect key="frame" x="180" y="56" width="186" height="23"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="Xnl-bF-Fa7" secondAttribute="height" multiplier="73:9" id="ZmD-2W-ogD"/>
                                                             </constraints>
@@ -896,14 +896,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjy-5j-tGf">
-                                                            <rect key="frame" x="8" y="121" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="127" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="uE2-MU-aDy"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Size: 30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gia-EQ-MGa">
-                                                            <rect key="frame" x="8" y="94" width="138" height="17"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: ₹498 - ₹500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gia-EQ-MGa">
+                                                            <rect key="frame" x="8" y="100" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="gia-EQ-MGa" secondAttribute="height" multiplier="138:17" id="qmV-Yt-4Wb"/>
                                                             </constraints>
@@ -912,7 +912,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date: 2021-03-26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-NL-9qU">
-                                                            <rect key="frame" x="220" y="94" width="146" height="18"/>
+                                                            <rect key="frame" x="220" y="100" width="146" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ykk-NL-9qU" secondAttribute="height" multiplier="138:17" id="1ky-g0-thC"/>
                                                             </constraints>
@@ -921,14 +921,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJy-4Z-EVU">
-                                                            <rect key="frame" x="186.5" y="127" width="1" height="41"/>
+                                                            <rect key="frame" x="186.66666666666666" y="133" width="1" height="35"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="Zel-GQ-MrJ"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qT-cG-J19">
-                                                            <rect key="frame" x="195.5" y="130" width="170.5" height="35"/>
+                                                            <rect key="frame" x="195.66666666666663" y="136" width="170.33333333333337" height="29"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <state key="normal" title="Should You Buy ?">
                                                                 <color key="titleColor" systemColor="systemRedColor"/>
@@ -942,7 +942,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEa-l5-yQl" customClass="StarReview" customModule="StarReview">
-                                                            <rect key="frame" x="15" y="137" width="156.5" height="21"/>
+                                                            <rect key="frame" x="15" y="143" width="156.66666666666666" height="15"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
                                                     </subviews>
@@ -1002,8 +1002,8 @@ Keep track of winner stocks for at least next two days.</string>
                                             <outlet property="logo" destination="bWg-dy-M45" id="Xxk-ed-jbx"/>
                                             <outlet property="name" destination="hot-2k-CZo" id="QN6-dh-5CI"/>
                                             <outlet property="outerBox" destination="tec-pc-9IB" id="dvv-0b-qM0"/>
-                                            <outlet property="price" destination="Xnl-bF-Fa7" id="ngP-LN-nB2"/>
-                                            <outlet property="size" destination="gia-EQ-MGa" id="jFK-o5-mhX"/>
+                                            <outlet property="price" destination="gia-EQ-MGa" id="JX7-il-i6u"/>
+                                            <outlet property="size" destination="Xnl-bF-Fa7" id="iQu-Ps-UVN"/>
                                             <outlet property="star" destination="zEa-l5-yQl" id="4IF-rx-E7f"/>
                                             <outlet property="subcriptionRate" destination="534-00-RNq" id="BDS-9h-SpY"/>
                                         </connections>
@@ -1034,14 +1034,14 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="ShouldYouBuy" id="Zdw-Gl-qKw" customClass="ShouldYouBuy" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="af9-Ci-qHC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JlZ-Uh-xnu">
-                                <rect key="frame" x="0.0" y="103" width="414" height="793"/>
+                                <rect key="frame" x="0.0" y="59" width="414" height="677"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="jet-eF-QRX">
-                                    <rect key="frame" x="0.0" y="244.00000034679067" width="414" height="386"/>
+                                    <rect key="frame" x="0.0" y="243.66666828502309" width="414" height="386"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF6-WF-lij">
@@ -1077,14 +1077,14 @@ Keep track of winner stocks for at least next two days.</string>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRM-kR-KCN" userLabel="HLine2">
-                                            <rect key="frame" x="8" y="318.5" width="398" height="1"/>
+                                            <rect key="frame" x="8" y="318.66666666666669" width="398" height="1"/>
                                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="AgO-6b-tOJ"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abn-5g-9zc" userLabel="VLine">
-                                            <rect key="frame" x="206.5" y="15" width="1" height="175"/>
+                                            <rect key="frame" x="206.66666666666666" y="15" width="1" height="175"/>
                                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="1" id="cQ8-OF-U6d"/>
@@ -1092,7 +1092,7 @@ Keep track of winner stocks for at least next two days.</string>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kpF-79-8vf">
-                                            <rect key="frame" x="15" y="49" width="183.5" height="140"/>
+                                            <rect key="frame" x="15" y="49" width="183.66666666666666" height="140"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="140" id="6S2-SH-1Rr"/>
                                             </constraints>
@@ -1101,7 +1101,7 @@ Keep track of winner stocks for at least next two days.</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fmd-oZ-Jf8">
-                                            <rect key="frame" x="222.5" y="49" width="183.5" height="140"/>
+                                            <rect key="frame" x="222.66666666666663" y="49" width="183.33333333333337" height="140"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="140" id="2tA-km-NSp"/>
                                             </constraints>
@@ -1110,13 +1110,13 @@ Keep track of winner stocks for at least next two days.</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remark - We don't recommand to buy this IPO as this comanny is in loss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-jb-Dzi">
-                                            <rect key="frame" x="10" y="215" width="394" height="33.5"/>
+                                            <rect key="frame" x="10" y="215" width="394" height="33.666666666666657"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" systemColor="systemRedColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-bj-HEh">
-                                            <rect key="frame" x="100.5" y="268.5" width="213" height="30"/>
+                                            <rect key="frame" x="100.66666666666669" y="268.66666666666669" width="213" height="30"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                             <state key="normal" title="  Youtube video for more info  ">
                                                 <color key="titleColor" systemColor="systemRedColor"/>
@@ -1126,7 +1126,7 @@ Keep track of winner stocks for at least next two days.</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK8-RA-5B1">
-                                            <rect key="frame" x="4" y="339.5" width="130" height="20"/>
+                                            <rect key="frame" x="4" y="339.66666666666669" width="130" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="tintColor" systemColor="systemRedColor"/>
                                             <state key="normal" title=" Rate Us" image="star.fill" catalog="system">
@@ -1137,7 +1137,7 @@ Keep track of winner stocks for at least next two days.</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te8-Pm-fuQ">
-                                            <rect key="frame" x="142" y="339.5" width="130" height="20"/>
+                                            <rect key="frame" x="142" y="339.66666666666669" width="130" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="tintColor" systemColor="systemRedColor"/>
                                             <state key="normal" title="  Feedback" image="mail.fill" catalog="system">
@@ -1148,7 +1148,7 @@ Keep track of winner stocks for at least next two days.</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hck-o0-cOn">
-                                            <rect key="frame" x="280" y="339.5" width="130" height="20"/>
+                                            <rect key="frame" x="280" y="339.66666666666669" width="130" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="tintColor" systemColor="systemRedColor"/>
                                             <state key="normal" title="  Share" image="arrowshape.turn.up.forward.fill" catalog="system">
@@ -1206,7 +1206,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="IPOopen" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IPOopen" rowHeight="195" id="7YM-GS-Ygw" customClass="IPOopen" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7YM-GS-Ygw" id="7Ho-fM-Sra">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -1223,7 +1223,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lu6-Nf-cXC">
-                                                            <rect key="frame" x="8" y="85" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="89" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="dnM-0O-CYq"/>
@@ -1235,8 +1235,8 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription Rate: 13.13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TFy-se-fzP">
-                                                            <rect key="frame" x="8" y="56" width="155.5" height="19"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grey Market Premium: +20%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TFy-se-fzP">
+                                                            <rect key="frame" x="8" y="56" width="186" height="23"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="TFy-se-fzP" secondAttribute="height" multiplier="138:17" id="xBk-pB-8jx"/>
                                                             </constraints>
@@ -1244,8 +1244,8 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: ₹498 - ₹500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a1i-cM-r0U">
-                                                            <rect key="frame" x="210.5" y="56" width="155.5" height="19"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Size: 30 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a1i-cM-r0U">
+                                                            <rect key="frame" x="180" y="56" width="186" height="23"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="a1i-cM-r0U" secondAttribute="height" multiplier="73:9" id="g6A-3H-ElK"/>
                                                             </constraints>
@@ -1254,14 +1254,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRf-FD-Eu9">
-                                                            <rect key="frame" x="8" y="123" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="126" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Okv-s9-hpG"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lot Size: 30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zmo-nO-G02">
-                                                            <rect key="frame" x="8" y="96" width="138" height="17"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: ₹498 - ₹500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zmo-nO-G02">
+                                                            <rect key="frame" x="8" y="100" width="130.66666666666666" height="16"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="Zmo-nO-G02" secondAttribute="height" multiplier="138:17" id="cmT-k0-ffW"/>
                                                             </constraints>
@@ -1270,7 +1270,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date: 2021-03-26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-Dp-Goc">
-                                                            <rect key="frame" x="220.5" y="96" width="145.5" height="18"/>
+                                                            <rect key="frame" x="220.66666666666663" y="100" width="145.33333333333337" height="17.666666666666671"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="kJ2-Dp-Goc" secondAttribute="height" multiplier="138:17" id="OxC-Ra-1C5"/>
                                                             </constraints>
@@ -1279,14 +1279,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMm-h5-6hK">
-                                                            <rect key="frame" x="186.5" y="129" width="1" height="39"/>
+                                                            <rect key="frame" x="186.66666666666666" y="132" width="1" height="36"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="tAI-nD-5qa"/>
                                                             </constraints>
                                                         </view>
                                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-27-HML">
-                                                            <rect key="frame" x="195.5" y="132" width="170.5" height="33"/>
+                                                            <rect key="frame" x="195.66666666666663" y="135" width="170.33333333333337" height="30"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <state key="normal" title="Should You Buy ?">
                                                                 <color key="titleColor" systemColor="systemRedColor"/>
@@ -1300,7 +1300,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTu-ai-Jrn" customClass="StarReview" customModule="StarReview">
-                                                            <rect key="frame" x="15" y="139" width="156.5" height="19"/>
+                                                            <rect key="frame" x="15" y="142" width="156.66666666666666" height="16"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
                                                     </subviews>
@@ -1359,8 +1359,8 @@ Keep track of winner stocks for at least next two days.</string>
                                             <outlet property="logo" destination="4ML-O5-VwZ" id="eWA-3t-ToC"/>
                                             <outlet property="name" destination="VyE-O2-eq3" id="Tpw-sy-apY"/>
                                             <outlet property="outerBox" destination="55j-yQ-q27" id="dcF-u5-IWa"/>
-                                            <outlet property="price" destination="a1i-cM-r0U" id="jWY-Id-H89"/>
-                                            <outlet property="size" destination="Zmo-nO-G02" id="Oa3-dw-dnY"/>
+                                            <outlet property="price" destination="Zmo-nO-G02" id="xu5-8N-yry"/>
+                                            <outlet property="size" destination="a1i-cM-r0U" id="ESE-bG-vu9"/>
                                             <outlet property="star" destination="tTu-ai-Jrn" id="SWW-D3-dqg"/>
                                             <outlet property="subcriptionRate" destination="TFy-se-fzP" id="V3j-Rk-EnL"/>
                                         </connections>
@@ -1368,7 +1368,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should You Buy This IPO ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-4m-tIT">
-                                <rect key="frame" x="20" y="52" width="374" height="51"/>
+                                <rect key="frame" x="20" y="8" width="374" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BkF-4m-tIT" secondAttribute="height" multiplier="22:3" id="vNk-Iy-7gc"/>
                                 </constraints>
@@ -1406,15 +1406,15 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="SettingVC" id="vjB-pa-oSD" customClass="SettingVC" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I0c-GH-Pwb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-TM-lOY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingMain" rowHeight="150" id="Wmq-5n-xfp" customClass="SettingMain" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="150"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wmq-5n-xfp" id="MzQ-a6-bbz">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -1428,16 +1428,16 @@ Keep track of winner stocks for at least next two days.</string>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="X0N-YF-dKd">
-                                                    <rect key="frame" x="100" y="26" width="282" height="52"/>
+                                                    <rect key="frame" x="100" y="25.999999999999996" width="282" height="51.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v70-l0-3iV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="282" height="28"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="282" height="28.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Email ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-fc-o6b">
-                                                            <rect key="frame" x="0.0" y="28" width="282" height="24"/>
+                                                            <rect key="frame" x="0.0" y="28.333333333333336" width="282" height="23.333333333333336"/>
                                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1514,7 +1514,7 @@ Keep track of winner stocks for at least next two days.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsCell" rowHeight="33" id="4Pq-63-38S" customClass="SettingsCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174.5" width="414" height="33"/>
+                                        <rect key="frame" x="0.0" y="174.33333396911621" width="414" height="33"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Pq-63-38S" id="dPi-gw-4O0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
@@ -1547,11 +1547,11 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="PostStock" id="dKg-h6-jRL" customClass="PostStock" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VDz-Md-ZEz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Stock Details to Post Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-mu-ToB">
-                                <rect key="frame" x="20" y="64" width="374" height="28"/>
+                                <rect key="frame" x="20" y="20" width="374" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gTd-mu-ToB" secondAttribute="height" multiplier="17:2" constant="136" id="XSC-xF-UUb"/>
                                 </constraints>
@@ -1560,20 +1560,20 @@ Keep track of winner stocks for at least next two days.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vy-8H-mMC">
-                                <rect key="frame" x="0.0" y="112" width="414" height="1"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="aO1-3G-ao8"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Stock Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-TD-lbF">
-                                <rect key="frame" x="20" y="177.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="133.33333333333334" width="374" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="EqU-5p-Nf4">
-                                <rect key="frame" x="20" y="231.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="187.33333333333334" width="374" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0nI-XD-QjP">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="34"/>
@@ -1590,7 +1590,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0ic-it-CWQ">
-                                <rect key="frame" x="20" y="285.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="241.33333333333337" width="374" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stop Loss" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6YV-3U-uA6">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="34"/>
@@ -1607,7 +1607,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdM-pA-JIs">
-                                <rect key="frame" x="157" y="349.5" width="100" height="35"/>
+                                <rect key="frame" x="157" y="305.33333333333331" width="100" height="35"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="MEH-9o-WyG"/>
@@ -1627,7 +1627,7 @@ Keep track of winner stocks for at least next two days.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note - Don't SPAM. Misusing this feature may permanently ban you from using this app, so use it carefully." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-Kc-56N">
-                                <rect key="frame" x="20" y="128" width="374" height="29.5"/>
+                                <rect key="frame" x="20" y="84" width="374" height="29.333333333333329"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1675,15 +1675,15 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="TopFiveVC" title="Top Five Stocks" id="cE8-E2-mFe" customClass="TopFiveVC" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RJI-vy-Mbk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AR4-X1-QxE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mainCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="195" id="ArR-EU-Gf0" customClass="mainCell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="195"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ArR-EU-Gf0" id="kg1-mw-Bq1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
@@ -1693,27 +1693,27 @@ Keep track of winner stocks for at least next two days.</string>
                                                     <rect key="frame" x="20" y="11" width="374" height="173"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4b-Xv-YbM">
-                                                            <rect key="frame" x="8" y="41" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="41.666666666666664" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="1c5-H7-8aD"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obe-sT-ckn">
-                                                            <rect key="frame" x="8" y="81" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="81.666666666666671" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="Odk-hu-cTS"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS Pharmaceuticals LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.89999997615814209" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-p7-OmF">
-                                                            <rect key="frame" x="8" y="11" width="268" height="19"/>
+                                                            <rect key="frame" x="8" y="11.000000000000002" width="264" height="19.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-02-2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mb-7u-0G0">
-                                                            <rect key="frame" x="288" y="14" width="78" height="13.5"/>
+                                                            <rect key="frame" x="284" y="14" width="82" height="14.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="0Mb-7u-0G0" secondAttribute="height" multiplier="81:14" id="fcC-3I-NT5"/>
                                                             </constraints>
@@ -1722,7 +1722,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price:  21242" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ty-0x-t9E">
-                                                            <rect key="frame" x="8" y="52" width="138" height="17"/>
+                                                            <rect key="frame" x="8" y="52.666666666666664" width="138" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="1Ty-0x-t9E" secondAttribute="height" multiplier="138:17" id="tEy-PB-gxd"/>
                                                             </constraints>
@@ -1731,7 +1731,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell Target:  21242" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8y-JH-xxr">
-                                                            <rect key="frame" x="228" y="52" width="138" height="17"/>
+                                                            <rect key="frame" x="228" y="52.666666666666664" width="138" height="16.999999999999993"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="L8y-JH-xxr" secondAttribute="height" multiplier="73:9" id="8dq-y5-iI4"/>
                                                             </constraints>
@@ -1740,14 +1740,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-Pe-XGI">
-                                                            <rect key="frame" x="8" y="119" width="358" height="1"/>
+                                                            <rect key="frame" x="8" y="119.66666666666666" width="358" height="1"/>
                                                             <color key="backgroundColor" red="0.874432981" green="0.87455898519999997" blue="0.87440532449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="3Nc-Yu-9jq"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:  2 - 3 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-Qe-wf0">
-                                                            <rect key="frame" x="8" y="92" width="138" height="17"/>
+                                                            <rect key="frame" x="8" y="92.666666666666671" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="rMT-Qe-wf0" secondAttribute="height" multiplier="138:17" id="QrG-f3-Aqu"/>
                                                             </constraints>
@@ -1756,7 +1756,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Loss:  13600" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kv-ei-V5Z">
-                                                            <rect key="frame" x="228" y="92" width="138" height="17"/>
+                                                            <rect key="frame" x="228" y="92.666666666666671" width="138" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="9Kv-ei-V5Z" secondAttribute="height" multiplier="138:17" id="nrn-1H-HXz"/>
                                                             </constraints>
@@ -1765,21 +1765,21 @@ Keep track of winner stocks for at least next two days.</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEI-xZ-IHg">
-                                                            <rect key="frame" x="186.5" y="125" width="1" height="43"/>
+                                                            <rect key="frame" x="186.66666666666666" y="125.66666666666664" width="1" height="42.333333333333329"/>
                                                             <color key="backgroundColor" red="0.88227552180000002" green="0.88240253930000001" blue="0.88224762680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="801-qz-pZH"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-YT-dgU">
-                                                            <rect key="frame" x="8" y="128" width="170.5" height="37"/>
+                                                            <rect key="frame" x="8" y="128.66666666666666" width="170.66666666666666" height="36.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-up">
                                                                 <color key="titleColor" systemColor="systemGreenColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-XE-5x1">
-                                                            <rect key="frame" x="195.5" y="128" width="170.5" height="37"/>
+                                                            <rect key="frame" x="195.66666666666663" y="128.66666666666666" width="170.33333333333337" height="36.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <state key="normal" image="thumb-down">
                                                                 <color key="titleColor" red="0.83601839069999995" green="0.3354423312" blue="0.35893233569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1850,10 +1850,10 @@ Keep track of winner stocks for at least next two days.</string>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV3-5v-rod">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NE2-Uj-hkK">
-                                        <rect key="frame" x="20" y="281.5" width="374" height="250"/>
+                                        <rect key="frame" x="20" y="218.66666666666663" width="374" height="250"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔒 Unlock Today's Top 5 Picks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6gc-qz-bJ0">
                                                 <rect key="frame" x="8" y="8" width="358" height="44"/>
@@ -1865,14 +1865,14 @@ Keep track of winner stocks for at least next two days.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pf0-IU-ahQ">
-                                                <rect key="frame" x="8" y="60" width="358" height="97"/>
+                                                <rect key="frame" x="8" y="60.000000000000036" width="358" height="96.666666666666686"/>
                                                 <string key="text">We have chosen today's top 5 stock for you that are posted frequently by other users.\nStocks will be updated every 24 hrs &amp; new stocks will available</string>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ch-6v-lib">
-                                                <rect key="frame" x="20" y="165" width="334" height="45"/>
+                                                <rect key="frame" x="20" y="164.66666666666666" width="334" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2ch-6v-lib" secondAttribute="height" multiplier="179:28" constant="46.321428571428555" id="dMe-W3-D1X"/>
@@ -1887,7 +1887,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* The information given is for research only, buy at your own risk *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CPf-YU-phY">
-                                                <rect key="frame" x="8" y="230" width="358" height="16"/>
+                                                <rect key="frame" x="8" y="230.00000000000003" width="358" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CPf-YU-phY" secondAttribute="height" multiplier="358:21" constant="85.238095238095241" id="m0c-dk-wHU"/>
                                                 </constraints>
@@ -1896,7 +1896,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIG-UW-OTj">
-                                                <rect key="frame" x="20" y="220" width="334" height="10"/>
+                                                <rect key="frame" x="20" y="219.66666666666666" width="334" height="10.333333333333343"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TIG-UW-OTj" secondAttribute="height" multiplier="166:5" id="rFm-J9-jcU"/>
                                                 </constraints>
@@ -1969,36 +1969,36 @@ Keep track of winner stocks for at least next two days.</string>
             <objects>
                 <viewController storyboardIdentifier="topWL" title="Winners &amp; Losers" id="Dam-hW-5xO" customClass="topWL" customModule="Stock_Market_India" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNC-eO-tpA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DZr-cv-Lux">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mycell" textLabel="FwL-Nq-ct3" detailTextLabel="8mj-1B-yEj" imageView="iWN-Zj-bb5" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="YJ1-K5-hvH" customClass="mycell" customModule="Stock_Market_India" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="61"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YJ1-K5-hvH" id="ku5-HS-g2K">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FwL-Nq-ct3">
-                                                    <rect key="frame" x="63" y="10" width="33" height="20.5"/>
+                                                    <rect key="frame" x="63" y="10.999999999999998" width="33" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8mj-1B-yEj">
-                                                    <rect key="frame" x="63" y="33.5" width="33" height="14.5"/>
+                                                    <rect key="frame" x="63" y="34.333333333333329" width="32.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="blank" id="iWN-Zj-bb5">
-                                                    <rect key="frame" x="20" y="16.5" width="28" height="28"/>
+                                                    <rect key="frame" x="20" y="16.333333333333332" width="28" height="28"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -2034,7 +2034,7 @@ Keep track of winner stocks for at least next two days.</string>
         <image name="avatar" width="128" height="128"/>
         <image name="blank" width="28" height="28"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="google" width="17" height="17"/>
+        <image name="google" width="17.333333969116211" height="17.333333969116211"/>
         <image name="mail.fill" catalog="system" width="128" height="93"/>
         <image name="otherStuff" width="25" height="25"/>
         <image name="setting" width="27" height="27"/>

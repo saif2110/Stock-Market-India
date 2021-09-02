@@ -169,15 +169,15 @@ class ipoVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         postWithParameter(Url: "getIPO.php", parameters: [:]) { (Json, Err) in
             
             for (_,Subjson) in Json["CLOSED"] {
-                self.closedData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2"))
+                self.closedData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2", GMP : Subjson["GMP"].string ?? "Not Avail."))
             }
             
             for (_,Subjson) in Json["OPEN"] {
-                self.openData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2"))
+                self.openData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2", GMP : Subjson["GMP"].string ?? "Not Avail."))
             }
             
             for (_,Subjson) in Json["UPCOMING"] {
-                self.upcomingData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2"))
+                self.upcomingData.append(DataOFjson(logoUrl: Subjson["logoUrl"].string ?? "Coming Soon", minPrice: Subjson["minPrice"].string ?? "Coming Soon", maxPrice: Subjson["maxPrice"].string ?? "Coming Soon", lotSize: Subjson["lotSize"].string ?? "Coming Soon", name: Subjson["name"].string ?? "Coming Soon", issueSize: Subjson["issueSize"].string ?? "Coming Soon", biddingEndDate: Subjson["biddingEndDate"].string ?? "Coming Soon", stars: Subjson["stars"].string ?? "2", GMP : Subjson["GMP"].string ?? "Not Avail."))
             }
             
             
@@ -201,8 +201,9 @@ class DataOFjson {
     var issueSize:String?
     var biddingEndDate:String?
     var stars:String?
+    var GMP:String?
     
-    init(logoUrl:String,minPrice:String,maxPrice:String,lotSize:String,name:String,issueSize:String,biddingEndDate:String,stars:String) {
+    init(logoUrl:String,minPrice:String,maxPrice:String,lotSize:String,name:String,issueSize:String,biddingEndDate:String,stars:String,GMP:String) {
         self.logoUrl = logoUrl
         self.minPrice = minPrice
         self.maxPrice = maxPrice
@@ -211,5 +212,6 @@ class DataOFjson {
         self.issueSize = issueSize
         self.biddingEndDate = biddingEndDate
         self.stars = stars
+        self.GMP = GMP
     }
 }

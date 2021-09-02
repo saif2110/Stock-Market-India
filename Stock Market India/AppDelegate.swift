@@ -150,7 +150,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     }
     
     func notification() {
-        if nameofDay() != "Saturday" && nameofDay() != "Sunday" {
+        
+        if nameofDay() != "Friday" && nameofDay() != "Saturday" {
             let notificationContent = UNMutableNotificationContent()
             notificationContent.title = "New Stock Tips Available"
             notificationContent.body = "Have two spare minutes ? Click to see today's latest tips."
@@ -216,60 +217,61 @@ func DisLikeAlgoritham(Name:String,Date:String) -> String {
 func AlphateNumberforLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
+    
     case "a":
-        return 9
+        return 10
     case "b":
-        return 11
+        return 12
     case "c":
         return 13
     case "d":
-        return 16
+        return 17
     case "e":
-        return 13
-    case "f":
-        return 11
-    case "g":
-        return 8
-    case "h":
         return 14
+    case "f":
+        return 12
+    case "g":
+        return 9
+    case "h":
+        return 15
     case "i":
-        return 8
+        return 9
     case "j":
-        return 8
+        return 9
     case "k":
-        return 13
+        return 14
     case "l":
-        return 13
+        return 14
     case "m":
-        return 13
+        return 14
     case "n":
-        return 10
-    case "o":
-        return 8
-    case "p":
         return 11
+    case "o":
+        return 9
+    case "p":
+        return 12
     case "q":
-        return 13
+        return 14
     case "r":
         return 12
     case "s":
-        return 14
+        return 15
     case "t":
-        return 9
+        return 10
     case "u":
-        return 10
+        return 11
     case "v":
-        return 12
+        return 13
     case "w":
-        return 14
+        return 15
     case "x":
-        return 11
+        return 12
     case "y":
-        return 14
+        return 15
     case "z":
-        return 11
+        return 12
     default:
-        return 10
+        return 11
     }
 }
 
@@ -277,59 +279,59 @@ func AlphateNumberforDisLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 7
+        return 8
     case "b":
-        return 9
+        return 10
     case "c":
-        return 8
+        return 9
     case "d":
-        return 6
+        return 7
     case "e":
-        return 7
+        return 8
     case "f":
-        return 12
-    case "g":
-        return 9
-    case "h":
-        return 10
-    case "i":
-        return 9
-    case "j":
-        return 9
-    case "k":
-        return 9
-    case "l":
-        return 8
-    case "m":
-        return 7
-    case "n":
-        return 8
-    case "o":
         return 13
-    case "p":
-        return 11
-    case "q":
-        return 8
-    case "r":
-        return 9
-    case "s":
-        return 8
-    case "t":
-        return 7
-    case "u":
-        return 8
-    case "v":
-        return 7
-    case "w":
-        return 12
-    case "x":
-        return 9
-    case "y":
-        return 7
-    case "z":
-        return 9
-    default:
+    case "g":
         return 10
+    case "h":
+        return 11
+    case "i":
+        return 10
+    case "j":
+        return 10
+    case "k":
+        return 10
+    case "l":
+        return 9
+    case "m":
+        return 8
+    case "n":
+        return 9
+    case "o":
+        return 14
+    case "p":
+        return 12
+    case "q":
+        return 9
+    case "r":
+        return 10
+    case "s":
+        return 9
+    case "t":
+        return 8
+    case "u":
+        return 9
+    case "v":
+        return 8
+    case "w":
+        return 13
+    case "x":
+        return 10
+    case "y":
+        return 8
+    case "z":
+        return 10
+    default:
+        return 11
     }
 }
 
