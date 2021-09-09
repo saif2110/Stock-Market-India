@@ -176,7 +176,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         Purchases.shared.purchaserInfo { (purchaserInfo, error) in
             
-            if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true || UserDefaults.standard.islifeTimePro() {
+            if purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true ||
+                purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true || purchaserInfo?.entitlements.all[IPA.StockMarketPro.rawValue]?.isActive == true ||
+                UserDefaults.standard.islifeTimePro() {
                 
                 UserDefaults.standard.setisProMember(value: true)
                 

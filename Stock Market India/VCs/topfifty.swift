@@ -60,7 +60,7 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             }
             
             
-            if indexPath.row == 18 {
+            if indexPath.row == 17 {
                 showIntrest(Myself: self)
             }
             
@@ -205,7 +205,11 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                                object: nil)
         
         
-        showIntrest(Myself: self)
+        if !UserDefaults.standard.isProMember() {
+            let vc  = InAppPurchases()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
         
         if UserDefaults.standard.getnumberOftimeAppOpen() > 1 {
             requestToRate()

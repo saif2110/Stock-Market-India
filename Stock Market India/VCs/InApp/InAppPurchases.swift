@@ -70,11 +70,11 @@ class InAppPurchases: UIViewController {
             if let offerings = offerings {
                 
                 
-                guard let package = offerings[IPA.OneMonthPro.rawValue]?.availablePackages.first else {
+                guard let package = offerings[IPA.OneYearPro.rawValue]?.availablePackages.first else {
                     return
                 }
                 
-                guard let package2 = offerings[IPA.OneYearPro.rawValue]?.availablePackages.first else {
+                guard let package2 = offerings[IPA.StockMarketPro.rawValue]?.availablePackages.first else {
                     return
                 }
                 
@@ -82,9 +82,9 @@ class InAppPurchases: UIViewController {
                 self.AllPackage.append(package2)
                 
                 
-                let priceone = offerings[IPA.OneMonthPro.rawValue]?.monthly?.localizedPriceString
+                let priceone = offerings[IPA.OneYearPro.rawValue]?.annual?.localizedPriceString
                 
-                let pricetwo = offerings[IPA.OneYearPro.rawValue]?.annual?.localizedPriceString
+                let pricetwo = offerings[IPA.StockMarketPro.rawValue]?.lifetime?.localizedPriceString
                 
                 self.WeekLowerLabel.attributedText = self.PriceMessage(price: priceone ?? "$0.49" , save: "Save 5%")
                 
@@ -162,7 +162,8 @@ class InAppPurchases: UIViewController {
         if AllPackage.count > 0 {
             startIndicator(selfo: self)
             Purchases.shared.purchasePackage(AllPackage[selectedIPA]) { (transaction, purchaserInfo, error, userCancelled) in
-                if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true {
+                if purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.StockMarketPro.rawValue]?.isActive == true || purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true {
+                    
                     
                     self.PerchesedComplte()
                     
@@ -172,6 +173,8 @@ class InAppPurchases: UIViewController {
                     //print("error")
                 }
             }
+            
+            lifeTimepurchesd()
         }
     }
     
@@ -185,13 +188,20 @@ class InAppPurchases: UIViewController {
         
         Purchases.shared.restoreTransactions { (purchaserInfo, error) in
             
-            if purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true {
+            if purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.StockMarketPro.rawValue]?.isActive == true {
+                
+                print(purchaserInfo?.entitlements.all[IPA.StockMarketPro.rawValue]?.isActive)
                 
                 self.PerchesedComplte()
                 
             }
         }
         
+        lifeTimepurchesd()
+        
+    }
+    
+    func lifeTimepurchesd(){
         let iap = InAppPurchase.default
         iap.restore(handler: { (result) in
             switch result {
@@ -199,7 +209,6 @@ class InAppPurchases: UIViewController {
             case .success(let products):
                 if products.contains("StockMarketPro"){
                     self.PerchesedComplte()
-                    
                     UserDefaults.standard.setislifeTimePro(value: true)
                 }
                 
@@ -208,8 +217,8 @@ class InAppPurchases: UIViewController {
                 print(error)
             }
         })
-        
     }
+    
     
     @IBOutlet weak var backButtonoutlet:UIButton!
     

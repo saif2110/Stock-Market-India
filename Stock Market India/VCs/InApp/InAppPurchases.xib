@@ -223,7 +223,7 @@
                                                                                 <constraint firstAttribute="height" constant="81" id="Z6G-z7-kHG"/>
                                                                             </constraints>
                                                                             <string key="text">1
-Month</string>
+YEAR</string>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <color key="textColor" red="0.076262362299999997" green="0.1070805863" blue="0.13937318330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -325,13 +325,11 @@ Cg
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c83-Vb-j3y">
                                                                     <rect key="frame" x="0.0" y="0.0" width="157" height="82"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9G-CI-4i1" userLabel="1 WEEK">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIFETIME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9G-CI-4i1" userLabel="1 WEEK">
                                                                             <rect key="frame" x="0.0" y="0.0" width="157" height="81"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="81" id="ZYa-4j-DuM"/>
                                                                             </constraints>
-                                                                            <string key="text">1
-YEAR</string>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <color key="textColor" red="0.076262362299999997" green="0.1070805863" blue="0.13937318330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -470,7 +468,7 @@ Cg
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="j4r-Su-XdU" firstAttribute="top" secondItem="dfb-Wh-yvE" secondAttribute="top" id="165-Cg-8Pb"/>
                                 <constraint firstAttribute="trailing" secondItem="gla-QV-qwR" secondAttribute="trailing" id="DQ9-Qp-Fok"/>
@@ -482,6 +480,7 @@ Cg
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="dfb-Wh-yvE" firstAttribute="trailing" secondItem="68n-yR-H8P" secondAttribute="trailing" id="7eH-AE-wj0"/>
                         <constraint firstItem="dfb-Wh-yvE" firstAttribute="bottom" secondItem="68n-yR-H8P" secondAttribute="bottom" id="Jli-TN-tOA"/>
@@ -494,7 +493,7 @@ Cg
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="INq-O1-J6S"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="h8p-kJ-yyC" firstAttribute="top" secondItem="Txd-te-roG" secondAttribute="top" id="SDT-df-x6Z"/>
                 <constraint firstAttribute="bottom" secondItem="h8p-kJ-yyC" secondAttribute="bottom" id="TH3-4U-BF1"/>
