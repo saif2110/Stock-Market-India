@@ -1,66 +1,66 @@
 PODS:
-  - Alamofire (5.4.3)
+  - Alamofire (5.4.4)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
   - DropDown (2.3.13)
-  - Google-Mobile-Ads-SDK (8.7.0):
+  - Google-Mobile-Ads-SDK (8.11.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (8.2.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.2.0)
+  - GoogleAppMeasurement (8.7.0):
+    - GoogleAppMeasurement/AdIdSupport (= 8.7.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.2.0):
+  - GoogleAppMeasurement/AdIdSupport (8.7.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - GoogleSignIn (5.0.2):
-    - AppAuth (~> 1.2)
+  - GoogleSignIn (6.0.2):
+    - AppAuth (~> 1.4)
     - GTMAppAuth (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
   - GoogleUserMessagingPlatform (2.0.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.4.3):
+  - GoogleUtilities/AppDelegateSwizzler (7.5.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.4.3):
-    - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (7.4.3):
+  - GoogleUtilities/Environment (7.5.2):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.5.2):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.4.3):
+  - GoogleUtilities/MethodSwizzler (7.5.2):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.4.3):
+  - GoogleUtilities/Network (7.5.2):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.4.3)"
-  - GoogleUtilities/Reachability (7.4.3):
+  - "GoogleUtilities/NSData+zlib (7.5.2)"
+  - GoogleUtilities/Reachability (7.5.2):
     - GoogleUtilities/Logger
   - GTMAppAuth (1.2.2):
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
-  - GTMSessionFetcher/Core (1.5.0)
+  - GTMSessionFetcher/Core (1.7.0)
   - InAppPurchase (2.3.1)
-  - Kingfisher (6.3.0)
-  - lottie-ios (3.2.2)
+  - Kingfisher (7.0.0)
+  - lottie-ios (3.2.3)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - NilTutorial (0.2.7)
-  - PromisesObjC (1.2.12)
-  - Purchases (3.11.1):
-    - PurchasesCoreSwift (= 3.11.1)
-  - PurchasesCoreSwift (3.11.1)
+  - PromisesObjC (2.0.0)
+  - Purchases (3.12.4):
+    - PurchasesCoreSwift (= 3.12.4)
+  - PurchasesCoreSwift (3.12.4)
   - SkyFloatingLabelTextField (3.8.0)
   - StarReview (1.0.0)
   - SwiftyJSON (4.3.0)
@@ -104,24 +104,24 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
-  Google-Mobile-Ads-SDK: e242f463fdb8564ac3f11847a30215a0e042c934
-  GoogleAppMeasurement: b52eafc9dff542d580700e708216568bd2fbf168
-  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  Google-Mobile-Ads-SDK: be2192b51b74d74a6ed70590c2e8275412f1b71e
+  GoogleAppMeasurement: 2be61ce546ad074dbe4dd545f222ac6033bb1d9e
+  GoogleSignIn: fd381840dbe7c1137aa6dc30849a5c3e070c034a
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
-  GoogleUtilities: 45dbb24a7f351d69d0a601482b39ad6c32e30dab
+  GoogleUtilities: 8de2a97a17e15b6b98e38e8770e2d129a57c0040
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
-  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   InAppPurchase: 0a8e027080fb57556ca9e04768137d0d6971f87e
-  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
-  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NilTutorial: bd093ecef7162a5b99e50366c6bbcf907e2fb542
-  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Purchases: 6351f9ff6bd514e5ec5aa0f989ea181effa94bf5
-  PurchasesCoreSwift: ee857e4c21e6254b09d7e303a756fcf2b9164408
+  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  Purchases: c451e29e3ceefaa8e7926a0d0d831b0f0ff39e32
+  PurchasesCoreSwift: c276d8c8df495271afebb0b090ec35117a0a827f
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   StarReview: 0578f61607b89b3f0ad87ab417907818c1f39532
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08

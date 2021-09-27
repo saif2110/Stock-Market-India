@@ -211,10 +211,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             self.present(vc, animated: true, completion: nil)
         }
         
-        if UserDefaults.standard.getnumberOftimeAppOpen() > 1 {
-            requestToRate()
-        }
-        
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = .systemRed
         indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)

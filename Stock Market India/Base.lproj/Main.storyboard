@@ -942,7 +942,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                             </constraints>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEa-l5-yQl" customClass="StarReview" customModule="StarReview">
-                                                            <rect key="frame" x="15" y="143" width="156.66666666666666" height="15"/>
+                                                            <rect key="frame" x="15" y="141" width="156.66666666666666" height="19"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         </view>
                                                     </subviews>
@@ -961,7 +961,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                         <constraint firstAttribute="trailing" secondItem="FWk-da-kJy" secondAttribute="trailing" constant="8" id="I5n-8G-OhI"/>
                                                         <constraint firstItem="FWk-da-kJy" firstAttribute="top" secondItem="534-00-RNq" secondAttribute="bottom" constant="10" id="Kk4-8H-Ksl"/>
                                                         <constraint firstItem="Q6r-V1-1H2" firstAttribute="top" secondItem="hot-2k-CZo" secondAttribute="bottom" constant="6" id="L9P-zU-qiS"/>
-                                                        <constraint firstAttribute="bottom" secondItem="zEa-l5-yQl" secondAttribute="bottom" constant="15" id="LXG-UU-df5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zEa-l5-yQl" secondAttribute="bottom" constant="13" id="LXG-UU-df5"/>
                                                         <constraint firstItem="hot-2k-CZo" firstAttribute="leading" secondItem="bWg-dy-M45" secondAttribute="trailing" constant="8" id="Md6-AM-0hT"/>
                                                         <constraint firstAttribute="trailing" secondItem="Q6r-V1-1H2" secondAttribute="trailing" constant="8" id="PkX-th-waR"/>
                                                         <constraint firstAttribute="trailing" secondItem="Xnl-bF-Fa7" secondAttribute="trailing" constant="8" id="WSM-tL-Fx0"/>
@@ -976,7 +976,7 @@ Keep track of winner stocks for at least next two days.</string>
                                                         <constraint firstItem="534-00-RNq" firstAttribute="top" secondItem="Q6r-V1-1H2" secondAttribute="bottom" constant="8" id="hjB-kT-zFM"/>
                                                         <constraint firstItem="Q6r-V1-1H2" firstAttribute="top" secondItem="bWg-dy-M45" secondAttribute="bottom" constant="8" id="hyX-Cy-a4p"/>
                                                         <constraint firstItem="ZJy-4Z-EVU" firstAttribute="top" secondItem="Hjy-5j-tGf" secondAttribute="bottom" constant="5" id="kdg-PL-ntc"/>
-                                                        <constraint firstItem="zEa-l5-yQl" firstAttribute="top" secondItem="Hjy-5j-tGf" secondAttribute="bottom" constant="15" id="nZp-Vv-3mF"/>
+                                                        <constraint firstItem="zEa-l5-yQl" firstAttribute="top" secondItem="Hjy-5j-tGf" secondAttribute="bottom" constant="13" id="nZp-Vv-3mF"/>
                                                         <constraint firstItem="Hjy-5j-tGf" firstAttribute="top" secondItem="ykk-NL-9qU" secondAttribute="bottom" constant="9" id="oSw-0f-v3o"/>
                                                         <constraint firstAttribute="trailing" secondItem="hot-2k-CZo" secondAttribute="trailing" constant="8" id="qCB-8N-r2q"/>
                                                         <constraint firstItem="bWg-dy-M45" firstAttribute="leading" secondItem="tec-pc-9IB" secondAttribute="leading" constant="8" id="txh-MA-7Qz"/>

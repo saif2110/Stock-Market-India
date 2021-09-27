@@ -100,6 +100,12 @@ class InAppVC: UIViewController {
         self.present(myAlt(titel:"Congratulations !",message:"You are a pro member now. Enjoy seamless experience with all features unlock."), animated: true, completion: nil)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        if UserDefaults.standard.getnumberOftimeAppOpen() > 1 {
+            requestToRate()
+        }
+    }
+    
 }
 
 
