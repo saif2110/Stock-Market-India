@@ -181,16 +181,16 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
         if !Connectivity.isConnectedToInternet {
             let alert2 = UIAlertController(title: "Connection Error", message: "The Internet connection appears to be offline.Please connect to Internet and open the app again.", preferredStyle: .alert)
             alert2.addAction(UIAlertAction(title: "EXIT APP", style: .default, handler: { action in
-                                            switch action.style{
-                                            case .default:
-                                                exit(0)
-                                            case .cancel:
-                                                print("")
-                                            case .destructive:
-                                                print("")
-                                            @unknown default:
-                                                fatalError()
-                                            }}))
+                switch action.style{
+                case .default:
+                    exit(0)
+                case .cancel:
+                    print("")
+                case .destructive:
+                    print("")
+                @unknown default:
+                    fatalError()
+                }}))
             
             present(alert2, animated: true, completion: nil)
             print("Not Connected")
@@ -205,11 +205,15 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                                object: nil)
         
         
-        if !UserDefaults.standard.isProMember() {
-            let vc  = InAppPurchases()
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
+        
+        if UserDefaults.standard.getnumberOftimeAppOpen() == 1 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                requestToRate()
+            }
+        }else{
+            showIntrest(Myself: self)
         }
+        
         
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = .systemRed
@@ -288,7 +292,6 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
             sender.setTitle(" 1 Week", for: .normal)
             getStockData(sort: "1 Week")
             Sender = "1 Week"
-            showIntrest(Myself: self)
         }else if sender.currentTitle == " 1 Week"{
             sender.setTitle(" 1 Month", for: .normal)
             getStockData(sort: "1 Month")

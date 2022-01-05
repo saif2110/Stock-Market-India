@@ -120,6 +120,12 @@ class InAppPurchases: UIViewController {
         continueOutlet.layer.cornerRadius = continueOutlet.bounds.height/2
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        if UserDefaults.standard.getnumberOftimeAppOpen() > 1 {
+            requestToRate()
+        }
+    }
+    
     func PriceMessage(price:String,save:String) -> NSAttributedString {
         let attrString = NSMutableAttributedString(string: price+"\n",
                                                    attributes: [NSAttributedString.Key.font: UIFont(name: "Arial-BoldMT", size: 18)!]);

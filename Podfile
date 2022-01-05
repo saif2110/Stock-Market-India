@@ -9,7 +9,7 @@ target 'Stock Market India' do
   pod 'NilTutorial'
   pod 'Alamofire', '~> 5.1'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'GoogleSignIn'
+  pod 'GoogleSignIn', '~> 5.0.2'
   pod 'Kingfisher'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'DropDown', '~> 2.3'
