@@ -78,8 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         UserDefaults.standard.setnumberOftimeAppOpen(value:
                                                         UserDefaults.standard.getnumberOftimeAppOpen()+1)
         
-        
-        Purchases.debugLogsEnabled = false
+        Purchases.logLevel = .error
         Purchases.configure(withAPIKey: "lkepAliEKBiKaKgjmMWSwwWUeGXlEvSI")
         
         
@@ -146,6 +145,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
             }
         }
         
+#if DEBUG
+        
+#else
+        
+#endif
+        
         return true
     }
     
@@ -185,7 +190,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
             }else{
                 
                 UserDefaults.standard.setisProMember(value: false)
-
+                
             }
         }
     }
@@ -205,13 +210,14 @@ struct Connectivity {
 
 func LikeAlgoritham(Name:String,Date:String) -> String {
     
-    let Likes = AlphateNumberforLike(alphabate: String(Name.first ?? "R")) + AlphateNumberforLike(alphabate: String(Name.last ?? "s")) + Int(String(Date.first!))!
+    let Likes = AlphateNumberforLike(alphabate: String(Name.first ?? "R")) + AlphateNumberforLike(alphabate: String(Name.last ?? "s")) + Int(String(Date.first!))! + Int(String(Date[1]))!
     return String(Int(Likes))
     
 }
 
 func DisLikeAlgoritham(Name:String,Date:String) -> String {
-    let Likes = AlphateNumberforDisLike(alphabate: String(Name.first ?? "R")) + AlphateNumberforDisLike(alphabate: String(Name.last ?? "R")) + Int(String(Date.first!))!
+    let Likes = AlphateNumberforDisLike(alphabate: String(Name.first ?? "R")) + AlphateNumberforDisLike(alphabate: String(Name.last ?? "R")) + Int(String(Date.first!))! + Int(String(Date[1]))!
+    
     return String(Int(Likes))
     
 }
@@ -219,61 +225,61 @@ func DisLikeAlgoritham(Name:String,Date:String) -> String {
 func AlphateNumberforLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
-    
+        
     case "a":
-        return 10
+        return 12
     case "b":
-        return 12
+        return 19
     case "c":
-        return 13
+        return 15
     case "d":
-        return 17
+        return 19
     case "e":
-        return 14
+        return 16
     case "f":
-        return 12
+        return 14
     case "g":
-        return 9
+        return 7
     case "h":
-        return 15
+        return 17
     case "i":
-        return 9
+        return 11
     case "j":
-        return 9
-    case "k":
-        return 14
-    case "l":
-        return 14
-    case "m":
-        return 14
-    case "n":
-        return 11
-    case "o":
-        return 9
-    case "p":
-        return 12
-    case "q":
-        return 14
-    case "r":
-        return 12
-    case "s":
-        return 15
-    case "t":
-        return 10
-    case "u":
-        return 11
-    case "v":
         return 13
+    case "k":
+        return 16
+    case "l":
+        return 15
+    case "m":
+        return 16
+    case "n":
+        return 13
+    case "o":
+        return 12
+    case "p":
+        return 14
+    case "q":
+        return 16
+    case "r":
+        return 14
+    case "s":
+        return 18
+    case "t":
+        return 20
+    case "u":
+        return 13
+    case "v":
+        return 10
     case "w":
-        return 15
+        return 13
     case "x":
-        return 12
+        return 14
     case "y":
-        return 15
-    case "z":
         return 12
+    case "z":
+        return 14
     default:
-        return 11
+        return 13
     }
 }
 
@@ -281,59 +287,59 @@ func AlphateNumberforDisLike(alphabate:String) -> Int {
     
     switch alphabate.lowercased() {
     case "a":
-        return 8
+        return 10
     case "b":
-        return 10
-    case "c":
-        return 9
-    case "d":
-        return 7
-    case "e":
-        return 8
-    case "f":
-        return 13
-    case "g":
-        return 10
-    case "h":
-        return 11
-    case "i":
-        return 10
-    case "j":
-        return 10
-    case "k":
-        return 10
-    case "l":
-        return 9
-    case "m":
-        return 8
-    case "n":
-        return 9
-    case "o":
-        return 14
-    case "p":
         return 12
-    case "q":
-        return 9
-    case "r":
-        return 10
-    case "s":
-        return 9
-    case "t":
-        return 8
-    case "u":
-        return 9
-    case "v":
-        return 8
-    case "w":
-        return 13
-    case "x":
-        return 10
-    case "y":
-        return 8
-    case "z":
-        return 10
-    default:
+    case "c":
         return 11
+    case "d":
+        return 9
+    case "e":
+        return 10
+    case "f":
+        return 15
+    case "g":
+        return 12
+    case "h":
+        return 13
+    case "i":
+        return 12
+    case "j":
+        return 12
+    case "k":
+        return 12
+    case "l":
+        return 11
+    case "m":
+        return 10
+    case "n":
+        return 11
+    case "o":
+        return 16
+    case "p":
+        return 14
+    case "q":
+        return 11
+    case "r":
+        return 12
+    case "s":
+        return 11
+    case "t":
+        return 10
+    case "u":
+        return 11
+    case "v":
+        return 10
+    case "w":
+        return 15
+    case "x":
+        return 12
+    case "y":
+        return 10
+    case "z":
+        return 12
+    default:
+        return 13
     }
 }
 
@@ -408,3 +414,30 @@ func nameofDay() -> String{
     return dayInWeek
 }
 
+
+extension String {
+    
+    var length: Int {
+        return count
+    }
+    
+    subscript (i: Int) -> String {
+        return self[i ..< i + 1]
+    }
+    
+    func substring(fromIndex: Int) -> String {
+        return self[min(fromIndex, length) ..< length]
+    }
+    
+    func substring(toIndex: Int) -> String {
+        return self[0 ..< max(0, toIndex)]
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        let range = Range(uncheckedBounds: (lower: max(0, min(length, r.lowerBound)),
+                                            upper: min(length, max(0, r.upperBound))))
+        let start = index(startIndex, offsetBy: range.lowerBound)
+        let end = index(start, offsetBy: range.upperBound - range.lowerBound)
+        return String(self[start ..< end])
+    }
+}

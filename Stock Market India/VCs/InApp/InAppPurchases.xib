@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,16 +11,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InAppPurchases" customModule="Stock_Market_India" customModuleProvider="target">
             <connections>
-                <outlet property="WeekLowerLabel" destination="GEG-SO-Cbd" id="TdJ-ES-Lze"/>
-                <outlet property="WeekUpperLabel" destination="Ykc-Iw-U7r" id="d3l-fa-Dfk"/>
+                <outlet property="WeekLowerLabel" destination="GEG-SO-Cbd" id="ScI-wp-OdG"/>
+                <outlet property="WeekUpperLabel" destination="Ykc-Iw-U7r" id="hTV-nc-j5i"/>
                 <outlet property="WeekUpperView" destination="Jog-QH-i2d" id="OGl-uz-PGq"/>
-                <outlet property="YearLowerLabel" destination="a6N-fh-crH" id="GXw-Ql-rTB"/>
-                <outlet property="YearUpperLabel" destination="V9G-CI-4i1" id="YES-3P-hQf"/>
+                <outlet property="YearLowerLabel" destination="a6N-fh-crH" id="tyL-2q-0WM"/>
+                <outlet property="YearUpperLabel" destination="V9G-CI-4i1" id="QlQ-Se-FlG"/>
                 <outlet property="YearUpperView" destination="c83-Vb-j3y" id="sVq-DE-7qb"/>
                 <outlet property="backButtonoutlet" destination="9do-ea-m52" id="wca-Y5-N96"/>
                 <outlet property="continueOutlet" destination="5vd-9Y-LCs" id="IZL-37-zyY"/>
-                <outlet property="labelBannerWeek" destination="dhf-qL-LgO" id="5gW-Pl-EKN"/>
-                <outlet property="labelBannerYear" destination="2RP-O9-TGp" id="1VS-SV-tcX"/>
+                <outlet property="labelBannerWeek" destination="dhf-qL-LgO" id="wY5-iM-2fP"/>
+                <outlet property="labelBannerYear" destination="2RP-O9-TGp" id="9gA-Ki-XAI"/>
                 <outlet property="view" destination="Txd-te-roG" id="5MJ-YK-s24"/>
                 <outlet property="weekView" destination="TyW-0v-qZa" id="rJ1-3v-nzU"/>
                 <outlet property="yearView" destination="Kyg-U4-jzb" id="1bX-Mv-XEN"/>

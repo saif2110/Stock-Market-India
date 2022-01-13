@@ -8,8 +8,10 @@
 import UIKit
 
 class CompanyGuideVC: UIViewController {
+    
     @IBOutlet weak var viewBut: UIView!
     @IBOutlet weak var viewBut2: UIView!
+    @IBOutlet weak var viewBut3: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,9 @@ class CompanyGuideVC: UIViewController {
         viewBut2.layer.cornerRadius = 8
         viewBut2.shadow2()
         
+        viewBut3.layer.cornerRadius = 8
+        viewBut3.shadow2()
+        
     }
     
     
@@ -29,11 +34,18 @@ class CompanyGuideVC: UIViewController {
     }
     
     @IBAction func CGbutton(_ sender: UIButton) {
+        
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
         if sender.tag == 1 {
             let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "niftyFifty") as? niftyFifty
             self.navigationController?.pushViewController(vc!, animated: true)
         }else  if sender.tag == 2 {
             let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "topWL") as? topWL
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }else  if sender.tag == 3 {
+            let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "NewsVC") as? NewsVC
             self.navigationController?.pushViewController(vc!, animated: true)
         }
     }

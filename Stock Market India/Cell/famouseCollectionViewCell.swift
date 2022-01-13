@@ -14,6 +14,13 @@ class famouseCollectionViewCell:UICollectionViewCell{
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var source: UIButton!
     
+    @IBOutlet weak var newLabel: UILabel!{
+        didSet{
+            newLabel.clipsToBounds = true
+            newLabel.layer.cornerRadius = 8
+            newLabel.layer.maskedCorners = [.layerMaxXMinYCorner]
+        }
+    }
     
     @IBOutlet weak var outerContainer: UIView!{
         didSet{

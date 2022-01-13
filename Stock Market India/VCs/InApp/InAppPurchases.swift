@@ -30,15 +30,19 @@ class InAppPurchases: UIViewController {
         }
     }
     
-    @IBOutlet weak var WeekUpperLabel: UILabel!
-    @IBOutlet weak var WeekUpperView: UIView!
-    @IBOutlet weak var labelBannerWeek: UILabel!
     @IBOutlet weak var WeekLowerLabel: UILabel!
+    @IBOutlet weak var WeekUpperLabel: UILabel!
     
-    @IBOutlet weak var YearUpperLabel: UILabel!
-    @IBOutlet weak var YearUpperView: UIView!
-    @IBOutlet weak var labelBannerYear: UILabel!
     @IBOutlet weak var YearLowerLabel: UILabel!
+    @IBOutlet weak var YearUpperLabel: UILabel!
+    
+    @IBOutlet weak var WeekUpperView: UIView!
+    
+    
+    @IBOutlet weak var labelBannerWeek: UILabel!
+    @IBOutlet weak var labelBannerYear: UILabel!
+    
+    @IBOutlet weak var YearUpperView: UIView!
     
     @IBOutlet weak var weekView: UIView!
     @IBOutlet weak var yearView: UIView!
@@ -69,7 +73,6 @@ class InAppPurchases: UIViewController {
         Purchases.shared.offerings { (offerings, error) in
             if let offerings = offerings {
                 
-                
                 guard let package = offerings[IPA.OneYearPro.rawValue]?.availablePackages.first else {
                     return
                 }
@@ -86,10 +89,14 @@ class InAppPurchases: UIViewController {
                 
                 let pricetwo = offerings[IPA.StockMarketPro.rawValue]?.lifetime?.localizedPriceString
                 
-                self.WeekLowerLabel.attributedText = self.PriceMessage(price: priceone ?? "$0.49" , save: "Save 5%")
+                self.WeekLowerLabel.attributedText = self.Offer(price: "3 Days Free" , save: "Save 5%")
                 
+                self.YearLowerLabel.attributedText = self.Offer(price: "Most Populer", save: "Save 26%")
                 
-                self.YearLowerLabel.attributedText = self.PriceMessage(price: pricetwo ?? "$5.49", save: "Save 26%")
+                self.labelBannerWeek.attributedText = self.PriceMessage(price: priceone ?? "$0.49")
+                
+                self.labelBannerYear.attributedText = self.PriceMessage(price: pricetwo ?? "$0.49")
+                
                 
             }
         }
@@ -126,12 +133,19 @@ class InAppPurchases: UIViewController {
         }
     }
     
-    func PriceMessage(price:String,save:String) -> NSAttributedString {
+    func Offer(price:String,save:String) -> NSAttributedString {
         let attrString = NSMutableAttributedString(string: price+"\n",
-                                                   attributes: [NSAttributedString.Key.font: UIFont(name: "Arial-BoldMT", size: 18)!]);
+                                                   attributes: [NSAttributedString.Key.font: UIFont(name: "Arial-BoldMT", size: 15)!,NSAttributedString.Key.foregroundColor: UIColor.systemRed]);
         
         attrString.append(NSMutableAttributedString(string: save,
-                                                    attributes: [NSAttributedString.Key.font: UIFont(name: "ArialMT", size: 10)!]))
+                                                    attributes: [NSAttributedString.Key.font: UIFont(name: "ArialMT", size: 12)!]))
+        return attrString
+    }
+    
+    
+    func PriceMessage(price:String) -> NSAttributedString {
+        let attrString = NSMutableAttributedString(string: price+"\n",
+                                                   attributes: [NSAttributedString.Key.font: UIFont(name: "Arial-BoldMT", size: 14)!]);
         return attrString
     }
     
@@ -170,17 +184,15 @@ class InAppPurchases: UIViewController {
             Purchases.shared.purchasePackage(AllPackage[selectedIPA]) { (transaction, purchaserInfo, error, userCancelled) in
                 if purchaserInfo?.entitlements.all[IPA.OneYearPro.rawValue]?.isActive == true ||  purchaserInfo?.entitlements.all[IPA.StockMarketPro.rawValue]?.isActive == true || purchaserInfo?.entitlements.all[IPA.OneMonthPro.rawValue]?.isActive == true {
                     
-                    
                     self.PerchesedComplte()
                     
                 }else{
                     
                     stopIndicator()
-                    //print("error")
                 }
             }
             
-            lifeTimepurchesd()
+            //lifeTimepurchesd()
         }
     }
     
@@ -204,7 +216,6 @@ class InAppPurchases: UIViewController {
         }
         
         lifeTimepurchesd()
-        
     }
     
     func lifeTimepurchesd(){

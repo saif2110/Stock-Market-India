@@ -271,6 +271,10 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     @objc func addTapped(){
+        
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        
         let MainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = (MainStoryboard.instantiateViewController(withIdentifier: "searchVC") as? searchVC)
         self.present(controller!, animated: true, completion: nil)
@@ -283,6 +287,9 @@ class topfifty: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     @objc func sort(sender:UIButton) {
+        
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         
         if sender.currentTitle == " All Stocks" {
             sender.setTitle(" Intraday", for: .normal)

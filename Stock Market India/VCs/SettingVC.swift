@@ -32,16 +32,18 @@ class SettingVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section != 0 {
-            return 40
-        }else{
+        if section == 0 {
             return 0
+        }else if section == 1 {
+            return 10
+        }else{
+            return 40
         }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         return view
     }
     
