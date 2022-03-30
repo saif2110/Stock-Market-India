@@ -31,7 +31,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhy-UQ-QgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-664" y="72"/>
+            <point key="canvasLocation" x="-942" y="72"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eAt-k3-qxP">
@@ -53,7 +53,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXW-Y1-S23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="72"/>
+            <point key="canvasLocation" x="-72" y="72"/>
         </scene>
         <!--searchVC-->
         <scene sceneID="vc5-Zh-Z4M">
@@ -906,7 +906,7 @@ Track of Market Live news, update, BSE, NSE &amp; more.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imr-WH-U8C" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902.89855072463774" y="470.75892857142856"/>
+            <point key="canvasLocation" x="903" y="470"/>
         </scene>
         <!--IPO-->
         <scene sceneID="6Uj-6x-6Hn">

@@ -47,6 +47,12 @@ class InAppPurchases: UIViewController {
     @IBOutlet weak var weekView: UIView!
     @IBOutlet weak var yearView: UIView!
     
+    
+    func selectedView(){
+        selectedIPA = 0
+        select(vw:weekView)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -68,7 +74,7 @@ class InAppPurchases: UIViewController {
         customLabelBanner(vw: labelBannerYear)
         upperView(vw: YearUpperLabel)
         upperView(vw: YearUpperView)
-        select(vw:weekView)
+        selectedView()
         
         Purchases.shared.offerings { (offerings, error) in
             if let offerings = offerings {
